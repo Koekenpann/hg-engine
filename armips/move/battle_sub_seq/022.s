@@ -64,9 +64,11 @@ _skipTypeChecks:
     if IF_EQUAL, VAR_ADD_EFFECT_TYPE, 0x3, _020C
     if IF_MASK, VAR_MOVE_STATUS, 0x10001, _0368
     if IF_MASK, VAR_SIDE_EFFECT_ACTIVE_BATTLER, 0x8, _protectedBySafeguard
-    if IF_NOTEQUAL, VAR_ADD_EFFECT_TYPE, 0x1, _020C
+    if IF_NOTEQUAL, VAR_ADD_EFFECT_TYPE, 0x1, _checkMortalSpin
     playanimation BATTLER_ATTACKER
     waitmessage
+_checkMortalSpin:
+    if IF_EQUAL, VAR_CURRENT_MOVE, MOVE_MORTAL_SPIN, _doRapidSpin
 _020C:
     setstatus2effect BATTLER_ADDL_EFFECT, 0x2
     waitmessage
@@ -171,5 +173,9 @@ MistyTerrainFail:
     if IF_EQUAL, VAR_ADD_EFFECT_TYPE, ADD_STATUS_DOKUBISI, _end_script
     changevar VAR_OP_SETMASK, VAR_MOVE_STATUS, 0x40
     endscript
+
+_doRapidSpin:
+    rapidspin
+    goto _020C
 
 .close

@@ -801,6 +801,24 @@ u8 CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int client2, int fl
             priority2++;
         }
 
+        // Handle custom ability Blazing Soul, courtesy to Radical Red/soupacell for the idea
+        if 
+        (
+            GetBattlerAbility(sp, client1) == ABILITY_BLAZING_SOUL
+            && sp->moveTbl[move1].type == TYPE_FIRE
+            && sp->battlemon[client1].hp == (s32)sp->battlemon[client1].maxhp 
+        ) {
+            priority1++;
+        }
+        if
+        (
+            GetBattlerAbility(sp, client2) == ABILITY_BLAZING_SOUL
+            && sp->moveTbl[move2].type == TYPE_FIRE
+            && sp->battlemon[client2].hp == (s32)sp->battlemon[client2].maxhp
+        ) {
+            priority2++;
+        }
+
         // Handle Triage
         if (GetBattlerAbility(sp, client1) == ABILITY_TRIAGE) {
             for (i = 0; i < NELEMS(TriageMovesList); i++)
@@ -1541,6 +1559,10 @@ BOOL adjustedMoveHasPositivePriority(struct BattleStruct *sp, int attacker) {
         ((GetBattlerAbility(sp, attacker) == ABILITY_GALE_WINGS) &&
          (sp->moveTbl[sp->current_move_index].type == TYPE_FLYING) &&
          (sp->moveTbl[sp->current_move_index].priority >= 0)  // Gale Wings is +1
+         ) || 
+        ((GetBattlerAbility(sp, attacker) == ABILITY_BLAZING_SOUL) &&
+         (sp->moveTbl[sp->current_move_index].type == TYPE_FIRE) &&
+         (sp->moveTbl[sp->current_move_index].priority >= 0)  // Blazing Soul is +1
          ) ||
         ((GetBattlerAbility(sp, attacker) == ABILITY_TRIAGE) &&
          (isTriageMove) &&

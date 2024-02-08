@@ -3685,7 +3685,7 @@ movedata MOVE_RAPID_SPIN, "Rapid Spin"
     appeal 0x11
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_RAPID_SPIN, "A spin attack that\ncan also eliminate\nsuch moves as Bind,\nWrap, Leech Seed,\nand Spikes."
+    movedescription MOVE_RAPID_SPIN, "A spin attack that\nraises the user’s\nSpeed, and eliminates\nthe effects of\ncertain moves."
 
 movedata MOVE_SWEET_SCENT, "Sweet Scent"
     battleeffect 24
@@ -8152,7 +8152,7 @@ movedata MOVE_HEAL_PULSE, "Heal Pulse"
     movedescription MOVE_HEAL_PULSE, "The user emits a\nhealing pulse that\nrestores a target’s\nHP by up to half."
 
 movedata MOVE_HEX, "Hex"
-    battleeffect 287
+    battleeffect 0
     pss SPLIT_SPECIAL
     basepower 65
     type TYPE_GHOST
@@ -9126,7 +9126,7 @@ movedata MOVE_PHANTOM_FORCE, "Phantom Force"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_PHANTOM_FORCE, "---"
+    movedescription MOVE_PHANTOM_FORCE, "The user vanishes,\nthen strikes the foe\non the second turn.\nIt hits even if the\nfoe protects itself."
 
 movedata MOVE_TRICK_OR_TREAT, "Trick-or-Treat"
     battleeffect 0
@@ -9254,7 +9254,7 @@ movedata MOVE_DISARMING_VOICE, "Disarming Voice"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_DISARMING_VOICE, "---"
+    movedescription MOVE_DISARMING_VOICE, "With a charming cry,\nthe user does\nemotional damage.\nThis attack never\nmisses."
 
 movedata MOVE_PARTING_SHOT, "Parting Shot"
     battleeffect 0
@@ -9302,7 +9302,7 @@ movedata MOVE_DRAINING_KISS, "Draining Kiss"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_DRAINING_KISS, "---"
+    movedescription MOVE_DRAINING_KISS, "The user attacks with\nan energy-draining\nkiss that restores\nthe user’s HP."
 
 movedata MOVE_CRAFTY_SHIELD, "Crafty Shield"
     battleeffect 0
@@ -9350,7 +9350,7 @@ movedata MOVE_GRASSY_TERRAIN, "Grassy Terrain"
     appeal 0x05
     contesttype CONTEST_BEAUTY
     terminatedata
-    movedescription MOVE_GRASSY_TERRAIN, "---"
+    movedescription MOVE_GRASSY_TERRAIN, "The user turns the\nground to grass for\nfive turns.\nIt restores the HP\nof grounded Pokémon."
 
 movedata MOVE_MISTY_TERRAIN, "Misty Terrain"
     battleeffect 294
@@ -9366,7 +9366,7 @@ movedata MOVE_MISTY_TERRAIN, "Misty Terrain"
     appeal 0x05
     contesttype CONTEST_BEAUTY
     terminatedata
-    movedescription MOVE_MISTY_TERRAIN, "---"
+    movedescription MOVE_MISTY_TERRAIN, "The user covers the\nground with mist for\nfive turns.\nIt protects grounded\nPokémon from status."
 
 movedata MOVE_ELECTRIFY, "Electrify"
     battleeffect 0
@@ -9734,7 +9734,7 @@ movedata MOVE_ELECTRIC_TERRAIN, "ElectricTerrain"
     appeal 0x05
     contesttype CONTEST_SMART // Prior to Pokémon Omega Ruby and Alpha Sapphire, it was known as the Smart condition.
     terminatedata
-    movedescription MOVE_ELECTRIC_TERRAIN, "---"
+    movedescription MOVE_ELECTRIC_TERRAIN, "The user electrifies\nthe ground for five\nturns.\nGrounded Pokémon no\nlonger fall asleep."
 
 movedata MOVE_DAZZLING_GLEAM, "Dazzling Gleam"
     battleeffect 0
@@ -10918,7 +10918,7 @@ movedata MOVE_PSYCHIC_TERRAIN, "Psychic Terrain"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_PSYCHIC_TERRAIN, "---"
+    movedescription MOVE_PSYCHIC_TERRAIN, "Grounded Pokémon are\nprotected from\npriority moves for\nfive turns."
 
 movedata MOVE_LUNGE, "Lunge"
     battleeffect 68
@@ -11160,8 +11160,9 @@ movedata MOVE_BRUTAL_SWING, "Brutal Swing"
     terminatedata
     movedescription MOVE_BRUTAL_SWING, "---"
 
+// Not done yet: in Reflect battle effect for AI purposes. TODO: add sub seq + link for Aurora veil effect
 movedata MOVE_AURORA_VEIL, "Aurora Veil"
-    battleeffect 0
+    battleeffect 65
     pss SPLIT_STATUS
     basepower 0
     type TYPE_ICE
@@ -11174,7 +11175,7 @@ movedata MOVE_AURORA_VEIL, "Aurora Veil"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_AURORA_VEIL, "---"
+    movedescription MOVE_AURORA_VEIL, "This move reduces\ndamage from all moves\nfor five turns.\nThis can be used\nonly in a hailstorm."
 
 movedata MOVE_SINISTER_ARROW_RAID, "Sinister Arrow Raid"
     battleeffect 0
@@ -12486,7 +12487,7 @@ movedata MOVE_BODY_PRESS, "Body Press"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_BODY_PRESS, "---"
+    movedescription MOVE_BODY_PRESS, "The user slams its\nbody into the foe.\nThe higher the user’s\nDefense, the higher\nthe damage dealt."
 
 movedata MOVE_DECORATE, "Decorate"
     battleeffect 0
@@ -13913,20 +13914,20 @@ movedata MOVE_TRIPLE_DIVE, "Triple Dive"
     movedescription MOVE_TRIPLE_DIVE, "---"
 
 movedata MOVE_MORTAL_SPIN, "Mortal Spin"
-    battleeffect 0
+    battleeffect 2
     pss SPLIT_PHYSICAL
     basepower 30
     type TYPE_POISON
     accuracy 100
     pp 15
-    effectchance 0
+    effectchance 100
     target MOVE_TARGET_BOTH
     priority 0
     flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_MORTAL_SPIN, "---"
+    movedescription MOVE_MORTAL_SPIN, "A spin attack that\npoisons the taget,\nand eliminates\nthe effects of\ncertain moves."
 
 movedata MOVE_DOODLE, "Doodle"
     battleeffect 0
@@ -13974,7 +13975,7 @@ movedata MOVE_KOWTOW_CLEAVE, "Kowtow Cleave"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_KOWTOW_CLEAVE, "---"
+    movedescription MOVE_KOWTOW_CLEAVE, "The user slashes\nat the target after\nkowtowing.\nThis attack never misses."
 
 movedata MOVE_FLOWER_TRICK, "Flower Trick"
     battleeffect 282
@@ -14152,6 +14153,7 @@ movedata MOVE_SHED_TAIL, "Shed Tail"
     terminatedata
     movedescription MOVE_SHED_TAIL, "---"
 
+// copy uturn subscript, put in hail battle effect
 movedata MOVE_CHILLY_RECEPTION, "Chilly Reception"
     battleeffect 0
     pss SPLIT_STATUS
@@ -14185,7 +14187,7 @@ movedata MOVE_TIDY_UP, "Tidy Up"
     movedescription MOVE_TIDY_UP, "---"
 
 movedata MOVE_SNOWSCAPE, "Snowscape"
-    battleeffect 0
+    battleeffect 164
     pss SPLIT_STATUS
     basepower 0
     type TYPE_ICE
@@ -14774,7 +14776,26 @@ movedata MOVE_MALIGNANT_CHAIN, "Malignant Chain"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_MALIGNANT_CHAIN, "---"
+
+// Custom Moves
+
+// Custom move for Meganium, Sp.Def variant of Body Press
+// Credits to Gherkins for move name.
+movedata MOVE_VERDANT_GRASP, "Verdant Grasp"
+    battleeffect 0
+    pss SPLIT_SPECIAL
+    basepower 80
+    type TYPE_GRASS
+    accuracy 100
+    pp 10
+    effectchance 0
+    target MOVE_TARGET_SELECTED
+    priority 0
+    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    appeal 0
+    contesttype 0
+    terminatedata
+    movedescription MOVE_VERDANT_GRASP, "The user slams its\nbody into the foe.\nThe higher the user’s\nSp. Def, the higher\nthe damage dealt."
 
 movedatanoname NUM_OF_MOVES+1
     battleeffect 0

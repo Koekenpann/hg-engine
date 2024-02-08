@@ -192,7 +192,7 @@ Desolate Land
 Delta Stream
 Stamina
 Wimp Out
-Emergency Exit
+Illumina Power
 Water Compaction
 Merciless
 Shields Down
@@ -239,7 +239,7 @@ Ball Fetch
 Cotton Down
 Propeller Tail
 Mirror Armor
-Gulp Missile
+Blazing Soul
 Stalwart
 Steam Engine
 Punk Rock
@@ -309,3 +309,4 @@ Tera Shift
 Tera Shell
 Teraform Zero
 Poison Puppeteer
+Blazing Soul

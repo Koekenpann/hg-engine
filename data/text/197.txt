@@ -1085,9 +1085,9 @@ The wild {STRVAR_1 1, 0, 0} vanished\ninstantly!
 The foe’s {STRVAR_1 1, 0, 0} vanished\ninstantly!
 Your team’s Lucky Chant wore off!
 The foe’s Lucky Chant wore off!
-{STRVAR_1 1, 0, 0} has\n{STRVAR_1 5, 1, 0}!
-The wild {STRVAR_1 1, 0, 0} has\n{STRVAR_1 5, 1, 0}!
-The foe’s {STRVAR_1 1, 0, 0} has\n{STRVAR_1 5, 1, 0}!
+{STRVAR_1 1, 0, 0} breaks\nthe mold!
+The wild {STRVAR_1 1, 0, 0} breaks\nthe mold!
+The foe’s {STRVAR_1 1, 0, 0} breaks\nthe mold!
 {STRVAR_1 1, 0, 0} is hurt\nby its {STRVAR_1 5, 1, 0}!
 The wild {STRVAR_1 1, 0, 0} is hurt\nby its {STRVAR_1 5, 1, 0}!
 The foe’s {STRVAR_1 1, 0, 0} is hurt\nby its {STRVAR_1 5, 1, 0}!
@@ -1397,3 +1397,16 @@ The weirdness disappeared\nfrom the battlefield.
 {STRVAR_1 1, 0, 0}’s HP was restored.
 The wild {STRVAR_1 1, 0, 0}’s HP was restored.
 The foe’s {STRVAR_1 1, 0, 0}’s HP was restored.
+
+{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0} weakened\nthe Sp. Atk of all surrounding\fPokémon!
+The wild {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\nweakened the Sp. Atk of all\fsurrounding Pokémon!
+The foe’s {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\nweakened the Sp. Atk of all\fsurrounding Pokémon!
+{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0} weakened\nthe Defense of all surrounding\fPokémon!
+The wild {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\nweakened the Defense of all\fsurrounding Pokémon!
+The foe’s {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\nweakened the Defense of all\fsurrounding Pokémon!
+{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0} weakened\nthe Attack of all surrounding\fPokémon!
+The wild {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\nweakened the Attack of all\fsurrounding Pokémon!
+The foe’s {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\nweakened the Attack of all\fsurrounding Pokémon!
+{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0} weakened\nthe Sp. Def of all surrounding\fPokémon!
+The wild {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\nweakened the Sp. Def of all\fsurrounding Pokémon!
+The foe’s {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\nweakened the Sp. Def of all\fsurrounding Pokémon!

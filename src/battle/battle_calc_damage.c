@@ -259,6 +259,13 @@ int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
     movetype = GetAdjustedMoveType(sp, attacker, moveno);
     movepower = movepower * sp->damage_value / 10;
 
+    // Handle moves that double in power if the target has a status condition.
+    if (moveno == MOVE_HEX) {
+        if (DefendingMon.condition > 0) {
+            movepower = movepower * 2;
+        }
+    }
+
     // handle charge
     if ((sp->battlemon[attacker].effect_of_moves & MOVE_EFFECT_FLAG_CHARGE) && (movetype == TYPE_ELECTRIC))
         movepower *= 2;
@@ -422,6 +429,13 @@ int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
         movepower /= 2;
     }
 
+    // handle illuminous power
+    if ((MoldBreakerAbilityCheck(sp, attacker, defender, ABILITY_ILLUMINOUS_POWER) == TRUE) &&
+        ((movetype == TYPE_BUG) || (movetype == TYPE_DARK) || (movetype == TYPE_GHOST)))
+    {
+        movepower /= 2;
+    }
+
     // handle hustle
     if (AttackingMon.ability == ABILITY_HUSTLE)
     {
@@ -536,7 +550,7 @@ int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
     //handle transistor
     if(AttackingMon.ability == ABILITY_TRANSISTOR && (movetype == TYPE_ELECTRIC))
     {
-        movepower = movepower * 150 / 100;
+        movepower = movepower * 130 / 100;
     }
 
     //handle rocky payload
@@ -938,6 +952,12 @@ int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
 
     //handles shadow shield
     if ((DefendingMon.ability == ABILITY_SHADOW_SHIELD) && (DefendingMon.hp == DefendingMon.maxhp))
+    {
+        damage /= 2;
+    }
+
+    //handles custom ability illuminous powers
+    if ((DefendingMon.ability == ABILITY_ILLUMINOUS_POWER) && (DefendingMon.hp == DefendingMon.maxhp))
     {
         damage /= 2;
     }
