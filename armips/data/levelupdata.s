@@ -3528,6 +3528,7 @@ levelup SPECIES_CHIKORITA
     learnset MOVE_SWEET_SCENT, 28
     learnset MOVE_LIGHT_SCREEN, 31
     learnset MOVE_BODY_PRESS, 34
+    learnset MOVE_VERDANT_GRASP, 37
     learnset MOVE_SAFEGUARD, 39
     learnset MOVE_AROMATHERAPY, 42
     learnset MOVE_SOLAR_BEAM, 45
@@ -3545,17 +3546,23 @@ levelup SPECIES_BAYLEEF
     learnset MOVE_ANCIENT_POWER, 14
     learnset MOVE_REFLECT, 18
     learnset MOVE_MAGICAL_LEAF, 22
-    learnset MOVE_NATURAL_GIFT, 26
-    learnset MOVE_SWEET_SCENT, 32
+    learnset MOVE_KNOCK_OFF, 26
+    learnset MOVE_AMNESIA, 32
     learnset MOVE_LIGHT_SCREEN, 36
+    learnset MOVE_IRON_DEFENSE, 38
     learnset MOVE_BODY_PRESS, 40
     learnset MOVE_SAFEGUARD, 46
+    learnset MOVE_VERDANT_GRASP, 48
     learnset MOVE_AROMATHERAPY, 50
     learnset MOVE_SOLAR_BEAM, 54
     terminatelearnset
 
 
-levelup SPECIES_MEGANIUM // updated to scvi but still bad
+// buffs: Body Press + Iron Defense 
+// buffs: Custom Move Verdant Grasp, basically Body Press but special and Sp.Def + Amnesia 
+// buffs: Knock Off and Ancient Power for Morty and Falkner/Bugsy split respectively
+
+levelup SPECIES_MEGANIUM
     learnset MOVE_PETAL_DANCE, 0
     learnset MOVE_GROWL, 1
     learnset MOVE_PETAL_BLIZZARD, 1
@@ -3568,12 +3575,15 @@ levelup SPECIES_MEGANIUM // updated to scvi but still bad
     learnset MOVE_REFLECT, 18
     learnset MOVE_GIGA_DRAIN, 22
     learnset MOVE_LEECH_SEED, 26
+    learnset MOVE_KNOCK_OFF, 26
     learnset MOVE_SWEET_SCENT, 34
     learnset MOVE_LIGHT_SCREEN, 40
-    learnset MOVE_BODY_PRESS, 46
-    learnset MOVE_SAFEGUARD, 54
-    learnset MOVE_AROMATHERAPY, 60
-    learnset MOVE_SOLAR_BEAM, 65
+    learnset MOVE_IRON_DEFENSE, 38
+    learnset MOVE_BODY_PRESS, 40
+    learnset MOVE_SAFEGUARD, 46
+    learnset MOVE_VERDANT_GRASP, 48
+    learnset MOVE_AROMATHERAPY, 50
+    learnset MOVE_SOLAR_BEAM, 54
     terminatelearnset
 
 
@@ -3650,6 +3660,7 @@ levelup SPECIES_TOTODILE
     learnset MOVE_WATER_GUN, 6
     learnset MOVE_RAGE, 8
     learnset MOVE_BITE, 13
+    learnset MOVE_SURGING_STRIKES, 14
     learnset MOVE_SCARY_FACE, 15
     learnset MOVE_ICE_FANG, 20
     learnset MOVE_FLAIL, 22
@@ -22462,9 +22473,9 @@ levelup SPECIES_VULPIX_ALOLAN
     learnset MOVE_CONFUSE_RAY, 16
     learnset MOVE_PAYBACK, 18
     learnset MOVE_FEINT_ATTACK, 23
-    learnset MOVE_AURORA_BEAM, 25
+    learnset MOVE_AURORA_BEAM, 24
     learnset MOVE_HEX, 26
-    learnset MOVE_EXTRASENSORY, 29
+    learnset MOVE_EXTRASENSORY, 28
     learnset MOVE_MIST, 30
     learnset MOVE_ICE_BEAM, 33
     learnset MOVE_SAFEGUARD, 34
