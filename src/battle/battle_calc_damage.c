@@ -142,6 +142,7 @@ static const u16 SharpnessMovesTable[] = {
         MOVE_FURY_CUTTER,
         MOVE_KOWTOW_CLEAVE,
         MOVE_LEAF_BLADE,
+        MOVE_MIGHTY_CLEAVE,
         MOVE_NIGHT_SLASH,
         MOVE_POPULATION_BOMB,
         MOVE_PSYBLADE,
@@ -211,11 +212,43 @@ int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
     }
 
     defense = BattlePokemonParamGet(sp, defender, BATTLE_MON_DATA_DEF, NULL);
-    sp_attack = BattlePokemonParamGet(sp, attacker, BATTLE_MON_DATA_SPATK, NULL);
+
+    switch (moveno) {
+        case MOVE_VERDANT_SURGE:
+            sp_attack = BattlePokemonParamGet(sp, attacker, BATTLE_MON_DATA_SPDEF, NULL);
+            break;
+
+        default:
+            sp_attack = BattlePokemonParamGet(sp, attacker, BATTLE_MON_DATA_SPATK, NULL);
+            break;
+    }
+
     sp_defense = BattlePokemonParamGet(sp, defender, BATTLE_MON_DATA_SPDEF, NULL);
 
+    switch (moveno) {
+        case MOVE_BODY_PRESS:
+            atkstate = BattlePokemonParamGet(sp, attacker, BATTLE_MON_DATA_STATE_DEF, NULL) - 6;
+            break;
+
+        default:
+            atkstate = BattlePokemonParamGet(sp, attacker, BATTLE_MON_DATA_STATE_ATK, NULL) - 6;
+            break;
+    }
+
+    // atkstate = BattlePokemonParamGet(sp, attacker, BATTLE_MON_DATA_STATE_ATK, NULL) - 6;
     defstate = BattlePokemonParamGet(sp, defender, BATTLE_MON_DATA_STATE_DEF, NULL) - 6;
-    spatkstate = BattlePokemonParamGet(sp, attacker, BATTLE_MON_DATA_STATE_SPATK, NULL) - 6;
+
+    switch (moveno) {
+        case MOVE_VERDANT_SURGE:
+            spatkstate = BattlePokemonParamGet(sp, attacker, BATTLE_MON_DATA_STATE_SPDEF, NULL) - 6;
+            break;
+
+        default:
+            spatkstate = BattlePokemonParamGet(sp, attacker, BATTLE_MON_DATA_STATE_SPATK, NULL) - 6;
+            break;
+    }
+
+    // spatkstate = BattlePokemonParamGet(sp, attacker, BATTLE_MON_DATA_STATE_SPATK, NULL) - 6;
     spdefstate = BattlePokemonParamGet(sp, defender, BATTLE_MON_DATA_STATE_SPDEF, NULL) - 6;
 
     level = BattlePokemonParamGet(sp, attacker, BATTLE_MON_DATA_LEVEL, NULL);
