@@ -58,8 +58,8 @@
 #define ABILITY_TRUANT 54
 #define ABILITY_HUSTLE 55
 #define ABILITY_CUTE_CHARM 56
-#define ABILITY_PLUS 57
-#define ABILITY_MINUS 58
+#define ABILITY_PLUS 57 // make it plus n minus
+#define ABILITY_MINUS 57 // scrap for 1 ability
 #define ABILITY_FORECAST 59
 #define ABILITY_STICKY_HOLD 60
 #define ABILITY_SHED_SKIN 61
@@ -75,8 +75,8 @@
 #define ABILITY_ARENA_TRAP 71
 #define ABILITY_VITAL_SPIRIT 72
 #define ABILITY_WHITE_SMOKE 73
-#define ABILITY_PURE_POWER 74
-#define ABILITY_SHELL_ARMOR 75
+#define ABILITY_PURE_POWER 74 // potential scrap huge power clone
+#define ABILITY_SHELL_ARMOR 75 // potential scrap battle armor clone
 #define ABILITY_AIR_LOCK 76
 
 // gen 4
@@ -106,7 +106,7 @@
 #define ABILITY_STALL 100
 #define ABILITY_TECHNICIAN 101
 #define ABILITY_LEAF_GUARD 102
-#define ABILITY_KLUTZ 103
+#define ABILITY_KLUTZ 103 // potential scrap, useless
 #define ABILITY_MOLD_BREAKER 104
 #define ABILITY_SUPER_LUCK 105
 #define ABILITY_AFTERMATH 106
@@ -119,7 +119,7 @@
 #define ABILITY_SCRAPPY 113
 #define ABILITY_STORM_DRAIN 114
 #define ABILITY_ICE_BODY 115
-#define ABILITY_SOLID_ROCK 116
+#define ABILITY_SOLID_ROCK 116 // potential scrap, filter clone
 #define ABILITY_SNOW_WARNING 117
 #define ABILITY_HONEY_GATHER 118
 #define ABILITY_FRISK 119
@@ -168,8 +168,8 @@
 #define ABILITY_IRON_BARBS 160
 #define ABILITY_ZEN_MODE 161
 #define ABILITY_VICTORY_STAR 162
-#define ABILITY_TURBOBLAZE 163
-#define ABILITY_TERAVOLT 164
+#define ABILITY_TURBOBLAZE 163 // potential scrap mold breaker clone
+#define ABILITY_TERAVOLT 164 // potential scrap mold breaker clone
 
 // gen 6
 #define ABILITY_AROMA_VEIL 165
@@ -203,7 +203,7 @@
 // gen 7
 #define ABILITY_STAMINA 192
 #define ABILITY_WIMP_OUT 193
-#define ABILITY_EMERGENCY_EXIT 255 // change back later
+#define ABILITY_EMERGENCY_EXIT 255 // scrapped, wimp out clone
 #define ABILITY_WATER_COMPACTION 195
 #define ABILITY_MERCILESS 196
 #define ABILITY_SHIELDS_DOWN 197
@@ -230,7 +230,7 @@
 #define ABILITY_FLUFFY 218
 #define ABILITY_DAZZLING 219
 #define ABILITY_SOUL_HEART 220
-#define ABILITY_TANGLING_HAIR 221
+#define ABILITY_TANGLING_HAIR 221 // potential scrap, gooey clone
 #define ABILITY_RECEIVER 222
 #define ABILITY_POWER_OF_ALCHEMY 223
 #define ABILITY_BEAST_BOOST 224
@@ -247,12 +247,12 @@
 // gen 8
 #define ABILITY_INTREPID_SWORD 234
 #define ABILITY_DAUNTLESS_SHIELD 235
-#define ABILITY_LIBERO 236
+#define ABILITY_LIBERO 236 // potential scrap, protean clone
 #define ABILITY_BALL_FETCH 237
 #define ABILITY_COTTON_DOWN 238
 #define ABILITY_PROPELLER_TAIL 239
 #define ABILITY_MIRROR_ARMOR 240
-#define ABILITY_GULP_MISSILE 255 // unalive gulp missile for blazing soul
+#define ABILITY_GULP_MISSILE 255 // scrapped, no point adding it
 #define ABILITY_STALWART 242
 #define ABILITY_STEAM_ENGINE 243
 #define ABILITY_PUNK_ROCK 244
@@ -296,7 +296,7 @@
 #define ABILITY_ELECTROMORPHOSIS 280
 #define ABILITY_PROTOSYNTHESIS 281
 #define ABILITY_QUARK_DRIVE 282
-#define ABILITY_GOOD_AS_GOLD 283
+#define ABILITY_GOOD_AS_GOLD 58 // over minus
 #define ABILITY_VESSEL_OF_RUIN 284
 #define ABILITY_SWORD_OF_RUIN 285
 #define ABILITY_TABLETS_OF_RUIN 286
@@ -314,10 +314,10 @@
 #define ABILITY_MYCELIUM_MIGHT 298
 #define ABILITY_HOSPITALITY 299
 #define ABILITY_MINDS_EYE 300
-#define ABILITY_EMBODY_ASPECT 301
-#define ABILITY_EMBODY_ASPECT_2 302
-#define ABILITY_EMBODY_ASPECT_3 303
-#define ABILITY_EMBODY_ASPECT_4 304
+#define ABILITY_EMBODY_ASPECT 301 // potential scrap, cant access
+#define ABILITY_EMBODY_ASPECT_2 302 // potential scrap, cant access
+#define ABILITY_EMBODY_ASPECT_3 303 // potential scrap, cant access
+#define ABILITY_EMBODY_ASPECT_4 304 // potential scrap, cant access
 #define ABILITY_TOXIC_CHAIN 305
 #define ABILITY_SUPERSWEET_SYRUP 306
 #define ABILITY_TERA_SHIFT 307
