@@ -276,6 +276,14 @@ BOOL CalcAccuracy(void *bw, struct BattleStruct *sp, int attacker, int defender,
         return FALSE;
     }
 
+    if ((MoldBreakerAbilityCheck(sp, attacker, defender, ABILITY_GOOD_AS_GOLD) == TRUE) // good as gold + mold breaker ignores it
+     && sp->moveTbl[move_no].split == SPLIT_STATUS // move is status
+     && (attacker & 1) != (defender & 1)) // used on an enemy
+    {
+        sp->waza_status_flag |= MOVE_STATUS_FLAG_NOT_EFFECTIVE;
+        return FALSE;
+    } // uncomment whenever good as gold is needed.
+
     int i;
 
     for (i = 0; i < (s32)NELEMS(PowderMovesList); i++) {
