@@ -39,6 +39,7 @@ extern const u8 StatBoostModifiers[][2];
 
 const u16 SoundproofMoveList[] =
 {
+    MOVE_ALLURING_VOICE,
     MOVE_BOOMBURST,
     MOVE_BUG_BUZZ,
     MOVE_CHATTER,
@@ -56,6 +57,7 @@ const u16 SoundproofMoveList[] =
     MOVE_HYPER_VOICE,
     MOVE_METAL_SOUND,
     MOVE_NOBLE_ROAR,
+    MOVE_PSYCHIC_NOISE,
     MOVE_OVERDRIVE,
     MOVE_PARTING_SHOT,
     MOVE_PERISH_SONG,
@@ -1504,11 +1506,8 @@ u8 BeastBoostGreatestStatHelper(struct BattleStruct *sp, u32 client)
     u8 ret = 0;
     for (u8 i = 0; i < NELEMS(stats); i++)
     {
-        if (stats[i] > max)
-        {
-            max = stats[i];
-            ret = i;
-        }
+        if(stats[i] > stats[max])
+            max = i;
     }
 
     return ret;
