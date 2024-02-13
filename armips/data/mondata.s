@@ -111,7 +111,7 @@ mondata SPECIES_CHARMANDER, "Charmander"
     abilities ABILITY_BLAZE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
-    mondexentry SPECIES_CHARMANDER, "The flame on its tail shows the\nstrength of its life force. If it is weak,\nthe flame also burns weakly."
+    mondexentry SPECIES_CHARMANDER,  "The flame on its tail shows the strength\nof its life force. If it is weak, the\nflame also burns weakly." 
     mondexclassification SPECIES_CHARMANDER, "Lizard Pokémon"
     mondexheight SPECIES_CHARMANDER, "2’00”"
     mondexweight SPECIES_CHARMANDER, "18.7 lbs."
@@ -195,7 +195,7 @@ mondata SPECIES_WARTORTLE, "Wartortle"
     abilities ABILITY_TORRENT, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_WARTORTLE, "It is a well-established symbol of\nlongevity. If its shell has algae on it,\nthat WARTORTLE is very old."
+    mondexentry SPECIES_WARTORTLE,  "It is a well-established symbol of\nlongevity. If its shell has algae on it,\nthat WARTORTLE is very old." 
     mondexclassification SPECIES_WARTORTLE, "Turtle Pokémon"
     mondexheight SPECIES_WARTORTLE, "3’03”"
     mondexweight SPECIES_WARTORTLE, "49.6 lbs."
@@ -384,7 +384,7 @@ mondata SPECIES_PIDGEOTTO, "Pidgeotto"
     abilities ABILITY_KEEN_EYE, ABILITY_TANGLED_FEET
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_PIDGEOTTO, "It has outstanding vision. However\nhigh it flies, it is able to distinguish\nthe movements of its prey."
+    mondexentry SPECIES_PIDGEOTTO,  "It has outstanding vision. However high\nit flies, it is able to distinguish the\nmovements of its prey." 
     mondexclassification SPECIES_PIDGEOTTO, "Bird Pokémon"
     mondexheight SPECIES_PIDGEOTTO, "3’07”"
     mondexweight SPECIES_PIDGEOTTO, "66.1 lbs."
@@ -1140,7 +1140,7 @@ mondata SPECIES_PERSIAN, "Persian"
     abilities ABILITY_LIMBER, ABILITY_TECHNICIAN
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0
-    mondexentry SPECIES_PERSIAN, "Many adore it for its sophisticated air.\nHowever, it will lash out and\nscratch for little reason."
+    mondexentry SPECIES_PERSIAN,  "Many adore it for its sophisticated air.\nHowever, it will lash out and scratch\nfor little reason." 
     mondexclassification SPECIES_PERSIAN, "Classy Cat Pokémon"
     mondexheight SPECIES_PERSIAN, "3’03”"
     mondexweight SPECIES_PERSIAN, "70.5 lbs."
@@ -1308,7 +1308,7 @@ mondata SPECIES_POLIWHIRL, "Poliwhirl"
     abilities ABILITY_WATER_ABSORB, ABILITY_DAMP
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_POLIWHIRL, "The swirl on its belly subtly undulates.\nStaring at it may gradually\ncause drowsiness."
+    mondexentry SPECIES_POLIWHIRL,  "The swirl on its belly subtly undulates.\nStaring at it may gradually cause\ndrowsiness." 
     mondexclassification SPECIES_POLIWHIRL, "Tadpole Pokémon"
     mondexheight SPECIES_POLIWHIRL, "3’03”"
     mondexweight SPECIES_POLIWHIRL, "44.1 lbs."
@@ -1770,7 +1770,7 @@ mondata SPECIES_FARFETCHD, "Farfetch’d"
     abilities ABILITY_KEEN_EYE, ABILITY_INNER_FOCUS
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_FARFETCHD, "If anyone tries to disturb where the\nessential plant stalks grow, it uses its\nown stalk to thwart them."
+    mondexentry SPECIES_FARFETCHD,  "If anyone tries to disturb where the\nessential plant stalks grow, it uses its\nown stalk to thwart them." 
     mondexclassification SPECIES_FARFETCHD, "Wild Duck Pokémon"
     mondexheight SPECIES_FARFETCHD, "2’07”"
     mondexweight SPECIES_FARFETCHD, "33.1 lbs."
@@ -1956,7 +1956,7 @@ mondata SPECIES_GASTLY, "Gastly"
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
-    abilities ABILITY_LEVITATE, ABILITY_NONE
+    abilities ABILITY_GOOD_AS_GOLD, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_PURPLE, 0
     mondexentry SPECIES_GASTLY, "With its gas-like body, it can sneak\ninto any place it desires. However,\nit can be blown away by wind."
@@ -2463,7 +2463,7 @@ mondata SPECIES_HORSEA, "Horsea"
     abilities ABILITY_SWIFT_SWIM, ABILITY_SNIPER
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_HORSEA, "If attacked by a larger enemy,\nit quickly swims to safety by adeptly\ncontrolling its well-developed dorsal fin."
+    mondexentry SPECIES_HORSEA,  "If attacked by a larger enemy, it\nquickly swims to safety by adeptly\ncontrolling its well-developed dorsal\nfin." 
     mondexclassification SPECIES_HORSEA, "Dragon Pokémon"
     mondexheight SPECIES_HORSEA, "1’04”"
     mondexweight SPECIES_HORSEA, "17.6 lbs."
@@ -2883,7 +2883,7 @@ mondata SPECIES_FLAREON, "Flareon"
     abilities ABILITY_FLASH_FIRE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
-    mondexentry SPECIES_FLAREON, "It stores some of the air it inhales in\nits internal flame pouch, which heats it\nto over 3,000 degrees Fahrenheit."
+    mondexentry SPECIES_FLAREON,  "It stores some of the air it inhales in\nits internal flame pouch, which heats it\nto over 3,000 degrees Fahrenheit." 
     mondexclassification SPECIES_FLAREON, "Flame Pokémon"
     mondexheight SPECIES_FLAREON, "2’11”"
     mondexweight SPECIES_FLAREON, "55.1 lbs."
@@ -7419,7 +7419,7 @@ mondata SPECIES_KECLEON, "Kecleon"
     abilities ABILITY_COLOR_CHANGE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_KECLEON, "It changes its shading to match its\nsurroundings so it can sneak up on prey.\nOnly its belly patterns stay fixed."
+    mondexentry SPECIES_KECLEON,  "It changes its shading to match its\nsurroundings so it can sneak up on prey.\nOnly its belly patterns stay fixed." 
     mondexclassification SPECIES_KECLEON, "Color Swap Pokémon"
     mondexheight SPECIES_KECLEON, "3’03”"
     mondexweight SPECIES_KECLEON, "48.5 lbs."
@@ -7650,7 +7650,7 @@ mondata SPECIES_SPHEAL, "Spheal"
     abilities ABILITY_THICK_FAT, ABILITY_ICE_BODY
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_SPHEAL, "It crosses the oceans by rolling itself\non drifting ice. Fluffy fur keeps it warm\nwhen the temperature is below freezing."
+    mondexentry SPECIES_SPHEAL,  "It crosses the oceans by rolling itself\non drifting ice. Fluffy fur keeps it\nwarm when the temperature is below\nfreezing." 
     mondexclassification SPECIES_SPHEAL, "Clap Pokémon"
     mondexheight SPECIES_SPHEAL, "2’07”"
     mondexweight SPECIES_SPHEAL, "87.1 lbs."
@@ -9225,7 +9225,7 @@ mondata SPECIES_BONSLY, "Bonsly"
     abilities ABILITY_STURDY, ABILITY_ROCK_HEAD
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_BONSLY, "In order to adjust the level of fluids in\nits body, it exudes water from its eyes.\nThis makes it appear to be crying."
+    mondexentry SPECIES_BONSLY,  "In order to adjust the level of fluids\nin its body, it exudes water from its\neyes. This makes it appear to be crying." 
     mondexclassification SPECIES_BONSLY, "Bonsai Pokémon"
     mondexheight SPECIES_BONSLY, "1’08”"
     mondexweight SPECIES_BONSLY, "33.1 lbs."
@@ -9246,7 +9246,7 @@ mondata SPECIES_MIMEJR, "Mime Jr."
     abilities ABILITY_SOUNDPROOF, ABILITY_FILTER
     runchance 0
     colorflip BODY_COLOR_PINK, 0
-    mondexentry SPECIES_MIMEJR, "In an attempt to confuse its enemy,\nit mimics the enemy’s movements. Then\nit wastes no time in making itself scarce!"
+    mondexentry SPECIES_MIMEJR,  "In an attempt to confuse its enemy, it\nmimics the enemy’s movements. Then it\nwastes no time in making itself scarce!" 
     mondexclassification SPECIES_MIMEJR, "Mime Pokémon"
     mondexheight SPECIES_MIMEJR, "2’00”"
     mondexweight SPECIES_MIMEJR, "28.7 lbs."
@@ -9267,7 +9267,7 @@ mondata SPECIES_HAPPINY, "Happiny"
     abilities ABILITY_NATURAL_CURE, ABILITY_SERENE_GRACE
     runchance 0
     colorflip BODY_COLOR_PINK, 0
-    mondexentry SPECIES_HAPPINY, "It carefully carries a round, white rock\nthat it thinks is an egg. It’s bothered\nby how curly its hair looks."
+    mondexentry SPECIES_HAPPINY,  "It carefully carries a round, white rock\nthat it thinks is an egg. It’s bothered\nby how curly its hair looks." 
     mondexclassification SPECIES_HAPPINY, "Playhouse Pokémon"
     mondexheight SPECIES_HAPPINY, "2’00”"
     mondexweight SPECIES_HAPPINY, "53.8 lbs."
@@ -9288,7 +9288,7 @@ mondata SPECIES_CHATOT, "Chatot"
     abilities ABILITY_KEEN_EYE, ABILITY_TANGLED_FEET
     runchance 0
     colorflip BODY_COLOR_BLACK, 0
-    mondexentry SPECIES_CHATOT, "It mimics the cries of other Pokémon to\ntrick them into thinking it’s one of them.\nThis way they won’t attack it."
+    mondexentry SPECIES_CHATOT,  "It mimics the cries of other Pokémon to\ntrick them into thinking it’s one of\nthem. This way they won’t attack it." 
     mondexclassification SPECIES_CHATOT, "Music Note Pokémon"
     mondexheight SPECIES_CHATOT, "1’08”"
     mondexweight SPECIES_CHATOT, "4.2 lbs."
@@ -9435,7 +9435,7 @@ mondata SPECIES_LUCARIO, "Lucario"
     abilities ABILITY_STEADFAST, ABILITY_INNER_FOCUS
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_LUCARIO, "It’s said that no foe can remain invisible\nto LUCARIO, since it can detect auras.\nEven foes it could not otherwise see."
+    mondexentry SPECIES_LUCARIO,  "It’s said that no foe can remain\ninvisible to LUCARIO, since it can\ndetect auras. Even foes it could not\notherwise see." 
     mondexclassification SPECIES_LUCARIO, "Aura Pokémon"
     mondexheight SPECIES_LUCARIO, "3’11”"
     mondexweight SPECIES_LUCARIO, "119.0 lbs."
@@ -9477,7 +9477,7 @@ mondata SPECIES_HIPPOWDON, "Hippowdon"
     abilities ABILITY_SAND_STREAM, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_HIPPOWDON, "It brandishes its gaping mouth in a\ndisplay of fearsome strength. It raises\nvast quantities of sand while attacking."
+    mondexentry SPECIES_HIPPOWDON,  "It brandishes its gaping mouth in a\ndisplay of fearsome strength. It raises\nvast quantities of sand while attacking." 
     mondexclassification SPECIES_HIPPOWDON, "Heavyweight Pokémon"
     mondexheight SPECIES_HIPPOWDON, "6’07”"
     mondexweight SPECIES_HIPPOWDON, "661.4 lbs."
@@ -9498,7 +9498,7 @@ mondata SPECIES_SKORUPI, "Skorupi"
     abilities ABILITY_BATTLE_ARMOR, ABILITY_SNIPER
     runchance 0
     colorflip BODY_COLOR_PURPLE, 0
-    mondexentry SPECIES_SKORUPI, "It burrows under the sand to lie in\nwait for prey. Its tail claws can inject\nits prey with a savage poison."
+    mondexentry SPECIES_SKORUPI,  "It burrows under the sand to lie in wait\nfor prey. Its tail claws can inject its\nprey with a savage poison." 
     mondexclassification SPECIES_SKORUPI, "Scorpion Pokémon"
     mondexheight SPECIES_SKORUPI, "2’07”"
     mondexweight SPECIES_SKORUPI, "26.5 lbs."
@@ -9540,7 +9540,7 @@ mondata SPECIES_CROAGUNK, "Croagunk"
     abilities ABILITY_ANTICIPATION, ABILITY_DRY_SKIN
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_CROAGUNK, "Fluid squeezed from its finger, albeit\npoisonous, is a significant ingredient in\nremedies for lower-back pain."
+    mondexentry SPECIES_CROAGUNK,  "Fluid squeezed from its finger, albeit\npoisonous, is a significant ingredient\nin remedies for lower-back pain." 
     mondexclassification SPECIES_CROAGUNK, "Toxic Mouth Pokémon"
     mondexheight SPECIES_CROAGUNK, "2’04”"
     mondexweight SPECIES_CROAGUNK, "50.7 lbs."
@@ -9561,7 +9561,7 @@ mondata SPECIES_TOXICROAK, "Toxicroak"
     abilities ABILITY_ANTICIPATION, ABILITY_DRY_SKIN
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_TOXICROAK, "Swaying and dodging the attacks of its\nfoes, it weaves its flexible body in close,\nthen lunges out with its poisonous claws."
+    mondexentry SPECIES_TOXICROAK,  "Swaying and dodging the attacks of its\nfoes, it weaves its flexible body in\nclose, then lunges out with its\npoisonous claws." 
     mondexclassification SPECIES_TOXICROAK, "Toxic Mouth Pokémon"
     mondexheight SPECIES_TOXICROAK, "4’03”"
     mondexweight SPECIES_TOXICROAK, "97.9 lbs."
@@ -9603,7 +9603,7 @@ mondata SPECIES_FINNEON, "Finneon"
     abilities ABILITY_SWIFT_SWIM, ABILITY_STORM_DRAIN
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_FINNEON, "Swimming and fluttering its two tail fins,\nit looks like a BEAUTIFLY. At night, the\npatterns on its tail fins softly shine."
+    mondexentry SPECIES_FINNEON,  "Swimming and fluttering its two tail\nfins, it looks like a BEAUTIFLY. At\nnight, the patterns on its tail fins\nsoftly shine." 
     mondexclassification SPECIES_FINNEON, "Wing Fish Pokémon"
     mondexheight SPECIES_FINNEON, "1’04”"
     mondexweight SPECIES_FINNEON, "15.4 lbs."
@@ -9645,7 +9645,7 @@ mondata SPECIES_MANTYKE, "Mantyke"
     abilities ABILITY_SWIFT_SWIM, ABILITY_WATER_ABSORB
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_MANTYKE, "When it swims close to the surface of the\nocean, people aboard ships are able to\nobserve the pattern on its back."
+    mondexentry SPECIES_MANTYKE,  "When it swims close to the surface of\nthe ocean, people aboard ships are able\nto observe the pattern on its back." 
     mondexclassification SPECIES_MANTYKE, "Kite Pokémon"
     mondexheight SPECIES_MANTYKE, "3’03”"
     mondexweight SPECIES_MANTYKE, "143.3 lbs."
@@ -9687,7 +9687,7 @@ mondata SPECIES_ABOMASNOW, "Abomasnow"
     abilities ABILITY_SNOW_WARNING, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
-    mondexentry SPECIES_ABOMASNOW, "It lives a quiet life on mountains that\nare perpetually covered in snow.\nIt hides itself by whipping up blizzards."
+    mondexentry SPECIES_ABOMASNOW,  "It lives a quiet life on mountains that\nare perpetually covered in snow. It\nhides itself by whipping up blizzards." 
     mondexclassification SPECIES_ABOMASNOW, "Frost Tree Pokémon"
     mondexheight SPECIES_ABOMASNOW, "7’03”"
     mondexweight SPECIES_ABOMASNOW, "298.7 lbs."
@@ -9792,7 +9792,7 @@ mondata SPECIES_TANGROWTH, "Tangrowth"
     abilities ABILITY_CHLOROPHYLL, ABILITY_LEAF_GUARD
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_TANGROWTH, "When it remains still, it appears to be a\nlarge shrub. Unsuspecting prey that\nwander near get ensnared by its vines."
+    mondexentry SPECIES_TANGROWTH,  "When it remains still, it appears to be\na large shrub. Unsuspecting prey that\nwander near get ensnared by its vines." 
     mondexclassification SPECIES_TANGROWTH, "Vine Pokémon"
     mondexheight SPECIES_TANGROWTH, "6’07”"
     mondexweight SPECIES_TANGROWTH, "283.5 lbs."
@@ -9834,7 +9834,7 @@ mondata SPECIES_MAGMORTAR, "Magmortar"
     abilities ABILITY_FLAME_BODY, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
-    mondexentry SPECIES_MAGMORTAR, "It blasts fireballs of over\n3,600 degrees Fahrenheit out of its\narms. Its breath also sears and sizzles."
+    mondexentry SPECIES_MAGMORTAR,  "It blasts fireballs of over 3,600\ndegrees Fahrenheit out of its arms. Its\nbreath also sears and sizzles." 
     mondexclassification SPECIES_MAGMORTAR, "Blast Pokémon"
     mondexheight SPECIES_MAGMORTAR, "5’03”"
     mondexweight SPECIES_MAGMORTAR, "149.9 lbs."
@@ -9855,7 +9855,7 @@ mondata SPECIES_TOGEKISS, "Togekiss"
     abilities ABILITY_HUSTLE, ABILITY_SERENE_GRACE
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
-    mondexentry SPECIES_TOGEKISS, "As everyone knows, it visits peaceful\nregions, bringing them gifts of kindness\nand sweet blessings."
+    mondexentry SPECIES_TOGEKISS,  "As everyone knows, it visits peaceful\nregions, bringing them gifts of kindness\nand sweet blessings." 
     mondexclassification SPECIES_TOGEKISS, "Jubilee Pokémon"
     mondexheight SPECIES_TOGEKISS, "4’11”"
     mondexweight SPECIES_TOGEKISS, "83.8 lbs."
@@ -9876,7 +9876,7 @@ mondata SPECIES_YANMEGA, "Yanmega"
     abilities ABILITY_SPEED_BOOST, ABILITY_TINTED_LENS
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_YANMEGA, "This six-legged Pokémon is easily capable\nof transporting an adult in flight. The\nwings on its tail help it stay balanced."
+    mondexentry SPECIES_YANMEGA,  "This six-legged Pokémon is easily\ncapable of transporting an adult in\nflight. The wings on its tail help it\nstay balanced." 
     mondexclassification SPECIES_YANMEGA, "Ogre Darner Pokémon"
     mondexheight SPECIES_YANMEGA, "6’03”"
     mondexweight SPECIES_YANMEGA, "113.5 lbs."
@@ -9960,7 +9960,7 @@ mondata SPECIES_MAMOSWINE, "Mamoswine"
     abilities ABILITY_OBLIVIOUS, ABILITY_SNOW_CLOAK
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_MAMOSWINE, "A frozen MAMOSWINE was dug from ice\ndating back 10,000 years. This Pokémon\nhas been around a long, long, long time."
+    mondexentry SPECIES_MAMOSWINE,  "A frozen MAMOSWINE was dug from ice\ndating back 10,000 years. This Pokémon\nhas been around a long, long, long time." 
     mondexclassification SPECIES_MAMOSWINE, "Twin Tusk Pokémon"
     mondexheight SPECIES_MAMOSWINE, "8’02”"
     mondexweight SPECIES_MAMOSWINE, "641.5 lbs."
@@ -10023,7 +10023,7 @@ mondata SPECIES_PROBOPASS, "Probopass"
     abilities ABILITY_STURDY, ABILITY_MAGNET_PULL
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_PROBOPASS, "It controls three units called Mini-Noses\nusing magnetic force. With them, it can\nattack the foe from three directions."
+    mondexentry SPECIES_PROBOPASS,  "It controls three units called\nMini-Noses using magnetic force. With\nthem, it can attack the foe from three\ndirections." 
     mondexclassification SPECIES_PROBOPASS, "Compass Pokémon"
     mondexheight SPECIES_PROBOPASS, "4’07”"
     mondexweight SPECIES_PROBOPASS, "749.6 lbs."
@@ -10044,7 +10044,7 @@ mondata SPECIES_DUSKNOIR, "Dusknoir"
     abilities ABILITY_PRESSURE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLACK, 0
-    mondexentry SPECIES_DUSKNOIR, "This feared Pokémon is said to travel to\nworlds unknown. Some even believe that\nit takes lost spirits along with it."
+    mondexentry SPECIES_DUSKNOIR,  "This feared Pokémon is said to travel to\nworlds unknown. Some even believe that\nit takes lost spirits along with it." 
     mondexclassification SPECIES_DUSKNOIR, "Gripper Pokémon"
     mondexheight SPECIES_DUSKNOIR, "7’03”"
     mondexweight SPECIES_DUSKNOIR, "235.0 lbs."
@@ -10170,7 +10170,7 @@ mondata SPECIES_DIALGA, "Dialga"
     abilities ABILITY_PRESSURE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
-    mondexentry SPECIES_DIALGA, "This Pokémon completely controls the\nflow of time. It uses its power to travel\nat will through the past and future."
+    mondexentry SPECIES_DIALGA,  "This Pokémon completely controls the\nflow of time. It uses its power to\ntravel at will through the past and\nfuture." 
     mondexclassification SPECIES_DIALGA, "Temporal Pokémon"
     mondexheight SPECIES_DIALGA, "17’09”"
     mondexweight SPECIES_DIALGA, "1505.8 lbs."
@@ -10191,7 +10191,7 @@ mondata SPECIES_PALKIA, "Palkia"
     abilities ABILITY_PRESSURE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_PURPLE, 0
-    mondexentry SPECIES_PALKIA, "Its total control over the boundaries\nof space enable it to transport itself to\nfaraway places or even other dimensions."
+    mondexentry SPECIES_PALKIA,  "Its total control over the boundaries of\nspace enable it to transport itself to\nfaraway places or even other dimensions." 
     mondexclassification SPECIES_PALKIA, "Spatial Pokémon"
     mondexheight SPECIES_PALKIA, "13’09”"
     mondexweight SPECIES_PALKIA, "740.8 lbs."
@@ -10254,7 +10254,7 @@ mondata SPECIES_GIRATINA, "Giratina"
     abilities ABILITY_PRESSURE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLACK, 0
-    mondexentry SPECIES_GIRATINA, "This Pokémon is said to live in a world on\nthe reverse side of ours, where common\nknowledge is distorted and strange."
+    mondexentry SPECIES_GIRATINA,  "This Pokémon is said to live in a world\non the reverse side of ours, where\ncommon knowledge is distorted and\nstrange." 
     mondexclassification SPECIES_GIRATINA, "Renegade Pokémon"
     mondexheight SPECIES_GIRATINA, "14’09”"
     mondexweight SPECIES_GIRATINA, "1653.5 lbs."
@@ -10275,7 +10275,7 @@ mondata SPECIES_CRESSELIA, "Cresselia"
     abilities ABILITY_LEVITATE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0
-    mondexentry SPECIES_CRESSELIA, "Those who sleep holding CRESSELIA’s\nfeather are assured of joyful dreams. It\nis said to represent the crescent moon."
+    mondexentry SPECIES_CRESSELIA,  "Those who sleep holding CRESSELIA’s\nfeather are assured of joyful dreams. It\nis said to represent the crescent moon." 
     mondexclassification SPECIES_CRESSELIA, "Lunar Pokémon"
     mondexheight SPECIES_CRESSELIA, "4’11”"
     mondexweight SPECIES_CRESSELIA, "188.7 lbs."
@@ -10317,7 +10317,7 @@ mondata SPECIES_MANAPHY, "Manaphy"
     abilities ABILITY_HYDRATION, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_MANAPHY, "It starts its life with a wondrous power\nthat permits it to bond with any kind\nof Pokémon."
+    mondexentry SPECIES_MANAPHY,  "It starts its life with a wondrous power\nthat permits it to bond with any kind of\nPokémon." 
     mondexclassification SPECIES_MANAPHY, "Seafaring Pokémon"
     mondexheight SPECIES_MANAPHY, "1’00”"
     mondexweight SPECIES_MANAPHY, "3.1 lbs."
@@ -10359,7 +10359,7 @@ mondata SPECIES_SHAYMIN, "Shaymin"
     abilities ABILITY_NATURAL_CURE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_SHAYMIN, "The blooming of Gracidea flowers confers\nthe power of flight upon it. Feelings \nof gratitude are the message it delivers."
+    mondexentry SPECIES_SHAYMIN,  "The blooming of Gracidea flowers confers\nthe power of flight upon it. Feelings of\ngratitude are the message it delivers." 
     mondexclassification SPECIES_SHAYMIN, "Gratitude Pokémon"
     mondexheight SPECIES_SHAYMIN, "0’08”"
     mondexweight SPECIES_SHAYMIN, "4.6 lbs."
@@ -11661,7 +11661,7 @@ mondata SPECIES_PATRAT, "Patrat"
     abilities ABILITY_RUN_AWAY, ABILITY_KEEN_EYE
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_PATRAT, "Extremely cautious, one of them is\nalways on a lookout, but it won’t notice\na foe coming from behind."
+    mondexentry SPECIES_PATRAT,  "Extremely cautious, one of them is\nalways on a lookout, but it won’t notice\na foe coming from behind." 
     mondexclassification SPECIES_PATRAT, "Scout Pokémon"
     mondexheight SPECIES_PATRAT, "1’08”"
     mondexweight SPECIES_PATRAT, "25.6 lbs."
@@ -11829,7 +11829,7 @@ mondata SPECIES_SIMISAGE, "Simisage"
     abilities ABILITY_GLUTTONY, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_SIMISAGE, "It strikes its enemies with a\nthorn-covered tail. The leaf on its head\nis bitter."
+    mondexentry SPECIES_SIMISAGE,  "It strikes its enemies with a\nthorn-covered tail. The leaf on its head\nis bitter." 
     mondexclassification SPECIES_SIMISAGE, "Thorn Monkey Pokémon"
     mondexheight SPECIES_SIMISAGE, "3’07”"
     mondexweight SPECIES_SIMISAGE, "67.2 lbs."
@@ -12396,7 +12396,7 @@ mondata SPECIES_SAWK, "Sawk"
     abilities ABILITY_STURDY, ABILITY_INNER_FOCUS
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_SAWK, "Desiring the strongest karate chop,\nthey seclude themselves in mountains and\ntrain without sleeping."
+    mondexentry SPECIES_SAWK,  "Desiring the strongest karate chop, they\nseclude themselves in mountains and\ntrain without sleeping." 
     mondexclassification SPECIES_SAWK, "Karate Pokémon"
     mondexheight SPECIES_SAWK, "4’07”"
     mondexweight SPECIES_SAWK, "112.4 lbs."
@@ -12543,7 +12543,7 @@ mondata SPECIES_COTTONEE, "Cottonee"
     abilities ABILITY_PRANKSTER, ABILITY_INFILTRATOR
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_COTTONEE, "When attacked, it escapes by shooting\ncotton from its body to serve as a decoy\nto distract the attacker."
+    mondexentry SPECIES_COTTONEE,  "When attacked, it escapes by shooting\ncotton from its body to serve as a decoy\nto distract the attacker." 
     mondexclassification SPECIES_COTTONEE, "Cotton Puff Pokémon"
     mondexheight SPECIES_COTTONEE, "1’00”"
     mondexweight SPECIES_COTTONEE, "1.3 lbs."
@@ -13320,7 +13320,7 @@ mondata SPECIES_VANILLISH, "Vanillish"
     abilities ABILITY_ICE_BODY, ABILITY_SNOW_CLOAK
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
-    mondexentry SPECIES_VANILLISH, "This hearty Pokémon survived the Ice\nAge. It’s incredibly popular in very hot\nregions."
+    mondexentry SPECIES_VANILLISH,  "This hearty Pokémon survived the Ice\nAge. It’s incredibly popular in very hot\nregions." 
     mondexclassification SPECIES_VANILLISH, "Icy Snow Pokémon"
     mondexheight SPECIES_VANILLISH, "3’07”"
     mondexweight SPECIES_VANILLISH, "90.4 lbs."
@@ -13383,7 +13383,7 @@ mondata SPECIES_SAWSBUCK, "Sawsbuck"
     abilities ABILITY_CHLOROPHYLL, ABILITY_SAP_SIPPER
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_SAWSBUCK, "They migrate according to seasons, so\nsome people call Sawsbuck the harbingers\nof spring."
+    mondexentry SPECIES_SAWSBUCK,  "They migrate according to seasons, so\nsome people call Sawsbuck the harbingers\nof spring." 
     mondexclassification SPECIES_SAWSBUCK, "Season Pokémon"
     mondexheight SPECIES_SAWSBUCK, "6’03”"
     mondexweight SPECIES_SAWSBUCK, "203.9 lbs."
@@ -13404,7 +13404,7 @@ mondata SPECIES_EMOLGA, "Emolga"
     abilities ABILITY_STATIC, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
-    mondexentry SPECIES_EMOLGA, "They live on treetops and glide using\nthe inside of a cape-like membrane while\ndischarging electricity."
+    mondexentry SPECIES_EMOLGA,  "They live on treetops and glide using\nthe inside of a cape-like membrane while\ndischarging electricity." 
     mondexclassification SPECIES_EMOLGA, "Sky Squirrel Pokémon"
     mondexheight SPECIES_EMOLGA, "1’04”"
     mondexweight SPECIES_EMOLGA, "11.0 lbs."
@@ -13425,7 +13425,7 @@ mondata SPECIES_KARRABLAST, "Karrablast"
     abilities ABILITY_SWARM, ABILITY_SHED_SKIN
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_KARRABLAST, "For some reason they evolve when they\nreceive electrical energy while they are\nattacking Shelmet."
+    mondexentry SPECIES_KARRABLAST,  "For some reason they evolve when they\nreceive electrical energy while they are\nattacking Shelmet." 
     mondexclassification SPECIES_KARRABLAST, "Clamping Pokémon"
     mondexheight SPECIES_KARRABLAST, "1’08”"
     mondexweight SPECIES_KARRABLAST, "13.0 lbs."
@@ -13446,7 +13446,7 @@ mondata SPECIES_ESCAVALIER, "Escavalier"
     abilities ABILITY_SWARM, ABILITY_SHELL_ARMOR
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_ESCAVALIER, "Wearing the shell covering they stole\nfrom Shelmet, they defend themselves and\nattack with two lances."
+    mondexentry SPECIES_ESCAVALIER,  "Wearing the shell covering they stole\nfrom Shelmet, they defend themselves and\nattack with two lances." 
     mondexclassification SPECIES_ESCAVALIER, "Cavalry Pokémon"
     mondexheight SPECIES_ESCAVALIER, "3’03”"
     mondexweight SPECIES_ESCAVALIER, "72.8 lbs."
@@ -13908,7 +13908,7 @@ mondata SPECIES_FRAXURE, "Fraxure"
     abilities ABILITY_RIVALRY, ABILITY_MOLD_BREAKER
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_FRAXURE, "Their tusks can shatter rocks.\nTerritory battles between Fraxure can be\nintensely violent."
+    mondexentry SPECIES_FRAXURE,  "Their tusks can shatter rocks. Territory\nbattles between Fraxure can be intensely\nviolent." 
     mondexclassification SPECIES_FRAXURE, "Axe Jaw Pokémon"
     mondexheight SPECIES_FRAXURE, "3’03”"
     mondexweight SPECIES_FRAXURE, "79.4 lbs."
@@ -14013,7 +14013,7 @@ mondata SPECIES_SHELMET, "Shelmet"
     abilities ABILITY_HYDRATION, ABILITY_SHELL_ARMOR
     runchance 0
     colorflip BODY_COLOR_RED, 0
-    mondexentry SPECIES_SHELMET, "When it and Karrablast are together,\nand both receive electrical stimulation,\nthey both evolve."
+    mondexentry SPECIES_SHELMET,  "When it and Karrablast are together, and\nboth receive electrical stimulation,\nthey both evolve." 
     mondexclassification SPECIES_SHELMET, "Snail Pokémon"
     mondexheight SPECIES_SHELMET, "1’04”"
     mondexweight SPECIES_SHELMET, "17.0 lbs."
@@ -14055,7 +14055,7 @@ mondata SPECIES_STUNFISK, "Stunfisk"
     abilities ABILITY_STATIC, ABILITY_LIMBER
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_STUNFISK, "When its opponent can’t be paralyzed,\nit contorts itself with unexpected speed\nand flops away."
+    mondexentry SPECIES_STUNFISK,  "When its opponent can’t be paralyzed, it\ncontorts itself with unexpected speed\nand flops away." 
     mondexclassification SPECIES_STUNFISK, "Trap Pokémon"
     mondexheight SPECIES_STUNFISK, "2’04”"
     mondexweight SPECIES_STUNFISK, "24.3 lbs."
@@ -14412,7 +14412,7 @@ mondata SPECIES_HYDREIGON, "Hydreigon"
     abilities ABILITY_LEVITATE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_HYDREIGON, "It responds to movement by attacking.\nThis scary, three-headed Pokémon devours\neverything in its path!"
+    mondexentry SPECIES_HYDREIGON,  "It responds to movement by attacking.\nThis scary, three-headed Pokémon devours\neverything in its path!" 
     mondexclassification SPECIES_HYDREIGON, "Brutal Pokémon"
     mondexheight SPECIES_HYDREIGON, "5’11”"
     mondexweight SPECIES_HYDREIGON, "352.7 lbs."
@@ -14874,7 +14874,7 @@ mondata SPECIES_FROGADIER, "Frogadier"
     abilities ABILITY_TORRENT, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_FROGADIER, "Its swiftness is unparalleled. It can\nscale a tower of more than 2,000 feet in\na minute’s time."
+    mondexentry SPECIES_FROGADIER,  "Its swiftness is unparalleled. It can\nscale a tower of more than 2,000 feet in\na minute’s time." 
     mondexclassification SPECIES_FROGADIER, "Bubble Frog Pokémon"
     mondexheight SPECIES_FROGADIER, "2’00”"
     mondexweight SPECIES_FROGADIER, "24.0 lbs."
@@ -15000,7 +15000,7 @@ mondata SPECIES_TALONFLAME, "Talonflame"
     abilities ABILITY_FLAME_BODY, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
-    mondexentry SPECIES_TALONFLAME, "When attacking prey, it can reach\nspeeds of up to 310 mph. It finishes its\nprey off with a colossal kick."
+    mondexentry SPECIES_TALONFLAME,  "When attacking prey, it can reach speeds\nof up to 310 mph. It finishes its prey\noff with a colossal kick." 
     mondexclassification SPECIES_TALONFLAME, "Scorching Pokémon"
     mondexheight SPECIES_TALONFLAME, "3’11”"
     mondexweight SPECIES_TALONFLAME, "54.0 lbs."
@@ -15252,7 +15252,7 @@ mondata SPECIES_PANGORO, "Pangoro"
     abilities ABILITY_IRON_FIST, ABILITY_MOLD_BREAKER
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
-    mondexentry SPECIES_PANGORO, "This Pokémon boasts great physical\nstrength. Many Trainers are also smitten\nby its lively character."
+    mondexentry SPECIES_PANGORO,  "This Pokémon boasts great physical\nstrength. Many Trainers are also smitten\nby its lively character." 
     mondexclassification SPECIES_PANGORO, "Daunting Pokémon"
     mondexheight SPECIES_PANGORO, "6’11”"
     mondexweight SPECIES_PANGORO, "299.8 lbs."
@@ -15420,7 +15420,7 @@ mondata SPECIES_AROMATISSE, "Aromatisse"
     abilities ABILITY_HEALER, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_PINK, 0
-    mondexentry SPECIES_AROMATISSE, "It devises various scents and emits\nscents that its enemies dislike in order\nto gain an edge in battle."
+    mondexentry SPECIES_AROMATISSE,  "It devises various scents and emits\nscents that its enemies dislike in order\nto gain an edge in battle." 
     mondexclassification SPECIES_AROMATISSE, "Fragrance Pokémon"
     mondexheight SPECIES_AROMATISSE, "2’07”"
     mondexweight SPECIES_AROMATISSE, "34.2 lbs."
@@ -15693,7 +15693,7 @@ mondata SPECIES_TYRUNT, "Tyrunt"
     abilities ABILITY_STRONG_JAW, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_TYRUNT, "Its immense jaws have enough destructive\nforce to chew up an automobile. It lived\n100 million years ago."
+    mondexentry SPECIES_TYRUNT,  "Its immense jaws have enough destructive\nforce to chew up an automobile. It lived\n100 million years ago." 
     mondexclassification SPECIES_TYRUNT, "Royal Heir Pokémon"
     mondexheight SPECIES_TYRUNT, "2’07”"
     mondexweight SPECIES_TYRUNT, "57.3 lbs."
@@ -15756,7 +15756,7 @@ mondata SPECIES_AURORUS, "Aurorus"
     abilities ABILITY_REFRIGERATE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_AURORUS, "This usually quiet and kindly Pokémon\nhas a surface temperature of around -240\ndegrees Fahrenheit."
+    mondexentry SPECIES_AURORUS,  "This usually quiet and kindly Pokémon\nhas a surface temperature of around -240\ndegrees Fahrenheit." 
     mondexclassification SPECIES_AURORUS, "Tundra Pokémon"
     mondexheight SPECIES_AURORUS, "8’10”"
     mondexweight SPECIES_AURORUS, "496.0 lbs."
@@ -15903,7 +15903,7 @@ mondata SPECIES_GOODRA, "Goodra"
     abilities ABILITY_SAP_SIPPER, ABILITY_HYDRATION
     runchance 0
     colorflip BODY_COLOR_PURPLE, 0
-    mondexentry SPECIES_GOODRA, "An amazingly friendly Pokémon, but if\nleft to itself, loneliness overcomes it,\nand it oozes gooey tears."
+    mondexentry SPECIES_GOODRA,  "An amazingly friendly Pokémon, but if\nleft to itself, loneliness overcomes it,\nand it oozes gooey tears." 
     mondexclassification SPECIES_GOODRA, "Dragon Pokémon"
     mondexheight SPECIES_GOODRA, "6’07”"
     mondexweight SPECIES_GOODRA, "331.8 lbs."
@@ -15966,7 +15966,7 @@ mondata SPECIES_TREVENANT, "Trevenant"
     abilities ABILITY_NATURAL_CURE, ABILITY_FRISK
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_TREVENANT, "It can control trees at will. It will\ntrap people who harm the forest, so they\ncan never leave."
+    mondexentry SPECIES_TREVENANT,  "It can control trees at will. It will\ntrap people who harm the forest, so they\ncan never leave." 
     mondexclassification SPECIES_TREVENANT, "Elder Tree Pokémon"
     mondexheight SPECIES_TREVENANT, "4’11”"
     mondexweight SPECIES_TREVENANT, "156.5 lbs."
@@ -16113,7 +16113,7 @@ mondata SPECIES_XERNEAS, "Xerneas"
     abilities ABILITY_FAIRY_AURA, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_XERNEAS, "When the horns on its head shine in\nseven different colors, it is said to be\nsharing everlasting life."
+    mondexentry SPECIES_XERNEAS,  "When the horns on its head shine in\nseven different colors, it is said to be\nsharing everlasting life." 
     mondexclassification SPECIES_XERNEAS, "Life Pokémon"
     mondexheight SPECIES_XERNEAS, "9’10”"
     mondexweight SPECIES_XERNEAS, "474.0 lbs."
@@ -16218,7 +16218,7 @@ mondata SPECIES_VOLCANION, "Volcanion"
     abilities ABILITY_WATER_ABSORB, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_VOLCANION, "It expels its internal steam from the\narms on its back. It has enough power to\nblow away a mountain."
+    mondexentry SPECIES_VOLCANION,  "It expels its internal steam from the\narms on its back. It has enough power to\nblow away a mountain." 
     mondexclassification SPECIES_VOLCANION, "Steam Pokémon"
     mondexheight SPECIES_VOLCANION, "5’07”"
     mondexweight SPECIES_VOLCANION, "429.9 lbs."
@@ -16428,7 +16428,7 @@ mondata SPECIES_PIKIPEK, "Pikipek"
     abilities ABILITY_KEEN_EYE, ABILITY_SKILL_LINK
     runchance 0
     colorflip BODY_COLOR_BLACK, 0
-    mondexentry SPECIES_PIKIPEK, "It may look spindly, but its neck\nmuscles are heavy-duty. It can peck at a\ntree 16 times per second!"
+    mondexentry SPECIES_PIKIPEK,  "It may look spindly, but its neck\nmuscles are heavy-duty. It can peck at a\ntree 16 times per second!" 
     mondexclassification SPECIES_PIKIPEK, "Woodpecker Pokémon"
     mondexheight SPECIES_PIKIPEK, "1’00”"
     mondexweight SPECIES_PIKIPEK, "2.6 lbs."
@@ -16470,7 +16470,7 @@ mondata SPECIES_TOUCANNON, "Toucannon"
     abilities ABILITY_KEEN_EYE, ABILITY_SKILL_LINK
     runchance 0
     colorflip BODY_COLOR_BLACK, 0
-    mondexentry SPECIES_TOUCANNON, "Known for forming harmonious couples,\nit is brought to wedding ceremonies as a\ngood luck charm."
+    mondexentry SPECIES_TOUCANNON,  "Known for forming harmonious couples, it\nis brought to wedding ceremonies as a\ngood luck charm." 
     mondexclassification SPECIES_TOUCANNON, "Cannon Pokémon"
     mondexheight SPECIES_TOUCANNON, "3’07”"
     mondexweight SPECIES_TOUCANNON, "57.3 lbs."
@@ -16533,7 +16533,7 @@ mondata SPECIES_GRUBBIN, "Grubbin"
     abilities ABILITY_SWARM, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_GRUBBIN, "Its strong jaw enables it to scrape\ntrees and slurp out the sap. It normally\nlives underground."
+    mondexentry SPECIES_GRUBBIN,  "Its strong jaw enables it to scrape\ntrees and slurp out the sap. It normally\nlives underground." 
     mondexclassification SPECIES_GRUBBIN, "Larva Pokémon"
     mondexheight SPECIES_GRUBBIN, "1’04”"
     mondexweight SPECIES_GRUBBIN, "9.7 lbs."
@@ -16638,7 +16638,7 @@ mondata SPECIES_ORICORIO, "Oricorio"
     abilities ABILITY_DANCER, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
-    mondexentry SPECIES_ORICORIO, "This Oricorio has sipped red nectar. Its\npassionate dance moves cause its enemies\nto combust in both body and mind."
+    mondexentry SPECIES_ORICORIO,  "This Oricorio has sipped red nectar. Its\npassionate dance moves cause its enemies\nto combust in both body and mind." 
     mondexclassification SPECIES_ORICORIO, "Dancing Pokémon"
     mondexheight SPECIES_ORICORIO, "2’00”"
     mondexweight SPECIES_ORICORIO, "7.5 lbs."
@@ -16743,7 +16743,7 @@ mondata SPECIES_WISHIWASHI, "Wishiwashi"
     abilities ABILITY_SCHOOLING, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_WISHIWASHI, "They’re weak, so they move in schools.\nHowever, they can also often be seen all\nalone, having strayed from the school."
+    mondexentry SPECIES_WISHIWASHI,  "They’re weak, so they move in schools.\nHowever, they can also often be seen all\nalone, having strayed from the school." 
     mondexclassification SPECIES_WISHIWASHI, "Small Fry Pokémon"
     mondexheight SPECIES_WISHIWASHI, "0’08”"
     mondexweight SPECIES_WISHIWASHI, "0.7 lbs."
@@ -17121,7 +17121,7 @@ mondata SPECIES_COMFEY, "Comfey"
     abilities ABILITY_FLOWER_VEIL, ABILITY_TRIAGE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_COMFEY, "Baths prepared with the flowers from\nits vine have a relaxing effect so it is\na hit to many people."
+    mondexentry SPECIES_COMFEY,  "Baths prepared with the flowers from its\nvine have a relaxing effect so it is a\nhit to many people." 
     mondexclassification SPECIES_COMFEY, "Posy Picker Pokémon"
     mondexheight SPECIES_COMFEY, "0’04”"
     mondexweight SPECIES_COMFEY, "0.7 lbs."
@@ -17184,7 +17184,7 @@ mondata SPECIES_WIMPOD, "Wimpod"
     abilities ABILITY_WIMP_OUT, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_WIMPOD, "An astonishingly coward Pokémon, it\nwhirs its legs at high speed to run away\nif anything comes near it."
+    mondexentry SPECIES_WIMPOD,  "An astonishingly coward Pokémon, it\nwhirs its legs at high speed to run away\nif anything comes near it." 
     mondexclassification SPECIES_WIMPOD, "Turn Tail Pokémon"
     mondexheight SPECIES_WIMPOD, "1’08”"
     mondexweight SPECIES_WIMPOD, "26.5 lbs."
@@ -17205,7 +17205,7 @@ mondata SPECIES_GOLISOPOD, "Golisopod"
     abilities ABILITY_WIMP_OUT, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_GOLISOPOD, "With a flashing slash of its giant\nsharp claws, it cleaves seawater-or even\nair-right in two."
+    mondexentry SPECIES_GOLISOPOD,  "With a flashing slash of its giant sharp\nclaws, it cleaves seawater-or even\nair-right in two." 
     mondexclassification SPECIES_GOLISOPOD, "Hard Scale Pokémon"
     mondexheight SPECIES_GOLISOPOD, "6’07”"
     mondexweight SPECIES_GOLISOPOD, "238.1 lbs."
@@ -17583,7 +17583,7 @@ mondata SPECIES_TAPU_LELE, "Tapu Lele"
     abilities ABILITY_PSYCHIC_SURGE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_PINK, 0
-    mondexentry SPECIES_TAPU_LELE, "This guardian deity of Akala is\nguilelessly cruel. Its flowers’ fragrant\naroma is its source of energy."
+    mondexentry SPECIES_TAPU_LELE,  "This guardian deity of Akala is\nguilelessly cruel. Its flowers’ fragrant\naroma is its source of energy." 
     mondexclassification SPECIES_TAPU_LELE, "Land Spirit Pokémon"
     mondexheight SPECIES_TAPU_LELE, "3’11”"
     mondexweight SPECIES_TAPU_LELE, "41.0 lbs."
@@ -17772,7 +17772,7 @@ mondata SPECIES_PHEROMOSA, "Pheromosa"
     abilities ABILITY_BEAST_BOOST, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
-    mondexentry SPECIES_PHEROMOSA, "One of the dangerous Ultra Beasts, it\nhas been spotted running across the land\nat terrific speeds."
+    mondexentry SPECIES_PHEROMOSA,  "One of the dangerous Ultra Beasts, it\nhas been spotted running across the land\nat terrific speeds." 
     mondexclassification SPECIES_PHEROMOSA, "Lissome Pokémon"
     mondexheight SPECIES_PHEROMOSA, "5’11”"
     mondexweight SPECIES_PHEROMOSA, "55.1 lbs."
@@ -17856,7 +17856,7 @@ mondata SPECIES_GUZZLORD, "Guzzlord"
     abilities ABILITY_BEAST_BOOST, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLACK, 0
-    mondexentry SPECIES_GUZZLORD, "An unknown life-form called a UB. It\nmay be constantly hungry-it is certainly\nalways devouring something."
+    mondexentry SPECIES_GUZZLORD,  "An unknown life-form called a UB. It may\nbe constantly hungry-it is certainly\nalways devouring something." 
     mondexclassification SPECIES_GUZZLORD, "Junkivore Pokémon"
     mondexheight SPECIES_GUZZLORD, "18’01”"
     mondexweight SPECIES_GUZZLORD, "1957.7 lbs."
@@ -17982,7 +17982,7 @@ mondata SPECIES_STAKATAKA, "Stakataka"
     abilities ABILITY_BEAST_BOOST, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_STAKATAKA, "When stone walls started moving and\nattacking, the brute’s true identity was\nthis mysterious life-form."
+    mondexentry SPECIES_STAKATAKA,  "When stone walls started moving and\nattacking, the brute’s true identity was\nthis mysterious life-form." 
     mondexclassification SPECIES_STAKATAKA, "Rampart Pokémon"
     mondexheight SPECIES_STAKATAKA, "18’01”"
     mondexweight SPECIES_STAKATAKA, "1807.8 lbs."
@@ -18087,7 +18087,7 @@ mondata SPECIES_GROOKEY, "Grookey"
     abilities ABILITY_OVERGROW, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_GROOKEY, "It attacks with rapid beats of its\nstick. As it strikes with amazing speed,\nit gets more and more pumped."
+    mondexentry SPECIES_GROOKEY,  "It attacks with rapid beats of its\nstick. As it strikes with amazing speed,\nit gets more and more pumped." 
     mondexclassification SPECIES_GROOKEY, "Chimp Pokémon"
     mondexheight SPECIES_GROOKEY, "1’00”"
     mondexweight SPECIES_GROOKEY, "11.0 lbs."
@@ -18108,7 +18108,7 @@ mondata SPECIES_THWACKEY, "Thwackey"
     abilities ABILITY_OVERGROW, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_THWACKEY, "The faster a Thwackey can beat out a\nrhythm with its two sticks, the more respect\nit wins from its peers."
+    mondexentry SPECIES_THWACKEY,  "The faster a Thwackey can beat out a\nrhythm with its two sticks, the more\nrespect it wins from its peers." 
     mondexclassification SPECIES_THWACKEY, "Beat Pokémon"
     mondexheight SPECIES_THWACKEY, "2’04”"
     mondexweight SPECIES_THWACKEY, "30.9 lbs."
@@ -18129,7 +18129,7 @@ mondata SPECIES_RILLABOOM, "Rillaboom"
     abilities ABILITY_OVERGROW, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_RILLABOOM, "By drumming, it taps into the power of\nits special tree stump. The roots of the\nstump follow its direction in battle."
+    mondexentry SPECIES_RILLABOOM,  "By drumming, it taps into the power of\nits special tree stump. The roots of the\nstump follow its direction in battle." 
     mondexclassification SPECIES_RILLABOOM, "Drummer Pokémon"
     mondexheight SPECIES_RILLABOOM, "6’11”"
     mondexweight SPECIES_RILLABOOM, "198.4 lbs."
@@ -18192,7 +18192,7 @@ mondata SPECIES_CINDERACE, "Cinderace"
     abilities ABILITY_BLAZE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
-    mondexentry SPECIES_CINDERACE, "It gets pumped up when cheered on.\nBut if it starts showboating, it could put\nitself in a tough spot."
+    mondexentry SPECIES_CINDERACE,  "It gets pumped up when cheered on. But\nif it starts showboating, it could put\nitself in a tough spot." 
     mondexclassification SPECIES_CINDERACE, "Striker Pokémon"
     mondexheight SPECIES_CINDERACE, "4’07”"
     mondexweight SPECIES_CINDERACE, "72.8 lbs."
@@ -18423,7 +18423,7 @@ mondata SPECIES_ORBEETLE, "Orbeetle"
     abilities ABILITY_SWARM, ABILITY_FRISK
     runchance 0
     colorflip BODY_COLOR_RED, 0
-    mondexentry SPECIES_ORBEETLE, "It’s famous for its high intelligence,\nand the large size of its brain is proof\nthat it has immense psychic power."
+    mondexentry SPECIES_ORBEETLE,  "It’s famous for its high intelligence,\nand the large size of its brain is proof\nthat it has immense psychic power." 
     mondexclassification SPECIES_ORBEETLE, "Seven Spot Pokémon"
     mondexheight SPECIES_ORBEETLE, "1’04”"
     mondexweight SPECIES_ORBEETLE, "89.9 lbs."
@@ -18444,7 +18444,7 @@ mondata SPECIES_NICKIT, "Nickit"
     abilities ABILITY_RUN_AWAY, ABILITY_UNBURDEN
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_NICKIT, "Aided by the soft pads on its feet, it\nsilently raids the food stores of others.\nIt survives off its ill-gotten gains."
+    mondexentry SPECIES_NICKIT,  "Aided by the soft pads on its feet, it\nsilently raids the food stores of\nothers. It survives off its ill-gotten\ngains." 
     mondexclassification SPECIES_NICKIT, "Fox Pokémon"
     mondexheight SPECIES_NICKIT, "2’00”"
     mondexweight SPECIES_NICKIT, "19.6 lbs."
@@ -18507,7 +18507,7 @@ mondata SPECIES_ELDEGOSS, "Eldegoss"
     abilities ABILITY_COTTON_DOWN, ABILITY_REGENERATOR
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_ELDEGOSS, "The seeds attached to its cotton fluff\nare full of nutrients. It spreads them on\nthe wind so that others can benefit."
+    mondexentry SPECIES_ELDEGOSS,  "The seeds attached to its cotton fluff\nare full of nutrients. It spreads them\non the wind so that others can benefit." 
     mondexclassification SPECIES_ELDEGOSS, "Cotton Bloom Pokémon"
     mondexheight SPECIES_ELDEGOSS, "1’08”"
     mondexweight SPECIES_ELDEGOSS, "5.5 lbs."
@@ -18612,7 +18612,7 @@ mondata SPECIES_YAMPER, "Yamper"
     abilities ABILITY_BALL_FETCH, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0
-    mondexentry SPECIES_YAMPER, "This greedy Pokémon only helps people\nwith their work because it wants treats.\nAs it runs, it crackles with electricity."
+    mondexentry SPECIES_YAMPER,  "This greedy Pokémon only helps people\nwith their work because it wants treats.\nAs it runs, it crackles with\nelectricity." 
     mondexclassification SPECIES_YAMPER, "Puppy Pokémon"
     mondexheight SPECIES_YAMPER, "1’00”"
     mondexweight SPECIES_YAMPER, "29.8 lbs."
@@ -18759,7 +18759,7 @@ mondata SPECIES_APPLETUN, "Appletun"
     abilities ABILITY_RIPEN, ABILITY_GLUTTONY
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_APPLETUN, "It ate a sweet apple, which induced\nits evolution. Back in the day, children\nused to have it as a snack."
+    mondexentry SPECIES_APPLETUN,  "It ate a sweet apple, which induced its\nevolution. Back in the day, children\nused to have it as a snack." 
     mondexclassification SPECIES_APPLETUN, "Apple Nectar Pokémon"
     mondexheight SPECIES_APPLETUN, "1’04”"
     mondexweight SPECIES_APPLETUN, "28.7 lbs."
@@ -18864,7 +18864,7 @@ mondata SPECIES_BARRASKEWDA, "Baraskewda"
     abilities ABILITY_SWIFT_SWIM, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_BARRASKEWDA, "Its jaw that’s as sharp as a spear and\nas strong as steel. It spins its tail fins\nto surge forward at over 100 knots."
+    mondexentry SPECIES_BARRASKEWDA,  "Its jaw that’s as sharp as a spear and\nas strong as steel. It spins its tail\nfins to surge forward at over 100 knots." 
     mondexclassification SPECIES_BARRASKEWDA, "Skewer Pokémon"
     mondexheight SPECIES_BARRASKEWDA, "4’03”"
     mondexweight SPECIES_BARRASKEWDA, "66.1 lbs."
@@ -18885,7 +18885,7 @@ mondata SPECIES_TOXEL, "Toxel"
     abilities ABILITY_RATTLED, ABILITY_STATIC
     runchance 0
     colorflip BODY_COLOR_PURPLE, 0
-    mondexentry SPECIES_TOXEL, "It manipulates the chemical makeup of\nits poison to produce electricity. Despite\na weak voltage, it can cause paralysis."
+    mondexentry SPECIES_TOXEL,  "It manipulates the chemical makeup of\nits poison to produce electricity.\nDespite a weak voltage, it can cause\nparalysis." 
     mondexclassification SPECIES_TOXEL, "Baby Pokémon"
     mondexheight SPECIES_TOXEL, "1’04”"
     mondexweight SPECIES_TOXEL, "24.3 lbs."
@@ -18990,7 +18990,7 @@ mondata SPECIES_GRAPPLOCT, "Grapploct"
     abilities ABILITY_LIMBER, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_GRAPPLOCT, "Searching for an opponent to test its\nskills against, it emerges onto land. Once\nthe battle is over, it returns to the sea."
+    mondexentry SPECIES_GRAPPLOCT,  "Searching for an opponent to test its\nskills against, it emerges onto land.\nOnce the battle is over, it returns to\nthe sea." 
     mondexclassification SPECIES_GRAPPLOCT, "Jujitsu Pokémon"
     mondexheight SPECIES_GRAPPLOCT, "5’03”"
     mondexweight SPECIES_GRAPPLOCT, "86.0 lbs."
@@ -19179,7 +19179,7 @@ mondata SPECIES_OBSTAGOON, "Obstagoon"
     abilities ABILITY_RECKLESS, ABILITY_GUTS
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_OBSTAGOON, "It evolved after experiencing numerous\nfights. While crossing its arms, it lets out a\nshout that would make anyone flinch."
+    mondexentry SPECIES_OBSTAGOON,  "It evolved after experiencing numerous\nfights. While crossing its arms, it lets\nout a shout that would make anyone\nflinch." 
     mondexclassification SPECIES_OBSTAGOON, "Blocking Pokémon"
     mondexheight SPECIES_OBSTAGOON, "5’03”"
     mondexweight SPECIES_OBSTAGOON, "101.4 lbs."
@@ -19221,7 +19221,7 @@ mondata SPECIES_CURSOLA, "Cursola"
     abilities ABILITY_WEAK_ARMOR, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
-    mondexentry SPECIES_CURSOLA, "Be cautious of the ectoplasmic body\nsurrounding its soul. You’ll become stiff\nas stone if you touch it."
+    mondexentry SPECIES_CURSOLA,  "Be cautious of the ectoplasmic body\nsurrounding its soul. You’ll become\nstiff as stone if you touch it." 
     mondexclassification SPECIES_CURSOLA, "Coral Pokémon"
     mondexheight SPECIES_CURSOLA, "3’03”"
     mondexweight SPECIES_CURSOLA, "0.9 lbs."
@@ -19242,7 +19242,7 @@ mondata SPECIES_SIRFETCHD, "Sirfetch’d"
     abilities ABILITY_STEADFAST, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
-    mondexentry SPECIES_SIRFETCHD, "After deflecting attacks with its hard\nleaf shield, it strikes back with its sharp\nleek stalk. "
+    mondexentry SPECIES_SIRFETCHD,  "After deflecting attacks with its hard\nleaf shield, it strikes back with its\nsharp leek stalk." 
     mondexclassification SPECIES_SIRFETCHD, "Wild Duck Pokémon"
     mondexheight SPECIES_SIRFETCHD, "2’07”"
     mondexweight SPECIES_SIRFETCHD, "257.9 lbs."
@@ -19347,7 +19347,7 @@ mondata SPECIES_FALINKS, "Falinks"
     abilities ABILITY_BATTLE_ARMOR, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0
-    mondexentry SPECIES_FALINKS, "The six of them work together as one.\nTeamwork is also their battle strategy, and\nthey constantly change their formation."
+    mondexentry SPECIES_FALINKS,  "The six of them work together as one.\nTeamwork is also their battle strategy,\nand they constantly change their\nformation." 
     mondexclassification SPECIES_FALINKS, "Formation Pokémon"
     mondexheight SPECIES_FALINKS, "9’10”"
     mondexweight SPECIES_FALINKS, "136.7 lbs."
@@ -19368,7 +19368,7 @@ mondata SPECIES_PINCURCHIN, "Pincurchin"
     abilities ABILITY_LIGHTNING_ROD, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_PURPLE, 0
-    mondexentry SPECIES_PINCURCHIN, "It feeds on seaweed, using its teeth\nto scrape it off rocks. Electric current\nflows from the tips of its spines."
+    mondexentry SPECIES_PINCURCHIN,  "It feeds on seaweed, using its teeth to\nscrape it off rocks. Electric current\nflows from the tips of its spines." 
     mondexclassification SPECIES_PINCURCHIN, "Sea Urchin Pokémon"
     mondexheight SPECIES_PINCURCHIN, "1’00”"
     mondexweight SPECIES_PINCURCHIN, "2.2 lbs."
@@ -19452,7 +19452,7 @@ mondata SPECIES_EISCUE, "Eiscue"
     abilities ABILITY_ICE_FACE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_EISCUE, "It drifted in on the flow of ocean\nwaters from a frigid place. It keeps its\nhead iced constantly to stay cold."
+    mondexentry SPECIES_EISCUE,  "It drifted in on the flow of ocean\nwaters from a frigid place. It keeps its\nhead iced constantly to stay cold." 
     mondexclassification SPECIES_EISCUE, "Penguin Pokémon"
     mondexheight SPECIES_EISCUE, "4’07”"
     mondexweight SPECIES_EISCUE, "196.2 lbs."
@@ -19473,7 +19473,7 @@ mondata SPECIES_INDEEDEE, "Indeedee"
     abilities ABILITY_INNER_FOCUS, ABILITY_SYNCHRONIZE
     runchance 0
     colorflip BODY_COLOR_PURPLE, 0
-    mondexentry SPECIES_INDEEDEE, "Through its horns, it can pick up on\nthe emotions of creatures around it. Males\nwill act as valets for those they serve."
+    mondexentry SPECIES_INDEEDEE,  "Through its horns, it can pick up on the\nemotions of creatures around it. Males\nwill act as valets for those they serve." 
     mondexclassification SPECIES_INDEEDEE, "Emotion Pokémon"
     mondexheight SPECIES_INDEEDEE, "2’11”"
     mondexweight SPECIES_INDEEDEE, "61.7 lbs."
@@ -19515,7 +19515,7 @@ mondata SPECIES_CUFANT, "Cufant"
     abilities ABILITY_SHEER_FORCE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0
-    mondexentry SPECIES_CUFANT, "If a job requires serious strength,\nCufant will excel at it. Its copper body\ntarnishes in the rain, turning green."
+    mondexentry SPECIES_CUFANT,  "If a job requires serious strength,\nCufant will excel at it. Its copper body\ntarnishes in the rain, turning green." 
     mondexclassification SPECIES_CUFANT, "Copperderm Pokémon"
     mondexheight SPECIES_CUFANT, "3’11”"
     mondexweight SPECIES_CUFANT, "220.5 lbs."
@@ -19557,7 +19557,7 @@ mondata SPECIES_DRACOZOLT, "Dracozolt"
     abilities ABILITY_VOLT_ABSORB, ABILITY_HUSTLE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_DRACOZOLT, "The powerful muscles in its tail\ngenerate its electricity. Its upper half\nis entirely too small. "
+    mondexentry SPECIES_DRACOZOLT,  "The powerful muscles in its tail\ngenerate its electricity. Its upper half\nis entirely too small." 
     mondexclassification SPECIES_DRACOZOLT, "Fossil Pokémon"
     mondexheight SPECIES_DRACOZOLT, "5’11”"
     mondexweight SPECIES_DRACOZOLT, "418.9 lbs."
@@ -19578,7 +19578,7 @@ mondata SPECIES_ARCTOZOLT, "Arctozolt"
     abilities ABILITY_VOLT_ABSORB, ABILITY_STATIC
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_ARCTOZOLT, "The shaking of its freezing upper half\nis what generates its electricity. It has\na hard time walking around."
+    mondexentry SPECIES_ARCTOZOLT,  "The shaking of its freezing upper half\nis what generates its electricity. It\nhas a hard time walking around." 
     mondexclassification SPECIES_ARCTOZOLT, "Fossil Pokémon"
     mondexheight SPECIES_ARCTOZOLT, "7’07”"
     mondexweight SPECIES_ARCTOZOLT, "330.7 lbs."
@@ -19599,7 +19599,7 @@ mondata SPECIES_DRACOVISH, "Dracovish"
     abilities ABILITY_WATER_ABSORB, ABILITY_STRONG_JAW
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_DRACOVISH, "Its mighty legs are capable of running\nat speeds exceeding 40 mph, but it can’t\nbreathe unless it’s underwater."
+    mondexentry SPECIES_DRACOVISH,  "Its mighty legs are capable of running\nat speeds exceeding 40 mph, but it can’t\nbreathe unless it’s underwater." 
     mondexclassification SPECIES_DRACOVISH, "Fossil Pokémon"
     mondexheight SPECIES_DRACOVISH, "7’07”"
     mondexweight SPECIES_DRACOVISH, "474.0 lbs."
@@ -19662,7 +19662,7 @@ mondata SPECIES_DREEPY, "Dreepy"
     abilities ABILITY_CLEAR_BODY, ABILITY_INFILTRATOR
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_DREEPY, "After being reborn as a ghost, Dreepy\nwanders the areas it used to inhabit back\nwhen it was alive in prehistoric seas."
+    mondexentry SPECIES_DREEPY,  "After being reborn as a ghost, Dreepy\nwanders the areas it used to inhabit\nback when it was alive in prehistoric\nseas." 
     mondexclassification SPECIES_DREEPY, "Lingering Pokémon"
     mondexheight SPECIES_DREEPY, "1’08”"
     mondexweight SPECIES_DREEPY, "4.4 lbs."
@@ -19788,7 +19788,7 @@ mondata SPECIES_KUBFU, "Kubfu"
     abilities ABILITY_INNER_FOCUS, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_KUBFU, "If it pulls the long white hair on\nits head, its fighting spirit heightens and\npower wells up from deep in its belly."
+    mondexentry SPECIES_KUBFU,  "If it pulls the long white hair on its\nhead, its fighting spirit heightens and\npower wells up from deep in its belly." 
     mondexclassification SPECIES_KUBFU, "Wushu Pokémon"
     mondexheight SPECIES_KUBFU, "2’00”"
     mondexweight SPECIES_KUBFU, "26.5 lbs."
@@ -19809,7 +19809,7 @@ mondata SPECIES_URSHIFU, "Urshifu"
     abilities ABILITY_UNSEEN_FIST, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_URSHIFU, "Inhabiting the mountains of a distant\nregion, it races across sheer cliffs, training\nits legs and refining its moves."
+    mondexentry SPECIES_URSHIFU,  "Inhabiting the mountains of a distant\nregion, it races across sheer cliffs,\ntraining its legs and refining its\nmoves." 
     mondexclassification SPECIES_URSHIFU, "Wushu Pokémon"
     mondexheight SPECIES_URSHIFU, "6’03”"
     mondexweight SPECIES_URSHIFU, "231.5 lbs."
@@ -19830,7 +19830,7 @@ mondata SPECIES_ZARUDE, "Zarude"
     abilities ABILITY_LEAF_GUARD, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_ZARUDE, "Once the vines on its body tear off,\nthey become nutrients in the soil. This helps\nthe plants of the forest grow."
+    mondexentry SPECIES_ZARUDE,  "Once the vines on its body tear off,\nthey become nutrients in the soil. This\nhelps the plants of the forest grow." 
     mondexclassification SPECIES_ZARUDE, "Rogue Monkey Pokémon"
     mondexheight SPECIES_ZARUDE, "5’11”"
     mondexweight SPECIES_ZARUDE, "154.3 lbs."
@@ -19851,7 +19851,7 @@ mondata SPECIES_REGIELEKI, "Regieleki"
     abilities ABILITY_TRANSISTOR, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0
-    mondexentry SPECIES_REGIELEKI, "Its entire body is made of an organ\nthat generates electricity. It is capable of\ngenerating a region’s worth of electricity."
+    mondexentry SPECIES_REGIELEKI,  "Its entire body is made of an organ that\ngenerates electricity. It is capable of\ngenerating a region’s worth of\nelectricity." 
     mondexclassification SPECIES_REGIELEKI, "Electron Pokémon"
     mondexheight SPECIES_REGIELEKI, "3’11”"
     mondexweight SPECIES_REGIELEKI, "319.7 lbs."
@@ -19872,7 +19872,7 @@ mondata SPECIES_REGIDRAGO, "Regidrago"
     abilities ABILITY_DRAGONS_MAW, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_REGIDRAGO, "Its body is composed of crystallized\ndragon energy. It is said to contain the\npower of every Dragon Pokémon."
+    mondexentry SPECIES_REGIDRAGO,  "Its body is composed of crystallized\ndragon energy. It is said to contain the\npower of every Dragon Pokémon." 
     mondexclassification SPECIES_REGIDRAGO, "Dragon Orb Pokémon"
     mondexheight SPECIES_REGIDRAGO, "6’11”"
     mondexweight SPECIES_REGIDRAGO, "440.9 lbs."
@@ -19914,7 +19914,7 @@ mondata SPECIES_SPECTRIER, "Spectrier"
     abilities ABILITY_GRIM_NEIGH, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLACK, 0
-    mondexentry SPECIES_SPECTRIER, "As it dashes through the night, it\nabsorbs the life energy of sleeping Pokémon. It\ncraves silence and solitude."
+    mondexentry SPECIES_SPECTRIER,  "As it dashes through the night, it\nabsorbs the life energy of sleeping\nPokémon. It craves silence and solitude." 
     mondexclassification SPECIES_SPECTRIER, "Swift Horse Pokémon"
     mondexheight SPECIES_SPECTRIER, "6’07”"
     mondexweight SPECIES_SPECTRIER, "98.1 lbs."
@@ -19935,7 +19935,7 @@ mondata SPECIES_CALYREX, "Calyrex"
     abilities ABILITY_UNNERVE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_CALYREX, "Its every move is filled with grace\nand dignity. Extremely intelligent, it is said\nto see past, present, and future events."
+    mondexentry SPECIES_CALYREX,  "Its every move is filled with grace and\ndignity. Extremely intelligent, it is\nsaid to see past, present, and future\nevents." 
     mondexclassification SPECIES_CALYREX, "King Pokémon"
     mondexheight SPECIES_CALYREX, "3’07”"
     mondexweight SPECIES_CALYREX, "17.0 lbs."
@@ -19956,7 +19956,7 @@ mondata SPECIES_WYRDEER, "Wyrdeer"
     abilities ABILITY_INTIMIDATE, ABILITY_FRISK
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_WYRDEER, "The black orbs shine with an uncanny light.\nThe fur shed from its beard retains heat\nand is useful for winter clothing."
+    mondexentry SPECIES_WYRDEER,  "The black orbs shine with an uncanny\nlight. The fur shed from its beard\nretains heat and is useful for winter\nclothing." 
     mondexclassification SPECIES_WYRDEER, "Big Horn Pokémon"
     mondexheight SPECIES_WYRDEER, "5’11”"
     mondexweight SPECIES_WYRDEER, "209.7 lbs."
@@ -19977,7 +19977,7 @@ mondata SPECIES_KLEAVOR, "Kleavor"
     abilities ABILITY_SWARM, ABILITY_SHEER_FORCE
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_KLEAVOR, "A violent creature that fells towering trees with its crude axes\nand shields itself with hard stone. If one should chance upon\nthis Pokémon in the wilds, one's only recourse is to flee."
+    mondexentry SPECIES_KLEAVOR,  "A violent creature that fells towering\ntrees with its crude axes and shields\nitself with hard stone. If one should\nchance upon this Pokémon in the wilds,\none's only recourse is to flee." 
     mondexclassification SPECIES_KLEAVOR, "Axe Pokémon"
     mondexheight SPECIES_KLEAVOR, "5’11”"
     mondexweight SPECIES_KLEAVOR, "196.2 lbs."
@@ -19998,7 +19998,7 @@ mondata SPECIES_URSALUNA, "Ursaluna"
     abilities ABILITY_GUTS, ABILITY_BULLETPROOF
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_URSALUNA, "I believe it was Hisui's swampy terrain that gave Ursaluna its\nburly physique and newfound capacity to manipulate peat\nat will."
+    mondexentry SPECIES_URSALUNA,  "I believe it was Hisui's swampy terrain\nthat gave Ursaluna its burly physique\nand newfound capacity to manipulate peat\nat will." 
     mondexclassification SPECIES_URSALUNA, "Peat Pokémon"
     mondexheight SPECIES_URSALUNA, "7’10”"
     mondexweight SPECIES_URSALUNA, "639.3 lbs."
@@ -20019,7 +20019,7 @@ mondata SPECIES_BASCULEGION, "Basclegion"
     abilities ABILITY_SWIFT_SWIM, ABILITY_ADAPTABILITY
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_BASCULEGION, "Clads itself in the souls of comrades that perished before\nfulfilling their goals of journeying upstream. No other species\nthroughout all Hisui's rivers is Basculegion's equal."
+    mondexentry SPECIES_BASCULEGION,  "Clads itself in the souls of comrades\nthat perished before fulfilling their\ngoals of journeying upstream. No other\nspecies throughout all Hisui's rivers is\nBasculegion's equal." 
     mondexclassification SPECIES_BASCULEGION, "Big Fish Pokémon"
     mondexheight SPECIES_BASCULEGION, "9’10”"
     mondexweight SPECIES_BASCULEGION, "242.5 lbs."
@@ -20040,7 +20040,7 @@ mondata SPECIES_SNEASLER, "Sneasler"
     abilities ABILITY_PRESSURE, ABILITY_UNBURDEN
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_SNEASLER, "Because of Sneasler's virulent poison and daunting physical\nprowess, no other species could hope to best it on the frozen\nhighlands. Preferring solitude, this species does not form packs."
+    mondexentry SPECIES_SNEASLER,  "Because of Sneasler's virulent poison\nand daunting physical prowess, no other\nspecies could hope to best it on the\nfrozen highlands. Preferring solitude,\nthis species does not form packs." 
     mondexclassification SPECIES_SNEASLER, "Free Climb Pokémon"
     mondexheight SPECIES_SNEASLER, "4’03”"
     mondexweight SPECIES_SNEASLER, "94.8 lbs."
@@ -20061,7 +20061,7 @@ mondata SPECIES_OVERQWIL, "Overqwil"
     abilities ABILITY_POISON_POINT, ABILITY_SWIFT_SWIM
     runchance 0
     colorflip BODY_COLOR_BLACK, 0
-    mondexentry SPECIES_OVERQWIL, "Its lancelike spikes and savage temperament have earned it the\nnickname ”sea fiend.” It slurps up poison to nourish itself."
+    mondexentry SPECIES_OVERQWIL,  "Its lancelike spikes and savage\ntemperament have earned it the nickname\n”sea fiend.” It slurps up poison to\nnourish itself." 
     mondexclassification SPECIES_OVERQWIL, "Pin Cluster Pokémon"
     mondexheight SPECIES_OVERQWIL, "8’02”"
     mondexweight SPECIES_OVERQWIL, "133.4 lbs."
@@ -20082,7 +20082,7 @@ mondata SPECIES_ENAMORUS, "Enamorus"
     abilities ABILITY_CUTE_CHARM, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_PINK, 0
-    mondexentry SPECIES_ENAMORUS, "When it flies to this land from across the sea, the bitter winter\ncomes to an end. According to legend, this Pokémon's love\ngives rise to the budding of fresh life across Hisui."
+    mondexentry SPECIES_ENAMORUS,  "When it flies to this land from across\nthe sea, the bitter winter comes to an\nend. According to legend, this Pokémon's\nlove gives rise to the budding of fresh\nlife across Hisui." 
     mondexclassification SPECIES_ENAMORUS, "Love-Hate Pokémon"
     mondexheight SPECIES_ENAMORUS, "5’03”"
     mondexweight SPECIES_ENAMORUS, "105.8 lbs."
@@ -20103,7 +20103,7 @@ mondata SPECIES_SPRIGATITO, "Sprigatito"
     abilities ABILITY_OVERGROW, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_SPRIGATITO, "The sweet scent its body gives off mesmerizes those around it. The scent grows stronger when this Pokémon is in the sun."
+    mondexentry SPECIES_SPRIGATITO,  "The sweet scent its body gives off\nmesmerizes those around it. The scent\ngrows stronger when this Pokémon is in\nthe sun." 
     mondexclassification SPECIES_SPRIGATITO, "Grass Cat Pokémon"
     mondexheight SPECIES_SPRIGATITO, "1’04”"
     mondexweight SPECIES_SPRIGATITO, "9.0 lbs."
@@ -20124,7 +20124,7 @@ mondata SPECIES_FLORAGATO, "Floragato"
     abilities ABILITY_OVERGROW, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_FLORAGATO, "The hardness of Floragato’s fur depends on the Pokémon’s mood. When Floragato is prepared to battle, its fur becomes pointed and needle sharp."
+    mondexentry SPECIES_FLORAGATO,  "The hardness of Floragato’s fur depends\non the Pokémon’s mood. When Floragato is\nprepared to battle, its fur becomes\npointed and needle sharp." 
     mondexclassification SPECIES_FLORAGATO, "Grass Cat Pokémon"
     mondexheight SPECIES_FLORAGATO, "2’11”"
     mondexweight SPECIES_FLORAGATO, "26.9 lbs."
@@ -20145,7 +20145,7 @@ mondata SPECIES_MEOWSCARADA, "Mewscarada"
     abilities ABILITY_OVERGROW, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_MEOWSCARADA, "With skillful misdirection, it rigs foes with pollen-packed flower bombs. Meowscarada sets off the bombs before its foes realize what’s going on."
+    mondexentry SPECIES_MEOWSCARADA,  "With skillful misdirection, it rigs foes\nwith pollen-packed flower bombs.\nMeowscarada sets off the bombs before\nits foes realize what’s going on." 
     mondexclassification SPECIES_MEOWSCARADA, "Magician Pokémon"
     mondexheight SPECIES_MEOWSCARADA, "4’11”"
     mondexweight SPECIES_MEOWSCARADA, "68.8 lbs."
@@ -20166,7 +20166,7 @@ mondata SPECIES_FUECOCO, "Fuecoco"
     abilities ABILITY_BLAZE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
-    mondexentry SPECIES_FUECOCO, "Its flame sac is small, so energy is always leaking out. This energy is released from the dent atop Fuecoco’s head and flickers to and fro."
+    mondexentry SPECIES_FUECOCO,  "Its flame sac is small, so energy is\nalways leaking out. This energy is\nreleased from the dent atop Fuecoco’s\nhead and flickers to and fro." 
     mondexclassification SPECIES_FUECOCO, "Fire Croc Pokémon"
     mondexheight SPECIES_FUECOCO, "1’04”"
     mondexweight SPECIES_FUECOCO, "21.6 lbs."
@@ -20187,7 +20187,7 @@ mondata SPECIES_CROCALOR, "Crocalor"
     abilities ABILITY_BLAZE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
-    mondexentry SPECIES_CROCALOR, "The valve in Crocalor’s flame sac is closely connected to its vocal cords. This Pokémon utters a guttural cry as it spews flames every which way."
+    mondexentry SPECIES_CROCALOR,  "The valve in Crocalor’s flame sac is\nclosely connected to its vocal cords.\nThis Pokémon utters a guttural cry as it\nspews flames every which way." 
     mondexclassification SPECIES_CROCALOR, "Fire Croc Pokémon"
     mondexheight SPECIES_CROCALOR, "3’03”"
     mondexweight SPECIES_CROCALOR, "67.7 lbs."
@@ -20208,7 +20208,7 @@ mondata SPECIES_SKELEDIRGE, "Skeledirge"
     abilities ABILITY_BLAZE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
-    mondexentry SPECIES_SKELEDIRGE, "Skeledirge’s gentle singing soothes the souls of all that hear it. It burns its enemies to a crisp with flames of over 5,400 degrees Fahrenheit."
+    mondexentry SPECIES_SKELEDIRGE,  "Skeledirge’s gentle singing soothes the\nsouls of all that hear it. It burns its\nenemies to a crisp with flames of over\n5,400 degrees Fahrenheit." 
     mondexclassification SPECIES_SKELEDIRGE, "Singer Pokémon"
     mondexheight SPECIES_SKELEDIRGE, "5’03”"
     mondexweight SPECIES_SKELEDIRGE, "719.8 lbs."
@@ -20229,7 +20229,7 @@ mondata SPECIES_QUAXLY, "Quaxly"
     abilities ABILITY_TORRENT, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
-    mondexentry SPECIES_QUAXLY, "Its strong legs let it easily swim around in even fast-flowing rivers. It likes to keep things tidy and is prone to overthinking things."
+    mondexentry SPECIES_QUAXLY,  "Its strong legs let it easily swim\naround in even fast-flowing rivers. It\nlikes to keep things tidy and is prone\nto overthinking things." 
     mondexclassification SPECIES_QUAXLY, "Duckling Pokémon"
     mondexheight SPECIES_QUAXLY, "1’08”"
     mondexweight SPECIES_QUAXLY, "13.4 lbs."
@@ -20250,7 +20250,7 @@ mondata SPECIES_QUAXWELL, "Quaxwell"
     abilities ABILITY_TORRENT, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_QUAXWELL, "The hardworking Quaxwell observes people and Pokémon from various regions and incorporates their movements into its own dance routines."
+    mondexentry SPECIES_QUAXWELL,  "The hardworking Quaxwell observes people\nand Pokémon from various regions and\nincorporates their movements into its\nown dance routines." 
     mondexclassification SPECIES_QUAXWELL, "Practicing Pokémon"
     mondexheight SPECIES_QUAXWELL, "3’11”"
     mondexweight SPECIES_QUAXWELL, "47.4 lbs."
@@ -20271,7 +20271,7 @@ mondata SPECIES_QUAQUAVAL, "Quaquaval"
     abilities ABILITY_TORRENT, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_QUAQUAVAL, "Dancing in ways that evoke far-away places, this Pokémon mesmerizes all that see it. Flourishes of its decorative water feathers slice into its foes."
+    mondexentry SPECIES_QUAQUAVAL,  "Dancing in ways that evoke far-away\nplaces, this Pokémon mesmerizes all that\nsee it. Flourishes of its decorative\nwater feathers slice into its foes." 
     mondexclassification SPECIES_QUAQUAVAL, "Dancer Pokémon"
     mondexheight SPECIES_QUAQUAVAL, "5’11”"
     mondexweight SPECIES_QUAQUAVAL, "136.5 lbs."
@@ -20292,7 +20292,7 @@ mondata SPECIES_LECHONK, "Lechonk"
     abilities ABILITY_AROMA_VEIL, ABILITY_GLUTTONY
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_LECHONK, "This Pokémon spurns all but the finest of foods. Its body gives off an herblike scent that bug Pokémon detest."
+    mondexentry SPECIES_LECHONK,  "This Pokémon spurns all but the finest\nof foods. Its body gives off an herblike\nscent that bug Pokémon detest." 
     mondexclassification SPECIES_LECHONK, "Hog Pokémon"
     mondexheight SPECIES_LECHONK, "1’08”"
     mondexweight SPECIES_LECHONK, "22.5 lbs."
@@ -20313,7 +20313,7 @@ mondata SPECIES_OINKOLOGNE, "Oinkologne"
     abilities ABILITY_LINGERING_AROMA, ABILITY_GLUTTONY
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_OINKOLOGNE, "It entrances female Pokémon with the sweet, alluring scent that wafts from all over its body."
+    mondexentry SPECIES_OINKOLOGNE,  "It entrances female Pokémon with the\nsweet, alluring scent that wafts from\nall over its body." 
     mondexclassification SPECIES_OINKOLOGNE, "Hog Pokémon"
     mondexheight SPECIES_OINKOLOGNE, "3’03”"
     mondexweight SPECIES_OINKOLOGNE, "264.6 lbs."
@@ -20334,7 +20334,7 @@ mondata SPECIES_TAROUNTULA, "Tarountula"
     abilities ABILITY_INSOMNIA, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
-    mondexentry SPECIES_TAROUNTULA, "The thread it secretes from its rear is as strong as wire. The secret behind the thread’s strength is the topic of ongoing research."
+    mondexentry SPECIES_TAROUNTULA,  "The thread it secretes from its rear is\nas strong as wire. The secret behind the\nthread’s strength is the topic of\nongoing research." 
     mondexclassification SPECIES_TAROUNTULA, "String Ball Pokémon"
     mondexheight SPECIES_TAROUNTULA, "1’00”"
     mondexweight SPECIES_TAROUNTULA, "8.8 lbs."
@@ -20355,7 +20355,7 @@ mondata SPECIES_SPIDOPS, "Spidops"
     abilities ABILITY_INSOMNIA, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_SPIDOPS, "Spidops covers its territory in tough, sticky threads to set up traps for intruders."
+    mondexentry SPECIES_SPIDOPS,  "Spidops covers its territory in tough,\nsticky threads to set up traps for\nintruders." 
     mondexclassification SPECIES_SPIDOPS, "Trap Pokémon"
     mondexheight SPECIES_SPIDOPS, "3’03”"
     mondexweight SPECIES_SPIDOPS, "36.4 lbs."
@@ -20376,7 +20376,7 @@ mondata SPECIES_NYMBLE, "Nymble"
     abilities ABILITY_SWARM, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_NYMBLE, "It’s highly skilled at a fighting style in which it uses its jumping capabilities to dodge incoming attacks while also dealing damage to opponents."
+    mondexentry SPECIES_NYMBLE,  "It’s highly skilled at a fighting style\nin which it uses its jumping\ncapabilities to dodge incoming attacks\nwhile also dealing damage to opponents." 
     mondexclassification SPECIES_NYMBLE, "Grasshopper Pokémon"
     mondexheight SPECIES_NYMBLE, "0’08”"
     mondexweight SPECIES_NYMBLE, "2.2 lbs."
@@ -20397,7 +20397,7 @@ mondata SPECIES_LOKIX, "Lokix"
     abilities ABILITY_SWARM, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_LOKIX, "It uses its normally folded third set of legs when in Showdown Mode. This places a huge burden on its body, so it can’t stay in this mode for long."
+    mondexentry SPECIES_LOKIX,  "It uses its normally folded third set of\nlegs when in Showdown Mode. This places\na huge burden on its body, so it can’t\nstay in this mode for long." 
     mondexclassification SPECIES_LOKIX, "Grasshopper Pokémon"
     mondexheight SPECIES_LOKIX, "3’03”"
     mondexweight SPECIES_LOKIX, "38.6 lbs."
@@ -20418,7 +20418,7 @@ mondata SPECIES_PAWMI, "Pawmi"
     abilities ABILITY_STATIC, ABILITY_NATURAL_CURE
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0
-    mondexentry SPECIES_PAWMI, "The pads of its paws are electricity-discharging organs. Pawmi fires electricity from its forepaws while standing unsteadily on its hind legs."
+    mondexentry SPECIES_PAWMI,  "The pads of its paws are\nelectricity-discharging organs. Pawmi\nfires electricity from its forepaws\nwhile standing unsteadily on its hind\nlegs." 
     mondexclassification SPECIES_PAWMI, "Mouse Pokémon"
     mondexheight SPECIES_PAWMI, "1’00”"
     mondexweight SPECIES_PAWMI, "5.5 lbs."
@@ -20439,7 +20439,7 @@ mondata SPECIES_PAWMO, "Pawmo"
     abilities ABILITY_VOLT_ABSORB, ABILITY_NATURAL_CURE
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0
-    mondexentry SPECIES_PAWMO, "Pawmo uses a unique fighting technique in which it uses its forepaws to strike foes and zap them with electricity from its paw pads simultaneously."
+    mondexentry SPECIES_PAWMO,  "Pawmo uses a unique fighting technique\nin which it uses its forepaws to strike\nfoes and zap them with electricity from\nits paw pads simultaneously." 
     mondexclassification SPECIES_PAWMO, "Mouse Pokémon"
     mondexheight SPECIES_PAWMO, "1’04”"
     mondexweight SPECIES_PAWMO, "14.3 lbs."
@@ -20460,7 +20460,7 @@ mondata SPECIES_PAWMOT, "Pawmot"
     abilities ABILITY_VOLT_ABSORB, ABILITY_NATURAL_CURE
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0
-    mondexentry SPECIES_PAWMOT, "Pawmot’s fluffy fur acts as a battery. It can store the same amount of electricity as an electric car."
+    mondexentry SPECIES_PAWMOT,  "Pawmot’s fluffy fur acts as a battery.\nIt can store the same amount of\nelectricity as an electric car." 
     mondexclassification SPECIES_PAWMOT, "Hands-On Pokémon"
     mondexheight SPECIES_PAWMOT, "2’11”"
     mondexweight SPECIES_PAWMOT, "90.4 lbs."
@@ -20481,7 +20481,7 @@ mondata SPECIES_TANDEMAUS, "Tandemaus"
     abilities ABILITY_RUN_AWAY, ABILITY_PICKUP
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
-    mondexentry SPECIES_TANDEMAUS, "The pair sticks together no matter what. They split any food they find exactly in half and then eat it together."
+    mondexentry SPECIES_TANDEMAUS,  "The pair sticks together no matter what.\nThey split any food they find exactly in\nhalf and then eat it together." 
     mondexclassification SPECIES_TANDEMAUS, "Couple Pokémon"
     mondexheight SPECIES_TANDEMAUS, "1’00”"
     mondexweight SPECIES_TANDEMAUS, "4.0 lbs."
@@ -20502,7 +20502,7 @@ mondata SPECIES_MAUSHOLD, "Maushold"
     abilities ABILITY_FRIEND_GUARD, ABILITY_CHEEK_POUCH
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
-    mondexentry SPECIES_MAUSHOLD, "The larger pair protects the little ones during battles. When facing strong opponents, the whole group will join the fight."
+    mondexentry SPECIES_MAUSHOLD,  "The larger pair protects the little ones\nduring battles. When facing strong\nopponents, the whole group will join the\nfight." 
     mondexclassification SPECIES_MAUSHOLD, "Family Pokémon"
     mondexheight SPECIES_MAUSHOLD, "1’00”"
     mondexweight SPECIES_MAUSHOLD, "5.1 lbs."
@@ -20523,7 +20523,7 @@ mondata SPECIES_FIDOUGH, "Fidough"
     abilities ABILITY_OWN_TEMPO, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0
-    mondexentry SPECIES_FIDOUGH, "The yeast in Fidough’s breath is useful for cooking, so this Pokémon has been protected by people since long ago."
+    mondexentry SPECIES_FIDOUGH,  "The yeast in Fidough’s breath is useful\nfor cooking, so this Pokémon has been\nprotected by people since long ago." 
     mondexclassification SPECIES_FIDOUGH, "Puppy Pokémon"
     mondexheight SPECIES_FIDOUGH, "1’00”"
     mondexweight SPECIES_FIDOUGH, "24.0 lbs."
@@ -20544,7 +20544,7 @@ mondata SPECIES_DACHSBUN, "Dachsbun"
     abilities ABILITY_WELL_BAKED_BODY, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_DACHSBUN, "The surface of this Pokémon’s skin hardens when exposed to intense heat, and its body has an appetizing aroma."
+    mondexentry SPECIES_DACHSBUN,  "The surface of this Pokémon’s skin\nhardens when exposed to intense heat,\nand its body has an appetizing aroma." 
     mondexclassification SPECIES_DACHSBUN, "Dog Pokémon"
     mondexheight SPECIES_DACHSBUN, "1’08”"
     mondexweight SPECIES_DACHSBUN, "32.8 lbs."
@@ -20565,7 +20565,7 @@ mondata SPECIES_SMOLIV, "Smoliv"
     abilities ABILITY_EARLY_BIRD, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_SMOLIV, "This Pokémon converts nutrients into oil, which it stores in the fruit on its head. It can easily go a whole week without eating or drinking."
+    mondexentry SPECIES_SMOLIV,  "This Pokémon converts nutrients into\noil, which it stores in the fruit on its\nhead. It can easily go a whole week\nwithout eating or drinking." 
     mondexclassification SPECIES_SMOLIV, "Olive Pokémon"
     mondexheight SPECIES_SMOLIV, "1’00”"
     mondexweight SPECIES_SMOLIV, "14.3 lbs."
@@ -20586,7 +20586,7 @@ mondata SPECIES_DOLLIV, "Dolliv"
     abilities ABILITY_EARLY_BIRD, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_DOLLIV, "It basks in the sun to its heart’s content until the fruits on its head ripen. After that, Dolliv departs from human settlements and goes on a journey."
+    mondexentry SPECIES_DOLLIV,  "It basks in the sun to its heart’s\ncontent until the fruits on its head\nripen. After that, Dolliv departs from\nhuman settlements and goes on a journey." 
     mondexclassification SPECIES_DOLLIV, "Olive Pokémon"
     mondexheight SPECIES_DOLLIV, "2’00”"
     mondexweight SPECIES_DOLLIV, "26.2 lbs."
@@ -20607,7 +20607,7 @@ mondata SPECIES_ARBOLIVA, "Arboliva"
     abilities ABILITY_SEED_SOWER, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_ARBOLIVA, "This Pokémon drives back enemies by launching its rich, aromatic oil at them with enough force to smash a boulder."
+    mondexentry SPECIES_ARBOLIVA,  "This Pokémon drives back enemies by\nlaunching its rich, aromatic oil at them\nwith enough force to smash a boulder." 
     mondexclassification SPECIES_ARBOLIVA, "Olive Pokémon"
     mondexheight SPECIES_ARBOLIVA, "4’07”"
     mondexweight SPECIES_ARBOLIVA, "106.3 lbs."
@@ -20628,7 +20628,7 @@ mondata SPECIES_SQUAWKABILLY, "Squawkbily"
     abilities ABILITY_INTIMIDATE, ABILITY_HUSTLE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_SQUAWKABILLY, "Green-feathered flocks hold the most sway. When they’re out searching for food in the mornings and evenings, it gets very noisy."
+    mondexentry SPECIES_SQUAWKABILLY,  "Green-feathered flocks hold the most\nsway. When they’re out searching for\nfood in the mornings and evenings, it\ngets very noisy." 
     mondexclassification SPECIES_SQUAWKABILLY, "Parrot Pokémon"
     mondexheight SPECIES_SQUAWKABILLY, "2’00”"
     mondexweight SPECIES_SQUAWKABILLY, "5.3 lbs."
@@ -20649,7 +20649,7 @@ mondata SPECIES_NACLI, "Nacli"
     abilities ABILITY_PURIFYING_SALT, ABILITY_STURDY
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_NACLI, "The ground scrapes its body as it travels, causing it to leave salt behind. Salt is constantly being created and replenished inside Nacli’s body."
+    mondexentry SPECIES_NACLI,  "The ground scrapes its body as it\ntravels, causing it to leave salt\nbehind. Salt is constantly being created\nand replenished inside Nacli’s body." 
     mondexclassification SPECIES_NACLI, "Rock Salt Pokémon"
     mondexheight SPECIES_NACLI, "1’04”"
     mondexweight SPECIES_NACLI, "35.3 lbs."
@@ -20670,7 +20670,7 @@ mondata SPECIES_NACLSTACK, "Naclstack"
     abilities ABILITY_PURIFYING_SALT, ABILITY_STURDY
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_NACLSTACK, "It compresses rock salt inside its body and shoots out hardened salt pellets with enough force to perforate an iron sheet."
+    mondexentry SPECIES_NACLSTACK,  "It compresses rock salt inside its body\nand shoots out hardened salt pellets\nwith enough force to perforate an iron\nsheet." 
     mondexclassification SPECIES_NACLSTACK, "Rock Salt Pokémon"
     mondexheight SPECIES_NACLSTACK, "2’00”"
     mondexweight SPECIES_NACLSTACK, "231.5 lbs."
@@ -20691,7 +20691,7 @@ mondata SPECIES_GARGANACL, "Garganacl"
     abilities ABILITY_PURIFYING_SALT, ABILITY_STURDY
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_GARGANACL, "Many Pokémon gather around Garganacl, hoping to lick at its mineral-rich salt."
+    mondexentry SPECIES_GARGANACL,  "Many Pokémon gather around Garganacl,\nhoping to lick at its mineral-rich salt." 
     mondexclassification SPECIES_GARGANACL, "Rock Salt Pokémon"
     mondexheight SPECIES_GARGANACL, "7’07”"
     mondexweight SPECIES_GARGANACL, "529.1 lbs."
@@ -20712,7 +20712,7 @@ mondata SPECIES_CHARCADET, "Charcadet"
     abilities ABILITY_FLASH_FIRE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
-    mondexentry SPECIES_CHARCADET, "Its firepower increases when it fights, reaching over 1,800 degrees Fahrenheit. It likes berries that are rich in fat."
+    mondexentry SPECIES_CHARCADET,  "Its firepower increases when it fights,\nreaching over 1,800 degrees Fahrenheit.\nIt likes berries that are rich in fat." 
     mondexclassification SPECIES_CHARCADET, "Fire Child Pokémon"
     mondexheight SPECIES_CHARCADET, "2’00”"
     mondexweight SPECIES_CHARCADET, "23.1 lbs."
@@ -20733,7 +20733,7 @@ mondata SPECIES_ARMAROUGE, "Armarouge"
     abilities ABILITY_FLASH_FIRE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
-    mondexentry SPECIES_ARMAROUGE, "This Pokémon clads itself in armor that has been fortified by psychic and fire energy, and it shoots blazing fireballs."
+    mondexentry SPECIES_ARMAROUGE,  "This Pokémon clads itself in armor that\nhas been fortified by psychic and fire\nenergy, and it shoots blazing fireballs." 
     mondexclassification SPECIES_ARMAROUGE, "Fire Warrior Pokémon"
     mondexheight SPECIES_ARMAROUGE, "4’11”"
     mondexweight SPECIES_ARMAROUGE, "187.4 lbs."
@@ -20754,7 +20754,7 @@ mondata SPECIES_CERULEDGE, "Ceruledge"
     abilities ABILITY_FLASH_FIRE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_CERULEDGE, "An old set of armor steeped in grudges caused this Pokémon’s evolution. Ceruledge cuts its enemies to pieces without mercy."
+    mondexentry SPECIES_CERULEDGE,  "An old set of armor steeped in grudges\ncaused this Pokémon’s evolution.\nCeruledge cuts its enemies to pieces\nwithout mercy." 
     mondexclassification SPECIES_CERULEDGE, "Fire Blades Pokémon"
     mondexheight SPECIES_CERULEDGE, "5’03”"
     mondexweight SPECIES_CERULEDGE, "136.7 lbs."
@@ -20775,7 +20775,7 @@ mondata SPECIES_TADBULB, "Tadbulb"
     abilities ABILITY_OWN_TEMPO, ABILITY_STATIC
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0
-    mondexentry SPECIES_TADBULB, "It floats using the electricity stored in its body. When thunderclouds are around, Tadbulb will float higher off the ground."
+    mondexentry SPECIES_TADBULB,  "It floats using the electricity stored\nin its body. When thunderclouds are\naround, Tadbulb will float higher off\nthe ground." 
     mondexclassification SPECIES_TADBULB, "EleTadpole Pokémon"
     mondexheight SPECIES_TADBULB, "1’00”"
     mondexweight SPECIES_TADBULB, "0.9 lbs."
@@ -20796,7 +20796,7 @@ mondata SPECIES_BELLIBOLT, "Bellibolt"
     abilities ABILITY_ELECTROMORPHOSIS, ABILITY_STATIC
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_BELLIBOLT, "What appear to be eyeballs are actually organs for discharging the electricity generated by Bellibolt’s belly-button dynamo."
+    mondexentry SPECIES_BELLIBOLT,  "What appear to be eyeballs are actually\norgans for discharging the electricity\ngenerated by Bellibolt’s belly-button\ndynamo." 
     mondexclassification SPECIES_BELLIBOLT, "EleFrog Pokémon"
     mondexheight SPECIES_BELLIBOLT, "3’11”"
     mondexweight SPECIES_BELLIBOLT, "249.1 lbs."
@@ -20817,7 +20817,7 @@ mondata SPECIES_WATTREL, "Wattrel"
     abilities ABILITY_WIND_POWER, ABILITY_VOLT_ABSORB
     runchance 0
     colorflip BODY_COLOR_BLACK, 0
-    mondexentry SPECIES_WATTREL, "These Pokémon make their nests on coastal cliffs. The nests have a strange, crackling texture, and they’re a popular delicacy."
+    mondexentry SPECIES_WATTREL,  "These Pokémon make their nests on\ncoastal cliffs. The nests have a\nstrange, crackling texture, and they’re\na popular delicacy." 
     mondexclassification SPECIES_WATTREL, "Storm Petrel Pokémon"
     mondexheight SPECIES_WATTREL, "1’04”"
     mondexweight SPECIES_WATTREL, "7.9 lbs."
@@ -20838,7 +20838,7 @@ mondata SPECIES_KILOWATTREL, "Kilowatrel"
     abilities ABILITY_WIND_POWER, ABILITY_VOLT_ABSORB
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0
-    mondexentry SPECIES_KILOWATTREL, "It uses its throat sac to store electricity generated by its wings. There’s hardly any oil in its feathers, so it is a poor swimmer."
+    mondexentry SPECIES_KILOWATTREL,  "It uses its throat sac to store\nelectricity generated by its wings.\nThere’s hardly any oil in its feathers,\nso it is a poor swimmer." 
     mondexclassification SPECIES_KILOWATTREL, "Frigatebird Pokémon"
     mondexheight SPECIES_KILOWATTREL, "4’07”"
     mondexweight SPECIES_KILOWATTREL, "85.1 lbs."
@@ -20859,7 +20859,7 @@ mondata SPECIES_MASCHIFF, "Maschiff"
     abilities ABILITY_INTIMIDATE, ABILITY_RUN_AWAY
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_MASCHIFF, "Its well-developed jaw and fangs are strong enough to crunch through boulders, and its thick fat makes for an excellent defense."
+    mondexentry SPECIES_MASCHIFF,  "Its well-developed jaw and fangs are\nstrong enough to crunch through\nboulders, and its thick fat makes for an\nexcellent defense." 
     mondexclassification SPECIES_MASCHIFF, "Rascal Pokémon"
     mondexheight SPECIES_MASCHIFF, "1’08”"
     mondexweight SPECIES_MASCHIFF, "35.3 lbs."
@@ -20880,7 +20880,7 @@ mondata SPECIES_MABOSSTIFF, "Mabosstiff"
     abilities ABILITY_INTIMIDATE, ABILITY_GUARD_DOG
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_MABOSSTIFF, "Mabosstiff loves playing with children. Though usually gentle, it takes on an intimidating look when protecting its family."
+    mondexentry SPECIES_MABOSSTIFF,  "Mabosstiff loves playing with children.\nThough usually gentle, it takes on an\nintimidating look when protecting its\nfamily." 
     mondexclassification SPECIES_MABOSSTIFF, "Boss Pokémon"
     mondexheight SPECIES_MABOSSTIFF, "3’07”"
     mondexweight SPECIES_MABOSSTIFF, "134.5 lbs."
@@ -20901,7 +20901,7 @@ mondata SPECIES_SHROODLE, "Shroodle"
     abilities ABILITY_UNBURDEN, ABILITY_PICKPOCKET
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_SHROODLE, "To keep enemies away from its territory, it paints markings around its nest using a poisonous liquid that has an acrid odor."
+    mondexentry SPECIES_SHROODLE,  "To keep enemies away from its territory,\nit paints markings around its nest using\na poisonous liquid that has an acrid\nodor." 
     mondexclassification SPECIES_SHROODLE, "Toxic Mouse Pokémon"
     mondexheight SPECIES_SHROODLE, "0’08”"
     mondexweight SPECIES_SHROODLE, "1.5 lbs."
@@ -20922,7 +20922,7 @@ mondata SPECIES_GRAFAIAI, "Grafaiai"
     abilities ABILITY_UNBURDEN, ABILITY_POISON_TOUCH
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_GRAFAIAI, "Each Grafaiai paints its own individual pattern, and it will paint that same pattern over and over again throughout its life."
+    mondexentry SPECIES_GRAFAIAI,  "Each Grafaiai paints its own individual\npattern, and it will paint that same\npattern over and over again throughout\nits life." 
     mondexclassification SPECIES_GRAFAIAI, "Toxic Monkey Pokémon"
     mondexheight SPECIES_GRAFAIAI, "2’04”"
     mondexweight SPECIES_GRAFAIAI, "60.0 lbs."
@@ -20943,7 +20943,7 @@ mondata SPECIES_BRAMBLIN, "Bramblin"
     abilities ABILITY_WIND_RIDER, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_BRAMBLIN, "Not even Bramblin knows where it is headed as it tumbles across the wilderness, blown by the wind. It loathes getting wet."
+    mondexentry SPECIES_BRAMBLIN,  "Not even Bramblin knows where it is\nheaded as it tumbles across the\nwilderness, blown by the wind. It\nloathes getting wet." 
     mondexclassification SPECIES_BRAMBLIN, "Tumbleweed Pokémon"
     mondexheight SPECIES_BRAMBLIN, "2’00”"
     mondexweight SPECIES_BRAMBLIN, "1.3 lbs."
@@ -20964,7 +20964,7 @@ mondata SPECIES_BRAMBLEGHAST, "Bramblgast"
     abilities ABILITY_WIND_RIDER, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_BRAMBLEGHAST, "Brambleghast wanders around arid regions. On rare occasions, mass outbreaks of these Pokémon will bury an entire town."
+    mondexentry SPECIES_BRAMBLEGHAST,  "Brambleghast wanders around arid\nregions. On rare occasions, mass\noutbreaks of these Pokémon will bury an\nentire town." 
     mondexclassification SPECIES_BRAMBLEGHAST, "Tumbleweed Pokémon"
     mondexheight SPECIES_BRAMBLEGHAST, "3’11”"
     mondexweight SPECIES_BRAMBLEGHAST, "13.2 lbs."
@@ -20985,7 +20985,7 @@ mondata SPECIES_TOEDSCOOL, "Toedscool"
     abilities ABILITY_MYCELIUM_MIGHT, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0
-    mondexentry SPECIES_TOEDSCOOL, "Though it looks like Tentacool, Toedscool is a completely different species. Its legs may be thin, but it can run at a speed of 30 mph."
+    mondexentry SPECIES_TOEDSCOOL,  "Though it looks like Tentacool,\nToedscool is a completely different\nspecies. Its legs may be thin, but it\ncan run at a speed of 30 mph." 
     mondexclassification SPECIES_TOEDSCOOL, "Woodear Pokémon"
     mondexheight SPECIES_TOEDSCOOL, "2’11”"
     mondexweight SPECIES_TOEDSCOOL, "72.8 lbs."
@@ -21006,7 +21006,7 @@ mondata SPECIES_TOEDSCRUEL, "Toedscruel"
     abilities ABILITY_MYCELIUM_MIGHT, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLACK, 0
-    mondexentry SPECIES_TOEDSCRUEL, "It coils its 10 tentacles around prey and sucks out their nutrients, causing the prey pain. The folds along the rim of its head are a popular delicacy."
+    mondexentry SPECIES_TOEDSCRUEL,  "It coils its 10 tentacles around prey\nand sucks out their nutrients, causing\nthe prey pain. The folds along the rim\nof its head are a popular delicacy." 
     mondexclassification SPECIES_TOEDSCRUEL, "Woodear Pokémon"
     mondexheight SPECIES_TOEDSCRUEL, "6’03”"
     mondexweight SPECIES_TOEDSCRUEL, "127.9 lbs."
@@ -21027,7 +21027,7 @@ mondata SPECIES_KLAWF, "Klawf"
     abilities ABILITY_ANGER_SHELL, ABILITY_SHELL_ARMOR
     runchance 0
     colorflip BODY_COLOR_RED, 0
-    mondexentry SPECIES_KLAWF, "This Pokémon lives on sheer cliffs. It sidesteps opponents’ attacks, then lunges for their weak spots with its claws."
+    mondexentry SPECIES_KLAWF,  "This Pokémon lives on sheer cliffs. It\nsidesteps opponents’ attacks, then\nlunges for their weak spots with its\nclaws." 
     mondexclassification SPECIES_KLAWF, "Ambush Pokémon"
     mondexheight SPECIES_KLAWF, "4’03”"
     mondexweight SPECIES_KLAWF, "174.2 lbs."
@@ -21048,7 +21048,7 @@ mondata SPECIES_CAPSAKID, "Capsakid"
     abilities ABILITY_CHLOROPHYLL, ABILITY_INSOMNIA
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_CAPSAKID, "Traditional Paldean dishes can be extremely spicy because they include the shed front teeth of Capsakid among their ingredients."
+    mondexentry SPECIES_CAPSAKID,  "Traditional Paldean dishes can be\nextremely spicy because they include the\nshed front teeth of Capsakid among their\ningredients." 
     mondexclassification SPECIES_CAPSAKID, "Spicy Pepper Pokémon"
     mondexheight SPECIES_CAPSAKID, "1’00”"
     mondexweight SPECIES_CAPSAKID, "6.6 lbs."
@@ -21069,7 +21069,7 @@ mondata SPECIES_SCOVILLAIN, "Scovillain"
     abilities ABILITY_CHLOROPHYLL, ABILITY_INSOMNIA
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_SCOVILLAIN, "The green head has turned vicious due to the spicy chemicals stimulating its brain. Once it goes on a rampage, there is no stopping it."
+    mondexentry SPECIES_SCOVILLAIN,  "The green head has turned vicious due to\nthe spicy chemicals stimulating its\nbrain. Once it goes on a rampage, there\nis no stopping it." 
     mondexclassification SPECIES_SCOVILLAIN, "Spicy Pepper Pokémon"
     mondexheight SPECIES_SCOVILLAIN, "2’11”"
     mondexweight SPECIES_SCOVILLAIN, "33.1 lbs."
@@ -21090,7 +21090,7 @@ mondata SPECIES_RELLOR, "Rellor"
     abilities ABILITY_COMPOUND_EYES, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_RELLOR, "It rolls its mud ball around while the energy it needs for evolution matures. Eventually the time comes for it to evolve."
+    mondexentry SPECIES_RELLOR,  "It rolls its mud ball around while the\nenergy it needs for evolution matures.\nEventually the time comes for it to\nevolve." 
     mondexclassification SPECIES_RELLOR, "Rolling Pokémon"
     mondexheight SPECIES_RELLOR, "0’08”"
     mondexweight SPECIES_RELLOR, "2.2 lbs."
@@ -21111,7 +21111,7 @@ mondata SPECIES_RABSCA, "Rabsca"
     abilities ABILITY_SYNCHRONIZE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_RABSCA, "An infant sleeps inside the ball. Rabsca rolls the ball soothingly with its legs to ensure the infant sleeps comfortably."
+    mondexentry SPECIES_RABSCA,  "An infant sleeps inside the ball. Rabsca\nrolls the ball soothingly with its legs\nto ensure the infant sleeps comfortably." 
     mondexclassification SPECIES_RABSCA, "Rolling Pokémon"
     mondexheight SPECIES_RABSCA, "1’00”"
     mondexweight SPECIES_RABSCA, "7.7 lbs."
@@ -21132,7 +21132,7 @@ mondata SPECIES_FLITTLE, "Flittle"
     abilities ABILITY_ANTICIPATION, ABILITY_FRISK
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0
-    mondexentry SPECIES_FLITTLE, "It spends its time running around wastelands. If anyone steals its beloved berries, it will chase them down and exact its revenge."
+    mondexentry SPECIES_FLITTLE,  "It spends its time running around\nwastelands. If anyone steals its beloved\nberries, it will chase them down and\nexact its revenge." 
     mondexclassification SPECIES_FLITTLE, "Frill Pokémon"
     mondexheight SPECIES_FLITTLE, "0’08”"
     mondexweight SPECIES_FLITTLE, "3.3 lbs."
@@ -21153,7 +21153,7 @@ mondata SPECIES_ESPATHRA, "Espathra"
     abilities ABILITY_OPPORTUNIST, ABILITY_FRISK
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0
-    mondexentry SPECIES_ESPATHRA, "It emits psychic power from the gaps between its multicolored frills and sprints at speeds greater than 120 mph."
+    mondexentry SPECIES_ESPATHRA,  "It emits psychic power from the gaps\nbetween its multicolored frills and\nsprints at speeds greater than 120 mph." 
     mondexclassification SPECIES_ESPATHRA, "Ostrich Pokémon"
     mondexheight SPECIES_ESPATHRA, "6’03”"
     mondexweight SPECIES_ESPATHRA, "198.4 lbs."
@@ -21174,7 +21174,7 @@ mondata SPECIES_TINKATINK, "Tinkatink"
     abilities ABILITY_MOLD_BREAKER, ABILITY_OWN_TEMPO
     runchance 0
     colorflip BODY_COLOR_PINK, 0
-    mondexentry SPECIES_TINKATINK, "This Pokémon pounds iron scraps together to make a hammer. It will remake the hammer again and again until it’s satisfied with the result."
+    mondexentry SPECIES_TINKATINK,  "This Pokémon pounds iron scraps together\nto make a hammer. It will remake the\nhammer again and again until it’s\nsatisfied with the result." 
     mondexclassification SPECIES_TINKATINK, "Metalsmith Pokémon"
     mondexheight SPECIES_TINKATINK, "1’04”"
     mondexweight SPECIES_TINKATINK, "19.6 lbs."
@@ -21195,7 +21195,7 @@ mondata SPECIES_TINKATUFF, "Tinkatuff"
     abilities ABILITY_MOLD_BREAKER, ABILITY_OWN_TEMPO
     runchance 0
     colorflip BODY_COLOR_PINK, 0
-    mondexentry SPECIES_TINKATUFF, "These Pokémon make their homes in piles of scrap metal. They test the strength of each other’s hammers by smashing them together."
+    mondexentry SPECIES_TINKATUFF,  "These Pokémon make their homes in piles\nof scrap metal. They test the strength\nof each other’s hammers by smashing them\ntogether." 
     mondexclassification SPECIES_TINKATUFF, "Hammer Pokémon"
     mondexheight SPECIES_TINKATUFF, "2’04”"
     mondexweight SPECIES_TINKATUFF, "130.3 lbs."
@@ -21216,7 +21216,7 @@ mondata SPECIES_TINKATON, "Tinkaton"
     abilities ABILITY_MOLD_BREAKER, ABILITY_OWN_TEMPO
     runchance 0
     colorflip BODY_COLOR_PINK, 0
-    mondexentry SPECIES_TINKATON, "The hammer tops 220 pounds, yet it gets swung around easily by Tinkaton as it steals whatever it pleases and carries its plunder back home."
+    mondexentry SPECIES_TINKATON,  "The hammer tops 220 pounds, yet it gets\nswung around easily by Tinkaton as it\nsteals whatever it pleases and carries\nits plunder back home." 
     mondexclassification SPECIES_TINKATON, "Hammer Pokémon"
     mondexheight SPECIES_TINKATON, "2’04”"
     mondexweight SPECIES_TINKATON, "248.7 lbs."
@@ -21237,7 +21237,7 @@ mondata SPECIES_WIGLETT, "Wiglett"
     abilities ABILITY_GOOEY, ABILITY_RATTLED
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
-    mondexentry SPECIES_WIGLETT, "Though it looks like Diglett, Wiglett is an entirely different species. The resemblance seems to be a coincidental result of environmental adaptation."
+    mondexentry SPECIES_WIGLETT,  "Though it looks like Diglett, Wiglett is\nan entirely different species. The\nresemblance seems to be a coincidental\nresult of environmental adaptation." 
     mondexclassification SPECIES_WIGLETT, "Garden Eel Pokémon"
     mondexheight SPECIES_WIGLETT, "3’11”"
     mondexweight SPECIES_WIGLETT, "4.0 lbs."
@@ -21258,7 +21258,7 @@ mondata SPECIES_WUGTRIO, "Wugtrio"
     abilities ABILITY_GOOEY, ABILITY_RATTLED
     runchance 0
     colorflip BODY_COLOR_RED, 0
-    mondexentry SPECIES_WUGTRIO, "A variety of fish Pokémon, Wugtrio was once considered to be a regional form of Dugtrio."
+    mondexentry SPECIES_WUGTRIO,  "A variety of fish Pokémon, Wugtrio was\nonce considered to be a regional form of\nDugtrio." 
     mondexclassification SPECIES_WUGTRIO, "Garden Eel Pokémon"
     mondexheight SPECIES_WUGTRIO, "3’11”"
     mondexweight SPECIES_WUGTRIO, "11.9 lbs."
@@ -21279,7 +21279,7 @@ mondata SPECIES_BOMBIRDIER, "Bombirdier"
     abilities ABILITY_BIG_PECKS, ABILITY_KEEN_EYE
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
-    mondexentry SPECIES_BOMBIRDIER, "Bombirdier uses the apron on its chest to bundle up food, which it carries back to its nest. It enjoys dropping things that make loud noises."
+    mondexentry SPECIES_BOMBIRDIER,  "Bombirdier uses the apron on its chest\nto bundle up food, which it carries back\nto its nest. It enjoys dropping things\nthat make loud noises." 
     mondexclassification SPECIES_BOMBIRDIER, "Item Drop Pokémon"
     mondexheight SPECIES_BOMBIRDIER, "4’11”"
     mondexweight SPECIES_BOMBIRDIER, "94.6 lbs."
@@ -21300,7 +21300,7 @@ mondata SPECIES_FINIZEN, "Finizen"
     abilities ABILITY_WATER_VEIL, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_FINIZEN, "Its water ring is made from seawater mixed with a sticky fluid that Finizen secretes from its blowhole."
+    mondexentry SPECIES_FINIZEN,  "Its water ring is made from seawater\nmixed with a sticky fluid that Finizen\nsecretes from its blowhole." 
     mondexclassification SPECIES_FINIZEN, "Dolphin Pokémon"
     mondexheight SPECIES_FINIZEN, "4’03”"
     mondexweight SPECIES_FINIZEN, "132.7 lbs."
@@ -21321,7 +21321,7 @@ mondata SPECIES_PALAFIN, "Palafin"
     abilities ABILITY_ZERO_TO_HERO, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_PALAFIN, "Its physical capabilities are no different than a Finizen’s, but when its allies are in danger, it transforms and powers itself up."
+    mondexentry SPECIES_PALAFIN,  "Its physical capabilities are no\ndifferent than a Finizen’s, but when its\nallies are in danger, it transforms and\npowers itself up." 
     mondexclassification SPECIES_PALAFIN, "Dolphin Pokémon"
     mondexheight SPECIES_PALAFIN, "4’03”"
     mondexweight SPECIES_PALAFIN, "132.7 lbs."
@@ -21342,7 +21342,7 @@ mondata SPECIES_VAROOM, "Varoom"
     abilities ABILITY_OVERCOAT, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_VAROOM, "The steel section is Varoom’s actual body. This Pokémon clings to rocks and converts the minerals within into energy to fuel its activities."
+    mondexentry SPECIES_VAROOM,  "The steel section is Varoom’s actual\nbody. This Pokémon clings to rocks and\nconverts the minerals within into energy\nto fuel its activities." 
     mondexclassification SPECIES_VAROOM, "Single-Cyl Pokémon"
     mondexheight SPECIES_VAROOM, "3’03”"
     mondexweight SPECIES_VAROOM, "77.2 lbs."
@@ -21363,7 +21363,7 @@ mondata SPECIES_REVAVROOM, "Revavroom"
     abilities ABILITY_OVERCOAT, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_REVAVROOM, "Revavroom viciously threatens others with the sound of its exhaust. It sticks its tongue out from its cylindrical mouth and sprays toxic fluids."
+    mondexentry SPECIES_REVAVROOM,  "Revavroom viciously threatens others\nwith the sound of its exhaust. It sticks\nits tongue out from its cylindrical\nmouth and sprays toxic fluids." 
     mondexclassification SPECIES_REVAVROOM, "Multi-Cyl Pokémon"
     mondexheight SPECIES_REVAVROOM, "5’11”"
     mondexweight SPECIES_REVAVROOM, "264.6 lbs."
@@ -21384,7 +21384,7 @@ mondata SPECIES_CYCLIZAR, "Cyclizar"
     abilities ABILITY_SHED_SKIN, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_CYCLIZAR, "It can sprint at over 70 mph while carrying a human. The rider’s body heat warms Cyclizar’s back and lifts the Pokémon’s spirit."
+    mondexentry SPECIES_CYCLIZAR,  "It can sprint at over 70 mph while\ncarrying a human. The rider’s body heat\nwarms Cyclizar’s back and lifts the\nPokémon’s spirit." 
     mondexclassification SPECIES_CYCLIZAR, "Mount Pokémon"
     mondexheight SPECIES_CYCLIZAR, "5’03”"
     mondexweight SPECIES_CYCLIZAR, "138.9 lbs."
@@ -21405,7 +21405,7 @@ mondata SPECIES_ORTHWORM, "Orthworm"
     abilities ABILITY_EARTH_EATER, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_PINK, 0
-    mondexentry SPECIES_ORTHWORM, "This Pokémon lives in arid deserts. It maintains its metal body by consuming iron from the soil."
+    mondexentry SPECIES_ORTHWORM,  "This Pokémon lives in arid deserts. It\nmaintains its metal body by consuming\niron from the soil." 
     mondexclassification SPECIES_ORTHWORM, "Earthworm Pokémon"
     mondexheight SPECIES_ORTHWORM, "8’02”"
     mondexweight SPECIES_ORTHWORM, "683.4 lbs."
@@ -21426,7 +21426,7 @@ mondata SPECIES_GLIMMET, "Glimmet"
     abilities ABILITY_TOXIC_DEBRIS, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_GLIMMET, "Glimmet’s toxic mineral crystals look just like flower petals. This Pokémon scatters poisonous powder like pollen to protect itself."
+    mondexentry SPECIES_GLIMMET,  "Glimmet’s toxic mineral crystals look\njust like flower petals. This Pokémon\nscatters poisonous powder like pollen to\nprotect itself." 
     mondexclassification SPECIES_GLIMMET, "Ore Pokémon"
     mondexheight SPECIES_GLIMMET, "2’04”"
     mondexweight SPECIES_GLIMMET, "17.6 lbs."
@@ -21447,7 +21447,7 @@ mondata SPECIES_GLIMMORA, "Glimmora"
     abilities ABILITY_TOXIC_DEBRIS, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_GLIMMORA, "Glimmora’s petals are made of crystallized poison energy. It has recently become evident that these petals resemble Tera Jewels."
+    mondexentry SPECIES_GLIMMORA,  "Glimmora’s petals are made of\ncrystallized poison energy. It has\nrecently become evident that these\npetals resemble Tera Jewels." 
     mondexclassification SPECIES_GLIMMORA, "Ore Pokémon"
     mondexheight SPECIES_GLIMMORA, "4’11”"
     mondexweight SPECIES_GLIMMORA, "99.2 lbs."
@@ -21468,7 +21468,7 @@ mondata SPECIES_GREAVARD, "Greavard"
     abilities ABILITY_PICKUP, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
-    mondexentry SPECIES_GREAVARD, "This friendly Pokémon doesn’t like being alone. Pay it even the slightest bit of attention, and it will follow you forever."
+    mondexentry SPECIES_GREAVARD,  "This friendly Pokémon doesn’t like being\nalone. Pay it even the slightest bit of\nattention, and it will follow you\nforever." 
     mondexclassification SPECIES_GREAVARD, "Ghost Dog Pokémon"
     mondexheight SPECIES_GREAVARD, "2’00”"
     mondexweight SPECIES_GREAVARD, "77.2 lbs."
@@ -21489,7 +21489,7 @@ mondata SPECIES_HOUNDSTONE, "Houndstone"
     abilities ABILITY_SAND_RUSH, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
-    mondexentry SPECIES_HOUNDSTONE, "A lovingly mourned Pokémon was reborn as Houndstone. It doesn’t like anyone touching the protuberance atop its head."
+    mondexentry SPECIES_HOUNDSTONE,  "A lovingly mourned Pokémon was reborn as\nHoundstone. It doesn’t like anyone\ntouching the protuberance atop its head." 
     mondexclassification SPECIES_HOUNDSTONE, "Ghost Dog Pokémon"
     mondexheight SPECIES_HOUNDSTONE, "6’07”"
     mondexweight SPECIES_HOUNDSTONE, "33.1 lbs."
@@ -21510,7 +21510,7 @@ mondata SPECIES_FLAMIGO, "Flamigo"
     abilities ABILITY_SCRAPPY, ABILITY_TANGLED_FEET
     runchance 0
     colorflip BODY_COLOR_PINK, 0
-    mondexentry SPECIES_FLAMIGO, "Thanks to a behavior of theirs known as “synchronizing,” an entire flock of these Pokémon can attack simultaneously in perfect harmony."
+    mondexentry SPECIES_FLAMIGO,  "Thanks to a behavior of theirs known as\n“synchronizing,” an entire flock of\nthese Pokémon can attack simultaneously\nin perfect harmony." 
     mondexclassification SPECIES_FLAMIGO, "Synchronize Pokémon"
     mondexheight SPECIES_FLAMIGO, "5’03”"
     mondexweight SPECIES_FLAMIGO, "81.6 lbs."
@@ -21531,7 +21531,7 @@ mondata SPECIES_CETODDLE, "Cetoddle"
     abilities ABILITY_THICK_FAT, ABILITY_SNOW_CLOAK
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
-    mondexentry SPECIES_CETODDLE, "It lives in frigid regions in pods of five or so individuals. It loves the minerals found in snow and ice."
+    mondexentry SPECIES_CETODDLE,  "It lives in frigid regions in pods of\nfive or so individuals. It loves the\nminerals found in snow and ice." 
     mondexclassification SPECIES_CETODDLE, "Terra Whale Pokémon"
     mondexheight SPECIES_CETODDLE, "3’11”"
     mondexweight SPECIES_CETODDLE, "99.2 lbs."
@@ -21552,7 +21552,7 @@ mondata SPECIES_CETITAN, "Cetitan"
     abilities ABILITY_THICK_FAT, ABILITY_SLUSH_RUSH
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
-    mondexentry SPECIES_CETITAN, "Ice energy builds up in the horn on its upper jaw, causing the horn to reach cryogenic temperatures that freeze its surroundings."
+    mondexentry SPECIES_CETITAN,  "Ice energy builds up in the horn on its\nupper jaw, causing the horn to reach\ncryogenic temperatures that freeze its\nsurroundings." 
     mondexclassification SPECIES_CETITAN, "Terra Whale Pokémon"
     mondexheight SPECIES_CETITAN, "14’09”"
     mondexweight SPECIES_CETITAN, "1543.2 lbs."
@@ -21573,7 +21573,7 @@ mondata SPECIES_VELUZA, "Veluza"
     abilities ABILITY_MOLD_BREAKER, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_VELUZA, "Veluza has excellent regenerative capabilities. It sheds spare flesh from its body to boost its agility, then charges at its prey."
+    mondexentry SPECIES_VELUZA,  "Veluza has excellent regenerative\ncapabilities. It sheds spare flesh from\nits body to boost its agility, then\ncharges at its prey." 
     mondexclassification SPECIES_VELUZA, "Jettison Pokémon"
     mondexheight SPECIES_VELUZA, "8’02”"
     mondexweight SPECIES_VELUZA, "198.4 lbs."
@@ -21594,7 +21594,7 @@ mondata SPECIES_DONDOZO, "Dondozo"
     abilities ABILITY_UNAWARE, ABILITY_OBLIVIOUS
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_DONDOZO, "It treats Tatsugiri like its boss and follows it loyally. Though powerful, Dondozo is apparently not very smart."
+    mondexentry SPECIES_DONDOZO,  "It treats Tatsugiri like its boss and\nfollows it loyally. Though powerful,\nDondozo is apparently not very smart." 
     mondexclassification SPECIES_DONDOZO, "Big Catfish Pokémon"
     mondexheight SPECIES_DONDOZO, "39’04”"
     mondexweight SPECIES_DONDOZO, "485.0 lbs."
@@ -21615,7 +21615,7 @@ mondata SPECIES_TATSUGIRI, "Tatsugiri"
     abilities ABILITY_COMMANDER, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_PINK, 0
-    mondexentry SPECIES_TATSUGIRI, "Tatsugiri is an extremely cunning Pokémon. It feigns weakness to lure in prey, then orders its partner to attack."
+    mondexentry SPECIES_TATSUGIRI,  "Tatsugiri is an extremely cunning\nPokémon. It feigns weakness to lure in\nprey, then orders its partner to attack." 
     mondexclassification SPECIES_TATSUGIRI, "Mimicry Pokémon"
     mondexheight SPECIES_TATSUGIRI, "1’00”"
     mondexweight SPECIES_TATSUGIRI, "17.6 lbs."
@@ -21636,7 +21636,7 @@ mondata SPECIES_ANNIHILAPE, "Annihilape"
     abilities ABILITY_VITAL_SPIRIT, ABILITY_INNER_FOCUS
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_ANNIHILAPE, "It imbues its fists with the power of the rage that it kept hidden in its heart. Opponents struck by these imbued fists will be shattered to their core."
+    mondexentry SPECIES_ANNIHILAPE,  "It imbues its fists with the power of\nthe rage that it kept hidden in its\nheart. Opponents struck by these imbued\nfists will be shattered to their core." 
     mondexclassification SPECIES_ANNIHILAPE, "Rage Monkey Pokémon"
     mondexheight SPECIES_ANNIHILAPE, "3’11”"
     mondexweight SPECIES_ANNIHILAPE, "123.5 lbs."
@@ -21657,7 +21657,7 @@ mondata SPECIES_CLODSIRE, "Clodsire"
     abilities ABILITY_POISON_POINT, ABILITY_WATER_ABSORB
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_CLODSIRE, "It lives at the bottom of ponds and swamps. It will carry Wooper on its back and ferry them across water from one shore to the other."
+    mondexentry SPECIES_CLODSIRE,  "It lives at the bottom of ponds and\nswamps. It will carry Wooper on its back\nand ferry them across water from one\nshore to the other." 
     mondexclassification SPECIES_CLODSIRE, "Spiny Fish Pokémon"
     mondexheight SPECIES_CLODSIRE, "5’11”"
     mondexweight SPECIES_CLODSIRE, "491.6 lbs."
@@ -21678,7 +21678,7 @@ mondata SPECIES_FARIGIRAF, "Farigiraf"
     abilities ABILITY_CUD_CHEW, ABILITY_ARMOR_TAIL
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_FARIGIRAF, "The hardened head from the tail protects the head of the main body as Farigiraf whips its long neck around to headbutt enemies."
+    mondexentry SPECIES_FARIGIRAF,  "The hardened head from the tail protects\nthe head of the main body as Farigiraf\nwhips its long neck around to headbutt\nenemies." 
     mondexclassification SPECIES_FARIGIRAF, "Long Neck Pokémon"
     mondexheight SPECIES_FARIGIRAF, "10’06”"
     mondexweight SPECIES_FARIGIRAF, "352.7 lbs."
@@ -21699,7 +21699,7 @@ mondata SPECIES_DUDUNSPARCE, "Dudunspars"
     abilities ABILITY_SERENE_GRACE, ABILITY_RUN_AWAY
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0
-    mondexentry SPECIES_DUDUNSPARCE, "It drives enemies out of its nest by sucking in enough air to fill its long, narrow lungs, then releasing the air in an intense blast."
+    mondexentry SPECIES_DUDUNSPARCE,  "It drives enemies out of its nest by\nsucking in enough air to fill its long,\nnarrow lungs, then releasing the air in\nan intense blast." 
     mondexclassification SPECIES_DUDUNSPARCE, "Land Snake Pokémon"
     mondexheight SPECIES_DUDUNSPARCE, "11’10”"
     mondexweight SPECIES_DUDUNSPARCE, "86.4 lbs."
@@ -21720,7 +21720,7 @@ mondata SPECIES_KINGAMBIT, "Kingambit"
     abilities ABILITY_DEFIANT, ABILITY_SUPREME_OVERLORD
     runchance 0
     colorflip BODY_COLOR_BLACK, 0
-    mondexentry SPECIES_KINGAMBIT, "Though it commands a massive army in battle, it’s not skilled at devising complex strategies. It just uses brute strength to keep pushing."
+    mondexentry SPECIES_KINGAMBIT,  "Though it commands a massive army in\nbattle, it’s not skilled at devising\ncomplex strategies. It just uses brute\nstrength to keep pushing." 
     mondexclassification SPECIES_KINGAMBIT, "Big Blade Pokémon"
     mondexheight SPECIES_KINGAMBIT, "6’07”"
     mondexweight SPECIES_KINGAMBIT, "264.6 lbs."
@@ -21741,7 +21741,7 @@ mondata SPECIES_GREAT_TUSK, "Great Tusk"
     abilities ABILITY_PROTOSYNTHESIS, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_PURPLE, 0
-    mondexentry SPECIES_GREAT_TUSK, "This creature resembles a mysterious Pokémon that, according to a paranormal magazine, has lived since ancient times."
+    mondexentry SPECIES_GREAT_TUSK,  "This creature resembles a mysterious\nPokémon that, according to a paranormal\nmagazine, has lived since ancient times." 
     mondexclassification SPECIES_GREAT_TUSK, "Paradox Pokémon"
     mondexheight SPECIES_GREAT_TUSK, "7’03”"
     mondexweight SPECIES_GREAT_TUSK, "705.5 lbs."
@@ -21762,7 +21762,7 @@ mondata SPECIES_SCREAM_TAIL, "ScreamTail"
     abilities ABILITY_PROTOSYNTHESIS, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_PINK, 0
-    mondexentry SPECIES_SCREAM_TAIL, "It resembles a mysterious Pokémon described in a paranormal magazine as a Jigglypuff from one billion years ago."
+    mondexentry SPECIES_SCREAM_TAIL,  "It resembles a mysterious Pokémon\ndescribed in a paranormal magazine as a\nJigglypuff from one billion years ago." 
     mondexclassification SPECIES_SCREAM_TAIL, "Paradox Pokémon"
     mondexheight SPECIES_SCREAM_TAIL, "3’11”"
     mondexweight SPECIES_SCREAM_TAIL, "17.6 lbs."
@@ -21783,7 +21783,7 @@ mondata SPECIES_BRUTE_BONNET, "BruteBonet"
     abilities ABILITY_PROTOSYNTHESIS, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_BRUTE_BONNET, "It bears a slight resemblance to a Pokémon described in a dubious magazine as a cross between a dinosaur and a mushroom."
+    mondexentry SPECIES_BRUTE_BONNET,  "It bears a slight resemblance to a\nPokémon described in a dubious magazine\nas a cross between a dinosaur and a\nmushroom." 
     mondexclassification SPECIES_BRUTE_BONNET, "Paradox Pokémon"
     mondexheight SPECIES_BRUTE_BONNET, "3’11”"
     mondexweight SPECIES_BRUTE_BONNET, "46.3 lbs."
@@ -21804,7 +21804,7 @@ mondata SPECIES_FLUTTER_MANE, "FluttrMane"
     abilities ABILITY_PROTOSYNTHESIS, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_FLUTTER_MANE, "It has similar features to a ghostly pterosaur that was covered in a paranormal magazine, but the two have little else in common."
+    mondexentry SPECIES_FLUTTER_MANE,  "It has similar features to a ghostly\npterosaur that was covered in a\nparanormal magazine, but the two have\nlittle else in common." 
     mondexclassification SPECIES_FLUTTER_MANE, "Paradox Pokémon"
     mondexheight SPECIES_FLUTTER_MANE, "4’07”"
     mondexweight SPECIES_FLUTTER_MANE, "8.8 lbs."
@@ -21825,7 +21825,7 @@ mondata SPECIES_SLITHER_WING, "SlithrWing"
     abilities ABILITY_PROTOSYNTHESIS, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
-    mondexentry SPECIES_SLITHER_WING, "This Pokémon somewhat resembles an ancient form of Volcarona that was introduced in a dubious magazine."
+    mondexentry SPECIES_SLITHER_WING,  "This Pokémon somewhat resembles an\nancient form of Volcarona that was\nintroduced in a dubious magazine." 
     mondexclassification SPECIES_SLITHER_WING, "Paradox Pokémon"
     mondexheight SPECIES_SLITHER_WING, "10’06”"
     mondexweight SPECIES_SLITHER_WING, "202.8 lbs."
@@ -21846,7 +21846,7 @@ mondata SPECIES_SANDY_SHOCKS, "SandyShock"
     abilities ABILITY_PROTOSYNTHESIS, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_SANDY_SHOCKS, "It slightly resembles a Magneton that lived for 10,000 years and was featured in an article in a paranormal magazine."
+    mondexentry SPECIES_SANDY_SHOCKS,  "It slightly resembles a Magneton that\nlived for 10,000 years and was featured\nin an article in a paranormal magazine." 
     mondexclassification SPECIES_SANDY_SHOCKS, "Paradox Pokémon"
     mondexheight SPECIES_SANDY_SHOCKS, "7’07”"
     mondexweight SPECIES_SANDY_SHOCKS, "132.3 lbs."
@@ -21867,7 +21867,7 @@ mondata SPECIES_IRON_TREADS, "IronTreads"
     abilities ABILITY_QUARK_DRIVE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_IRON_TREADS, "Sightings of this Pokémon have occurred in recent years. It resembles a mysterious object described in an old expedition journal."
+    mondexentry SPECIES_IRON_TREADS,  "Sightings of this Pokémon have occurred\nin recent years. It resembles a\nmysterious object described in an old\nexpedition journal." 
     mondexclassification SPECIES_IRON_TREADS, "Paradox Pokémon"
     mondexheight SPECIES_IRON_TREADS, "2’11”"
     mondexweight SPECIES_IRON_TREADS, "529.1 lbs."
@@ -21888,7 +21888,7 @@ mondata SPECIES_IRON_BUNDLE, "IronBundle"
     abilities ABILITY_QUARK_DRIVE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
-    mondexentry SPECIES_IRON_BUNDLE, "It resembles a mysterious object mentioned in an old book. There are only two reported sightings of this Pokémon."
+    mondexentry SPECIES_IRON_BUNDLE,  "It resembles a mysterious object\nmentioned in an old book. There are only\ntwo reported sightings of this Pokémon." 
     mondexclassification SPECIES_IRON_BUNDLE, "Paradox Pokémon"
     mondexheight SPECIES_IRON_BUNDLE, "2’00”"
     mondexweight SPECIES_IRON_BUNDLE, "24.3 lbs."
@@ -21909,7 +21909,7 @@ mondata SPECIES_IRON_HANDS, "Iron Hands"
     abilities ABILITY_QUARK_DRIVE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_IRON_HANDS, "This Pokémon shares many similarities with Iron Hands, an object mentioned in a certain expedition journal."
+    mondexentry SPECIES_IRON_HANDS,  "This Pokémon shares many similarities\nwith Iron Hands, an object mentioned in\na certain expedition journal." 
     mondexclassification SPECIES_IRON_HANDS, "Paradox Pokémon"
     mondexheight SPECIES_IRON_HANDS, "5’11”"
     mondexweight SPECIES_IRON_HANDS, "839.3 lbs."
@@ -21930,7 +21930,7 @@ mondata SPECIES_IRON_JUGULIS, "Iron Neck"
     abilities ABILITY_QUARK_DRIVE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_IRON_JUGULIS, "It’s possible that Iron Jugulis, an object described in an old book, may actually be this Pokémon."
+    mondexentry SPECIES_IRON_JUGULIS,  "It’s possible that Iron Jugulis, an\nobject described in an old book, may\nactually be this Pokémon." 
     mondexclassification SPECIES_IRON_JUGULIS, "Paradox Pokémon"
     mondexheight SPECIES_IRON_JUGULIS, "4’03”"
     mondexweight SPECIES_IRON_JUGULIS, "244.7 lbs."
@@ -21951,7 +21951,7 @@ mondata SPECIES_IRON_MOTH, "Iron Moth"
     abilities ABILITY_QUARK_DRIVE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0
-    mondexentry SPECIES_IRON_MOTH, "No records exist of this species being caught. Data is lacking, but the Pokémon’s traits match up with an object described in an old book."
+    mondexentry SPECIES_IRON_MOTH,  "No records exist of this species being\ncaught. Data is lacking, but the\nPokémon’s traits match up with an object\ndescribed in an old book." 
     mondexclassification SPECIES_IRON_MOTH, "Paradox Pokémon"
     mondexheight SPECIES_IRON_MOTH, "3’11”"
     mondexweight SPECIES_IRON_MOTH, "79.4 lbs."
@@ -21972,7 +21972,7 @@ mondata SPECIES_IRON_THORNS, "Iron Thorn"
     abilities ABILITY_QUARK_DRIVE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_IRON_THORNS, "Some of its notable features match those of an object named within a certain expedition journal as Iron Thorns."
+    mondexentry SPECIES_IRON_THORNS,  "Some of its notable features match those\nof an object named within a certain\nexpedition journal as Iron Thorns." 
     mondexclassification SPECIES_IRON_THORNS, "Paradox Pokémon"
     mondexheight SPECIES_IRON_THORNS, "5’03”"
     mondexweight SPECIES_IRON_THORNS, "668.0 lbs."
@@ -21993,7 +21993,7 @@ mondata SPECIES_FRIGIBAX, "Frigibax"
     abilities ABILITY_THERMAL_EXCHANGE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_FRIGIBAX, "This Pokémon lives in forests and craggy areas. Using the power of its dorsal fin, it cools the inside of its nest like a refrigerator."
+    mondexentry SPECIES_FRIGIBAX,  "This Pokémon lives in forests and craggy\nareas. Using the power of its dorsal\nfin, it cools the inside of its nest\nlike a refrigerator." 
     mondexclassification SPECIES_FRIGIBAX, "Ice Fin Pokémon"
     mondexheight SPECIES_FRIGIBAX, "1’08”"
     mondexweight SPECIES_FRIGIBAX, "37.5 lbs."
@@ -22014,7 +22014,7 @@ mondata SPECIES_ARCTIBAX, "Arctibax"
     abilities ABILITY_THERMAL_EXCHANGE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_ARCTIBAX, "It attacks with the blade of its frozen dorsal fin by doing a front flip in the air. Arctibax’s strong back and legs allow it to pull off this technique."
+    mondexentry SPECIES_ARCTIBAX,  "It attacks with the blade of its frozen\ndorsal fin by doing a front flip in the\nair. Arctibax’s strong back and legs\nallow it to pull off this technique." 
     mondexclassification SPECIES_ARCTIBAX, "Ice Fin Pokémon"
     mondexheight SPECIES_ARCTIBAX, "2’07”"
     mondexweight SPECIES_ARCTIBAX, "66.1 lbs."
@@ -22035,7 +22035,7 @@ mondata SPECIES_BAXCALIBUR, "Baxcalibur"
     abilities ABILITY_THERMAL_EXCHANGE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
-    mondexentry SPECIES_BAXCALIBUR, "It launches itself into battle by flipping upside down and spewing frigid air from its mouth. It finishes opponents off with its dorsal blade."
+    mondexentry SPECIES_BAXCALIBUR,  "It launches itself into battle by\nflipping upside down and spewing frigid\nair from its mouth. It finishes\nopponents off with its dorsal blade." 
     mondexclassification SPECIES_BAXCALIBUR, "Ice Dragon Pokémon"
     mondexheight SPECIES_BAXCALIBUR, "6’11”"
     mondexweight SPECIES_BAXCALIBUR, "463.0 lbs."
@@ -22056,7 +22056,7 @@ mondata SPECIES_GIMMIGHOUL, "Gimmighoul"
     abilities ABILITY_RATTLED, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_GIMMIGHOUL, "It lives inside an old treasure chest. Sometimes it gets left in shop corners since no one realizes it’s actually a Pokémon."
+    mondexentry SPECIES_GIMMIGHOUL,  "It lives inside an old treasure chest.\nSometimes it gets left in shop corners\nsince no one realizes it’s actually a\nPokémon." 
     mondexclassification SPECIES_GIMMIGHOUL, "Coin Chest Pokémon"
     mondexheight SPECIES_GIMMIGHOUL, "1’00”"
     mondexweight SPECIES_GIMMIGHOUL, "11.0 lbs."
@@ -22077,7 +22077,7 @@ mondata SPECIES_GHOLDENGO, "Gholdengo"
     abilities ABILITY_GOOD_AS_GOLD, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0
-    mondexentry SPECIES_GHOLDENGO, "It has a sturdy body made up of stacked coins. Gholdengo overwhelms its enemies by firing coin after coin at them in quick succession."
+    mondexentry SPECIES_GHOLDENGO,  "It has a sturdy body made up of stacked\ncoins. Gholdengo overwhelms its enemies\nby firing coin after coin at them in\nquick succession." 
     mondexclassification SPECIES_GHOLDENGO, "Coin Entity Pokémon"
     mondexheight SPECIES_GHOLDENGO, "3’11”"
     mondexweight SPECIES_GHOLDENGO, "66.1 lbs."
@@ -22098,7 +22098,7 @@ mondata SPECIES_WO_CHIEN, "Wo-Chien"
     abilities ABILITY_TABLETS_OF_RUIN, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_WO_CHIEN, "It drains the life-force from vegetation, causing nearby forests to instantly wither and fields to turn barren."
+    mondexentry SPECIES_WO_CHIEN,  "It drains the life-force from\nvegetation, causing nearby forests to\ninstantly wither and fields to turn\nbarren." 
     mondexclassification SPECIES_WO_CHIEN, "Ruinous Pokémon"
     mondexheight SPECIES_WO_CHIEN, "4’11”"
     mondexweight SPECIES_WO_CHIEN, "163.6 lbs."
@@ -22119,7 +22119,7 @@ mondata SPECIES_CHIEN_PAO, "Chien-Pao"
     abilities ABILITY_SWORD_OF_RUIN, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
-    mondexentry SPECIES_CHIEN_PAO, "The hatred of those who perished by the sword long ago has clad itself in snow and become a Pokémon."
+    mondexentry SPECIES_CHIEN_PAO,  "The hatred of those who perished by the\nsword long ago has clad itself in snow\nand become a Pokémon." 
     mondexclassification SPECIES_CHIEN_PAO, "Ruinous Pokémon"
     mondexheight SPECIES_CHIEN_PAO, "6’03”"
     mondexweight SPECIES_CHIEN_PAO, "335.5 lbs."
@@ -22140,7 +22140,7 @@ mondata SPECIES_TING_LU, "Ting-Lu"
     abilities ABILITY_VESSEL_OF_RUIN, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
-    mondexentry SPECIES_TING_LU, "It slowly brings its exceedingly heavy head down upon the ground, splitting the earth open with huge fissures that run over 160 feet deep."
+    mondexentry SPECIES_TING_LU,  "It slowly brings its exceedingly heavy\nhead down upon the ground, splitting the\nearth open with huge fissures that run\nover 160 feet deep." 
     mondexclassification SPECIES_TING_LU, "Ruinous Pokémon"
     mondexheight SPECIES_TING_LU, "8’10”"
     mondexweight SPECIES_TING_LU, "1542.6 lbs."
@@ -22161,7 +22161,7 @@ mondata SPECIES_CHI_YU, "Chi-Yu"
     abilities ABILITY_BEADS_OF_RUIN, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
-    mondexentry SPECIES_CHI_YU, "The envy accumulated within curved beads that sparked multiple conflicts has clad itself in fire and become a Pokémon."
+    mondexentry SPECIES_CHI_YU,  "The envy accumulated within curved beads\nthat sparked multiple conflicts has clad\nitself in fire and become a Pokémon." 
     mondexclassification SPECIES_CHI_YU, "Ruinous Pokémon"
     mondexheight SPECIES_CHI_YU, "1’04”"
     mondexweight SPECIES_CHI_YU, "10.8 lbs."
@@ -22182,7 +22182,7 @@ mondata SPECIES_ROARING_MOON, "Roar Moon"
     abilities ABILITY_PROTOSYNTHESIS, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
-    mondexentry SPECIES_ROARING_MOON, "According to an article in a dubious magazine, this Pokémon has some connection to a phenomenon that occurs in a certain region."
+    mondexentry SPECIES_ROARING_MOON,  "According to an article in a dubious\nmagazine, this Pokémon has some\nconnection to a phenomenon that occurs\nin a certain region." 
     mondexclassification SPECIES_ROARING_MOON, "Paradox Pokémon"
     mondexheight SPECIES_ROARING_MOON, "6’07”"
     mondexweight SPECIES_ROARING_MOON, "837.8 lbs."
@@ -22203,7 +22203,7 @@ mondata SPECIES_IRON_VALIANT, "Iron Valor"
     abilities ABILITY_QUARK_DRIVE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
-    mondexentry SPECIES_IRON_VALIANT, "It’s possible that this is the object listed as Iron Valiant in a certain expedition journal."
+    mondexentry SPECIES_IRON_VALIANT,  "It’s possible that this is the object\nlisted as Iron Valiant in a certain\nexpedition journal." 
     mondexclassification SPECIES_IRON_VALIANT, "Paradox Pokémon"
     mondexheight SPECIES_IRON_VALIANT, "4’07”"
     mondexweight SPECIES_IRON_VALIANT, "77.2 lbs."
@@ -22224,7 +22224,7 @@ mondata SPECIES_KORAIDON, "Koraidon"
     abilities ABILITY_ORICHALCUM_PULSE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
-    mondexentry SPECIES_KORAIDON, "This Pokémon resembles Cyclizar, but it is far burlier and more ferocious. Nothing is known about its ecology or other features."
+    mondexentry SPECIES_KORAIDON,  "This Pokémon resembles Cyclizar, but it\nis far burlier and more ferocious.\nNothing is known about its ecology or\nother features." 
     mondexclassification SPECIES_KORAIDON, "Paradox Pokémon"
     mondexheight SPECIES_KORAIDON, "8’02”"
     mondexweight SPECIES_KORAIDON, "668.0 lbs."
@@ -22245,7 +22245,7 @@ mondata SPECIES_MIRAIDON, "Miraidon"
     abilities ABILITY_HADRON_ENGINE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
-    mondexentry SPECIES_MIRAIDON, "This seems to be the Iron Serpent mentioned in an old book. The Iron Serpent is said to have turned the land to ash with its lightning."
+    mondexentry SPECIES_MIRAIDON,  "This seems to be the Iron Serpent\nmentioned in an old book. The Iron\nSerpent is said to have turned the land\nto ash with its lightning." 
     mondexclassification SPECIES_MIRAIDON, "Paradox Pokémon"
     mondexheight SPECIES_MIRAIDON, "11’06”"
     mondexweight SPECIES_MIRAIDON, "529.1 lbs."
