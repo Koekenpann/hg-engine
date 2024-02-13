@@ -56,7 +56,7 @@ Pokémon can’t attack\non consecutive turns.
 Boosts the Attack stat,\nbut lowers accuracy.
 Contact with the Pokémon\nmay cause infatuation.
 Ups Sp. Atk if another\nPokémon has Minus.
-Ups Sp. Atk if another\nPokémon has Plus.
+Gives the Pokémon full\nimmunity to status moves.
 CASTFORM transforms with\nthe weather.
 Protects the Pokémon\nfrom item theft.
 The Pokémon may heal its\nown status problems.
@@ -79,7 +79,7 @@ Raises evasion if the\nPokémon is confused.
 Raises Speed if hit by an\nElectric-type move.
 Raises Attack if the foe\nis of the same gender.
 Raises Speed each time\nthe Pokémon flinches.
-Raises evasion in a\nhailstorm.
+Raises evasion in \nsnow.
 Encourages the early use\nof a held Berry.
 Raises Attack upon\ntaking a critical hit.
 Raises Speed if a held\nitem is used.
@@ -113,9 +113,9 @@ Reduces damage from\nsupereffective attacks.
 Temporarily halves\nAttack and Speed.
 Enables moves to hit\nGhost-type foes.
 The Pokémon draws in all\nWater-type moves.
-The Pokémon regains HP in\na hailstorm.
+The Pokémon regains HP in\nsnow.
 Reduces damage from\nsupereffective attacks
-The Pokémon summons a\nhailstorm in battle.
+The Pokémon makes it\nsnow in battle.
 The Pokémon may gather\nHoney from somewhere.
 The Pokémon can check\nthe foe’s held item.
 Powers up moves that\nhave recoil damage.
@@ -144,11 +144,11 @@ Protects the Pokémon from\ndamage from weather.
 May poison targets when\na Pokémon makes contact.
 Restores a little HP when\nwithdrawn from battle.
 Protects from\nDefense-lowering attacks.
-Boosts the Pokémon’s Speed\nin a sandstorm.
+Boosts the Pokémon’s\nSpeed in a sandstorm.
 Makes status-changing moves\nmore likely to miss.
 Boosts move power when\nthe Pokémon moves last.
 Comes out disguised as the\nPokémon in back.
-It transforms itself into\nthe Pokémon it is facing.
+Transforms itself into the\nPokémon it is facing.
 Passes through the foe’s\nbarrier and strikes.
 Contact with this Pokémon\nspreads this Ability.
 Boosts Attack after\nknocking out any Pokémon.
@@ -166,7 +166,7 @@ Moves can be used\nregardless of Abilities.
 Protects against attacks\nthat limit move choices.
 Protects Grass-type allies\nfrom stat/status effects.
 Restores HP as well when\nthe Pokémon eats a Berry.
-It changes type to that\nof the move it’s about to use.
+Changes type to that of\nthe move it’s about to use.
 Halves the damage from\nphysical moves.
 Steals the held item of\na Pokémon it hits.
 Protects the Pokémon from\nsome ball and bomb moves.
@@ -200,7 +200,7 @@ Deals doubles damage to\na target’s replacement.
 Weakens incoming Fire-type\nmoves and prevents burns.
 Powers up\nSteel-type moves.
 Ups Sp. Atk if a hit\nmakes its HP half or less.
-Boosts the Pokémon’s\nSpeed stat in a hailstorm.
+Boosts the Pokémon’s\nSpeed stat in snow.
 Uses moves without\nmaking contact with the target.
 Its sound-based moves\nbecome Water-type.
 Gives priority to\na healing move.
@@ -234,7 +234,7 @@ Reduces damage from\nsuper-effective attacks.
 Powers up moves that\nare super-effective.
 Boosts Attack when\nentering a battle.
 Boosts Defense when\nentering a battle.
-It changes type to that\nof the move it’s about to use.
+Changes type to that of\nthe move it’s about to use.
 Retrieves the first\nthrown Poké Ball if it failed.
 Scatters Speed-lowering\ncotton fluff when hit.
 This Pokémon’s\nmoves cannot be redirected.

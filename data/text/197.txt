@@ -699,9 +699,9 @@ The foe’s {STRVAR_1 1, 0, 0}’s\n{STRVAR_1 5, 1, 0} whipped up\fa sandstorm!
 {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\nintensified the sun’s rays!
 The wild {STRVAR_1 1, 0, 0}’s\n{STRVAR_1 5, 1, 0} intensified\fthe sun’s rays!
 The foe’s {STRVAR_1 1, 0, 0}’s\n{STRVAR_1 5, 1, 0} intensified\fthe sun’s rays!
-{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\nwhipped up a hailstorm!
-The wild {STRVAR_1 1, 0, 0}’s\n{STRVAR_1 5, 1, 0} whipped up\fa hailstorm!
-The foe’s {STRVAR_1 1, 0, 0}’s\n{STRVAR_1 5, 1, 0} whipped up\fa hailstorm!
+{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\nmakes it snow!
+The wild {STRVAR_1 1, 0, 0}’s\n{STRVAR_1 5, 1, 0} makes it\fsnow!
+The foe’s {STRVAR_1 1, 0, 0}’s\n{STRVAR_1 5, 1, 0} makes it\fsnow!
 {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\nprevents {STRVAR_1 13, 2, 0} loss!
 The wild {STRVAR_1 1, 0, 0}’s\n{STRVAR_1 5, 1, 0} prevents\f{STRVAR_1 13, 2, 0} loss!
 The foe’s {STRVAR_1 1, 0, 0}’s\n{STRVAR_1 5, 1, 0} prevents\f{STRVAR_1 13, 2, 0} loss!
@@ -808,9 +808,9 @@ The sandstorm subsided.
 The sunlight turned harsh!
 The sunlight is strong.
 The sunlight faded.
-It started to hail!
-Hail continues to fall.
-The hail stopped.
+It started to snow!
+Snow continues to fall.
+The snow stopped.
 The fog is deep...
 But it failed to spit up a thing!
 But it failed to swallow a thing!
@@ -1410,3 +1410,15 @@ The foe’s {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\nweakened the Attack of al
 {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0} weakened\nthe Sp. Def of all surrounding\fPokémon!
 The wild {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\nweakened the Sp. Def of all\fsurrounding Pokémon!
 The foe’s {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\nweakened the Sp. Def of all\fsurrounding Pokémon!
+{STRVAR_1 1, 0, 0} is preparing to tell\na chillingly bad joke!
+The wild {STRVAR_1 1, 0, 0} is preparing\nto tell a chillingly bad joke!
+The foe’s {STRVAR_1 1, 0, 0} is preparing\nto tell a chillingly bad joke!
+{STRVAR_1 1, 0, 0} shed its tail to\ncreate a decoy!
+The wild {STRVAR_1 1, 0, 0} shed its tail to\ncreate a decoy!
+The foe’s {STRVAR_1 1, 0, 0} shed its tail to\ncreate a decoy!
+{STRVAR_1 1, 0, 0} is overflowing\nwith space power!
+The wild {STRVAR_1 1, 0, 0} is overflowing\nwith space power!
+The foe’s {STRVAR_1 1, 0, 0} is overflowing\nwith space power!
+{STRVAR_1 1, 0, 0} absorbed\nelectricity!
+The wild {STRVAR_1 1, 0, 0} absorbed\nelectricity!
+The foe’s {STRVAR_1 1, 0, 0} absorbed\nelectricity!
