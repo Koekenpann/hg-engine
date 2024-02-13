@@ -9,26 +9,23 @@
 
 .create "build/move/move_anim/0_883", 0
 
+// Shed Tail
+// Acid Armor + Slam/Poison Tail/Iron Tail on self
+
 a010_883:
-    loadparticlefromspa 0, 486
+    cmd1F 0x0, 0
+    loadparticlefromspa 0, 173  // Acid Armor
+    waitparticle
+    loadparticlefromspa 1, 360  // Poison Tail 
     waitparticle
 
-    addparticle 0, 2, 3
-    addparticle 0, 1, 3
-    addparticle 0, 1, 3
-    addparticle 0, 0, 3
-    wait 10
-
-    addparticle 0, 1, 3
-    addparticle 0, 1, 3
-    wait 10
-
-    addparticle 0, 2, 3
-    addparticle 0, 0, 3
-    waitparticle
-
-    unloadparticle 0
+    callfunction 12, 0, "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN", "NaN" // Acid Armor animation
+    playsepan 1856, -117
     waitstate
+    cmd20 0
+
+    playsepan 2124, 117
+    addparticle 1, 2, 3
     end
     
 

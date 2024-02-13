@@ -171,6 +171,9 @@ u16 move_effect_to_subscripts[] =
     [ADD_STATUS_EFF_WORK_UP]                     = SUB_SEQ_WORK_UP,
     [ADD_STATUS_EFF_SPICY_EXTRACT]               = SUB_SEQ_SPICY_EXTRACT,
     [ADD_STATUS_EFF_FILLET_AWAY]                 = SUB_SEQ_FILLET_AWAY,
+    [159]           = 353,                       // Aurora Veil
+    [160]           = 354,                       // Chilly Reception
+    [161]           = 355,                       // Shed Tail
 };
 
 

@@ -10,6 +10,7 @@
 .create "build/move/battle_eff_seq/0_164", 0
 
 a030_164:
+    if IF_EQUAL, VAR_CURRENT_MOVE, MOVE_CHILLY_RECEPTION, _ChillyReception 
     if IF_MASK, VAR_FIELD_EFFECT, 0x40, _0094
     preparemessage 0x32A, 0x0, "NaN", "NaN", "NaN", "NaN", "NaN", "NaN"
     changevar VAR_OP_CLEARMASK, VAR_FIELD_EFFECT, 0x80FF
@@ -23,6 +24,9 @@ _0090:
     endscript
 _0094:
     changevar VAR_OP_SETMASK, VAR_MOVE_STATUS, 0x40
+    endscript
+_ChillyReception:
+    changevar VAR_OP_SET, VAR_ADD_STATUS1, ADD_STATUS_WORK | 160
     endscript
 
 .close
