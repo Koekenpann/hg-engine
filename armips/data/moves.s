@@ -13146,7 +13146,7 @@ movedata MOVE_WICKED_BLOW, "Wicked Blow"
     movedescription MOVE_WICKED_BLOW, "The user strikes the\ntarget with a fierce\nblow.\nIt always lands\na critical hit."
 
 movedata MOVE_SURGING_STRIKES, "Surging Strikes"
-    battleeffect 305
+    battleeffect 304
     pss SPLIT_PHYSICAL
     basepower 25
     type TYPE_WATER
