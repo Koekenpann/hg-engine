@@ -14843,20 +14843,20 @@ movedata MOVE_IVY_CUDGEL, "Ivy Cudgel"
     movedescription MOVE_IVY_CUDGEL, "---"
 
 movedata MOVE_ELECTRO_SHOT, "Electro Shot"
-    battleeffect 0
+    battleeffect 305
     pss SPLIT_SPECIAL
     basepower 130
     type TYPE_ELECTRIC
     accuracy 100
     pp 10
-    effectchance 0
+    effectchance 100
     target MOVE_TARGET_SELECTED
     priority 0
     flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_ELECTRO_SHOT, "---"
+    movedescription MOVE_ELECTRO_SHOT, "The user gathers\nelectricity to raise\nits Sp. Atk, then\nfires a high-voltage\nshot on the next turn."
 
 movedata MOVE_TERA_STARSTORM, "Tera Starstorm"
     battleeffect 0
