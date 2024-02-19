@@ -1429,7 +1429,7 @@ trainerdata 33, "Jasmine"
     endparty
 
 trainerdata 34, "Chuck"
-    trainermontype TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_MOVES
+    trainermontype TRAINER_MON_TYPE_FLAGS
     trainerclass CLASS_LEADER_3
     nummons 4
     item ITEM_NONE
@@ -11227,10 +11227,10 @@ trainerdata 303, "Jose"
         ballseal 0
     endparty
 
-trainerdata 304, "Mickey"
-    trainermontype TRAINER_DATA_TYPE_NOTHING
-    trainerclass CLASS_CAMPER
-    nummons 4
+trainerdata 304, "Jasmine"
+    trainermontype TRAINER_MON_TYPE_FLAGS
+    trainerclass CLASS_LEADER_2
+    nummons 5
     item ITEM_NONE
     item ITEM_NONE
     item ITEM_NONE
@@ -11243,35 +11243,97 @@ trainerdata 304, "Mickey"
         // mon 0
         ivs 0
         abilityslot 0
-        level 33
-        pokemon SPECIES_GRAVELER
+        level LEVEL_PRYCE
+        pokemon SPECIES_SKARMORY
+        item ITEM_CUSTAP_BERRY
+        move MOVE_SPIKES
+        move MOVE_STEALTH_ROCK
+        move MOVE_ROOST
+        move MOVE_DRILL_PECK
+        ability ABILITY_STURDY
+        ball ITEM_POKE_BALL
+        setivs 31, 31, 31, 31, 31, 31
+        setevs 0, 0, 0, 0, 0, 0
+        nature NATURE_HARDY
+        shinylock 0
         ballseal 0
 
         // mon 1
         ivs 0
         abilityslot 0
-        level 36
-        pokemon SPECIES_GRAVELER
+        level LEVEL_PRYCE
+        pokemon SPECIES_GHOLDENGO
+        item ITEM_OCCA_BERRY
+        move MOVE_SHADOW_BALL
+        move MOVE_FLASH_CANNON
+        move MOVE_NASTY_PLOT
+        move MOVE_THUNDERBOLT
+        ability ABILITY_GOOD_AS_GOLD
+        ball ITEM_POKE_BALL
+        setivs 31, 0, 31, 31, 31, 31
+        setevs 4, 0, 0, 252, 252, 0
+        nature NATURE_HARDY
+        shinylock 0
         ballseal 0
 
         // mon 2
         ivs 0
         abilityslot 0
-        level 40
-        pokemon SPECIES_GOLBAT
+        level LEVEL_PRYCE
+        pokemon SPECIES_MAGNEZONE
+        item ITEM_AIR_BALLOON
+        move MOVE_THUNDER
+        move MOVE_FLASH_CANNON
+        move MOVE_MAGNET_RISE
+        move MOVE_RAIN_DANCE
+        ability ABILITY_STURDY
+        ball ITEM_POKE_BALL
+        setivs 31, 0, 31, 31, 31, 31
+        setevs 4, 0, 0, 252, 252, 0
+        nature NATURE_HARDY
+        shinylock 0
         ballseal 0
 
         // mon 3
         ivs 0
         abilityslot 0
-        level 42
-        pokemon SPECIES_GOLDUCK
+        level LEVEL_PRYCE
+        pokemon SPECIES_STEELIX
+        item ITEM_STEELIXITE
+        move MOVE_HEAVY_SLAM
+        move MOVE_EARTHQUAKE
+        move MOVE_IRON_DEFENSE
+        move MOVE_BODY_PRESS
+        ability ABILITY_STURDY
+        ball ITEM_POKE_BALL
+        setivs 31, 31, 31, 31, 31, 31
+        setevs 252, 4, 252, 0, 0, 0
+        nature NATURE_HARDY
+        shinylock 0
+        ballseal 0
+
+        // mon 4
+        ivs 0
+        abilityslot 0
+        level LEVEL_PRYCE
+        pokemon SPECIES_METAGROSS
+        item ITEM_ASSAULT_VEST
+        move MOVE_HEAVY_SLAM
+        move MOVE_PSYCHIC_FANGS
+        move MOVE_EARTHQUAKE
+        move MOVE_BULLET_PUNCH
+        ability ABILITY_CLEAR_BODY
+        ball ITEM_POKE_BALL
+        setivs 31, 31, 31, 31, 31, 31
+        setevs 252, 252, 0, 0, 0, 4
+        nature NATURE_ADAMANT
+        shinylock 0
         ballseal 0
     endparty
 
-trainerdata 305, "Mickey"
-    trainermontype TRAINER_DATA_TYPE_NOTHING
-    trainerclass CLASS_CAMPER
+trainerdata 305, "Chuck"
+    trainermontype TRAINER_MON_TYPE_FLAGS
+    trainerclass CLASS_LEADER_3
     nummons 4
     item ITEM_NONE
     item ITEM_NONE
@@ -11281,39 +11343,83 @@ trainerdata 305, "Mickey"
     battletype SINGLE_BATTLE
     endentry
 
-    party 305
+    party 34
         // mon 0
         ivs 0
         abilityslot 0
-        level 33
-        pokemon SPECIES_GRAVELER
+        level LEVEL_JASMINE
+        pokemon SPECIES_HITMONTOP
+        item ITEM_ASSAULT_VEST
+        move MOVE_FAKE_OUT
+        move MOVE_CLOSE_COMBAT
+        move MOVE_MACH_PUNCH
+        move MOVE_TRIPLE_AXEL
+        ability ABILITY_INTIMIDATE
+        ball ITEM_POKE_BALL
+        setivs 31, 31, 31, 31, 31, 31
+        setevs 0, 0, 0, 0, 0, 0
+        nature NATURE_IMPISH
+        shinylock 0
         ballseal 0
 
         // mon 1
         ivs 0
         abilityslot 0
-        level 36
-        pokemon SPECIES_GRAVELER
+        level LEVEL_JASMINE
+        pokemon SPECIES_ANNIHILAPE
+        item ITEM_LEFTOVERS
+        move MOVE_RAGE_FIST
+        move MOVE_DRAIN_PUNCH
+        move MOVE_BULK_UP
+        move MOVE_TAUNT
+        ability ABILITY_DEFIANT
+        ball ITEM_POKE_BALL
+        setivs 31, 31, 31, 31, 31, 31
+        setevs 0, 0, 0, 0, 0, 0
+        nature NATURE_CAREFUL
+        shinylock 0
         ballseal 0
 
         // mon 2
         ivs 0
         abilityslot 0
-        level 40
-        pokemon SPECIES_GOLBAT
+        level LEVEL_JASMINE
+        pokemon SPECIES_MEDICHAM
+        item ITEM_MEDICHAMITE
+        move MOVE_CLOSE_COMBAT
+        move MOVE_ZEN_HEADBUTT
+        move MOVE_FAKE_OUT
+        move MOVE_ICE_PUNCH
+        ability ABILITY_PURE_POWER
+        ball ITEM_POKE_BALL
+        setivs 31, 31, 31, 31, 31, 31
+        setevs 0, 0, 0, 0, 0, 0
+        nature NATURE_ADAMANT
+        shinylock 1
         ballseal 0
 
         // mon 3
         ivs 0
         abilityslot 0
-        level 42
-        pokemon SPECIES_GOLDUCK
+        level LEVEL_JASMINE
+        pokemon SPECIES_POLIWRATH
+        item ITEM_SITRUS_BERRY
+        move MOVE_LIQUIDATION
+        move MOVE_CLOSE_COMBAT
+        move MOVE_DARKEST_LARIAT
+        move MOVE_ICE_PUNCH
+        ability ABILITY_WATER_ABSORB
+        ball ITEM_POKE_BALL
+        setivs 31, 31, 31, 31, 31, 31
+        setevs 0, 0, 0, 0, 0, 0
+        nature NATURE_ADAMANT
+        shinylock 0
         ballseal 0
     endparty
 
-trainerdata 306, "Mickey"
-    trainermontype TRAINER_DATA_TYPE_NOTHING
-    trainerclass CLASS_CAMPER
+trainerdata 306, "Pryce"
+    trainermontype TRAINER_MON_TYPE_FLAGS
+    trainerclass CLASS_LEADER_1
     nummons 4
     item ITEM_NONE
     item ITEM_NONE
@@ -11323,39 +11429,83 @@ trainerdata 306, "Mickey"
     battletype SINGLE_BATTLE
     endentry
 
-    party 306
+    party 32
         // mon 0
         ivs 0
         abilityslot 0
-        level 33
-        pokemon SPECIES_GRAVELER
+        level LEVEL_CHUCK
+        monwithform SPECIES_NINETALES, 1
+        item ITEM_LIGHT_CLAY
+        move MOVE_AURORA_VEIL
+        move MOVE_FREEZE_DRY
+        move MOVE_MOONBLAST
+        move MOVE_BLIZZARD
+        ability ABILITY_SNOW_WARNING
+        ball ITEM_POKE_BALL
+        setivs 31, 0, 31, 31, 31, 31
+        setevs 252, 0, 0, 252, 4, 0
+        nature NATURE_TIMID
+        shinylock 1
         ballseal 0
 
         // mon 1
         ivs 0
         abilityslot 0
-        level 36
-        pokemon SPECIES_GRAVELER
+        level LEVEL_CHUCK
+        pokemon SPECIES_MAMOSWINE
+        item ITEM_LIFE_ORB
+        move MOVE_ICICLE_CRASH
+        move MOVE_EARTHQUAKE
+        move MOVE_ICE_SHARD
+        move MOVE_TRAILBLAZE
+        ability ABILITY_THICK_FAT
+        ball ITEM_POKE_BALL
+        setivs 31, 31, 31, 31, 31, 31
+        setevs 0, 252, 0, 252, 0, 4
+        nature NATURE_ADAMANT
+        shinylock 0
         ballseal 0
 
         // mon 2
         ivs 0
         abilityslot 0
-        level 40
-        pokemon SPECIES_GOLBAT
+        level LEVEL_CHUCK
+        pokemon SPECIES_IRON_BUNDLE
+        item ITEM_BOOSTER_ENERGY
+        move MOVE_HYDRO_PUMP
+        move MOVE_FREEZE_DRY
+        move MOVE_BLIZZARD
+        move MOVE_ICY_WIND
+        ability ABILITY_QUARK_DRIVE
+        ball ITEM_POKE_BALL
+        setivs 31, 0, 31, 31, 31, 31
+        setevs 0, 0, 0, 252, 252, 4
+        nature NATURE_MODEST
+        shinylock 0
         ballseal 0
 
         // mon 3
         ivs 0
         abilityslot 0
-        level 42
-        pokemon SPECIES_GOLDUCK
+        level LEVEL_CHUCK
+        pokemon SPECIES_GLALIE
+        item ITEM_GLALITITE
+        move MOVE_RETURN
+        move MOVE_FREEZE_DRY
+        move MOVE_ICE_SHARD
+        move MOVE_EARTHQUAKE
+        ability ABILITY_ICE_BODY
+        ball ITEM_POKE_BALL
+        setivs 31, 31, 31, 31, 31, 31
+        setevs 0, 252, 0, 252, 4, 0
+        nature NATURE_NAIVE
+        shinylock 0
         ballseal 0
     endparty
 
-trainerdata 307, "Mickey"
-    trainermontype TRAINER_DATA_TYPE_NOTHING
-    trainerclass CLASS_CAMPER
+trainerdata 307, "Pryce"
+    trainermontype TRAINER_MON_TYPE_FLAGS
+    trainerclass CLASS_LEADER_1
     nummons 4
     item ITEM_NONE
     item ITEM_NONE
@@ -11365,33 +11515,77 @@ trainerdata 307, "Mickey"
     battletype SINGLE_BATTLE
     endentry
 
-    party 307
+    party 32
         // mon 0
         ivs 0
         abilityslot 0
-        level 33
-        pokemon SPECIES_GRAVELER
+        level LEVEL_JASMINE
+        monwithform SPECIES_NINETALES, 1
+        item ITEM_LIGHT_CLAY
+        move MOVE_AURORA_VEIL
+        move MOVE_FREEZE_DRY
+        move MOVE_MOONBLAST
+        move MOVE_BLIZZARD
+        ability ABILITY_SNOW_WARNING
+        ball ITEM_POKE_BALL
+        setivs 31, 0, 31, 31, 31, 31
+        setevs 252, 0, 0, 252, 4, 0
+        nature NATURE_TIMID
+        shinylock 1
         ballseal 0
 
         // mon 1
         ivs 0
         abilityslot 0
-        level 36
-        pokemon SPECIES_GRAVELER
+        level LEVEL_JASMINE
+        pokemon SPECIES_MAMOSWINE
+        item ITEM_LIFE_ORB
+        move MOVE_ICICLE_CRASH
+        move MOVE_EARTHQUAKE
+        move MOVE_ICE_SHARD
+        move MOVE_TRAILBLAZE
+        ability ABILITY_THICK_FAT
+        ball ITEM_POKE_BALL
+        setivs 31, 31, 31, 31, 31, 31
+        setevs 0, 252, 0, 252, 0, 4
+        nature NATURE_ADAMANT
+        shinylock 0
         ballseal 0
 
         // mon 2
         ivs 0
         abilityslot 0
-        level 40
-        pokemon SPECIES_GOLBAT
+        level LEVEL_JASMINE
+        pokemon SPECIES_IRON_BUNDLE
+        item ITEM_BOOSTER_ENERGY
+        move MOVE_HYDRO_PUMP
+        move MOVE_FREEZE_DRY
+        move MOVE_BLIZZARD
+        move MOVE_ICY_WIND
+        ability ABILITY_QUARK_DRIVE
+        ball ITEM_POKE_BALL
+        setivs 31, 0, 31, 31, 31, 31
+        setevs 0, 0, 0, 252, 252, 4
+        nature NATURE_MODEST
+        shinylock 0
         ballseal 0
 
         // mon 3
         ivs 0
         abilityslot 0
-        level 42
-        pokemon SPECIES_GOLDUCK
+        level LEVEL_JASMINE
+        pokemon SPECIES_GLALIE
+        item ITEM_GLALITITE
+        move MOVE_RETURN
+        move MOVE_FREEZE_DRY
+        move MOVE_ICE_SHARD
+        move MOVE_EARTHQUAKE
+        ability ABILITY_ICE_BODY
+        ball ITEM_POKE_BALL
+        setivs 31, 31, 31, 31, 31, 31
+        setevs 0, 252, 0, 252, 4, 0
+        nature NATURE_NAIVE
+        shinylock 0
         ballseal 0
     endparty
 
