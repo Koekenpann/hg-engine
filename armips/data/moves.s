@@ -12858,7 +12858,7 @@ movedata MOVE_SCALE_SHOT, "Scale Shot"
     movedescription MOVE_SCALE_SHOT, "---"
 
 movedata MOVE_METEOR_BEAM, "Meteor Beam"
-    battleeffect 0
+    battleeffect 306
     pss SPLIT_SPECIAL
     basepower 120
     type TYPE_ROCK
