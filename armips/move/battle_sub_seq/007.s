@@ -20,22 +20,22 @@ _0030:
     if IF_NOTMASK, VAR_MOVE_STATUS, 0x10000, _004C
     goto _0278
 _004C:
-    if IF_NOTMASK, VAR_MOVE_STATUS, 0x8000, _0118
-    if IF_EQUAL, VAR_CURRENT_MOVE, 0xAD, _00EC
-    if IF_EQUAL, VAR_CURRENT_MOVE, 0xAB, _00EC
-    if IF_EQUAL, VAR_CURRENT_MOVE, 0x176, _00EC
-    if IF_EQUAL, VAR_CURRENT_MOVE, 0x183, _00EC
-    if IF_EQUAL, VAR_CURRENT_MOVE, 0x177, _00EC
-    if IF_EQUAL, VAR_CURRENT_MOVE, 0xFC, _00EC
-    if IF_NOTEQUAL, VAR_CURRENT_MOVE, 0x16B, _0100
+    if IF_NOTMASK, VAR_MOVE_STATUS, 0x8000, _0118 // MOVE_STATUS_FLAG_PROTECTED
+    if IF_EQUAL, VAR_CURRENT_MOVE, 0xAD, _00EC // Snore 
+    if IF_EQUAL, VAR_CURRENT_MOVE, 0xAB, _00EC // Nightmare 
+    if IF_EQUAL, VAR_CURRENT_MOVE, 0x176, _00EC // Fling
+    if IF_EQUAL, VAR_CURRENT_MOVE, 0x183, _00EC // Last Resort 
+    if IF_EQUAL, VAR_CURRENT_MOVE, 0x177, _00EC // Psycho Shift 
+    if IF_EQUAL, VAR_CURRENT_MOVE, 0xFC, _00EC // Fake Out 
+    if IF_NOTEQUAL, VAR_CURRENT_MOVE, 0x16B, _0100 // Natural Gift 
 _00EC:
     if IF_MASK, VAR_MOVE_STATUS, 0x40, _0188
 _0100:
-    printmessage 0xF, 0x2, 0x2, "NaN", "NaN", "NaN", "NaN", "NaN"
+    printmessage 0xF, 0x2, 0x2, "NaN", "NaN", "NaN", "NaN", "NaN" // {STRVAR_1 1, 0, 0}\nprotected itself!
     goto _02D0
 _0118:
     if IF_NOTMASK, VAR_MOVE_STATUS, 0x800, _0148
-    printmessage 0x15, 0xB, 0x2, 0x2, "NaN", "NaN", "NaN", "NaN"
+    printmessage 0x15, 0xB, 0x2, 0x2, "NaN", "NaN", "NaN", "NaN" // {STRVAR_1 1, 0, 0} avoided damage\nby using {STRVAR_1 5, 1, 0}!
     goto _02D0
 _0148:
     if IF_NOTMASK, VAR_MOVE_STATUS, 0x100000, _0188
