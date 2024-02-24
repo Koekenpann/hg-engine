@@ -7,7 +7,7 @@
 .include "armips/include/monnums.s"
 .include "armips/include/movenums.s"
 
-.create "build/move/battle_sub_seq/1_357", 0
+.create "build/move/battle_sub_seq/1_358", 0
 
 // Chilly Reception
 // Hail + Teleport effect when in trainer battle.
