@@ -9,6 +9,8 @@
 
 .create "build/move/battle_sub_seq/1_356", 0
 
+// Electro Shot + Power Herb
+
 a001_356:
     playanimation BATTLER_ATTACKER
     waitmessage
