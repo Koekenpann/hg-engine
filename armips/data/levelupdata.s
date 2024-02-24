@@ -21233,11 +21233,23 @@ levelup SPECIES_BAXCALIBUR
     terminatelearnset
 
 levelup SPECIES_GIMMIGHOUL
+    learnset MOVE_ASTONISH, 1
     learnset MOVE_TACKLE, 1
     terminatelearnset
 
 levelup SPECIES_GHOLDENGO
+    learnset MOVE_ASTONISH, 1
     learnset MOVE_TACKLE, 1
+    learnset MOVE_NIGHT_SHADE, 7
+    learnset MOVE_CONFUSE_RAY, 14
+    learnset MOVE_SUBSTITUTE, 21
+    learnset MOVE_METAL_SOUND, 28
+    learnset MOVE_SHADOW_BALL, 35
+    learnset MOVE_RECOVER, 42
+    learnset MOVE_POWER_GEM, 49
+    learnset MOVE_MAKE_IT_RAIN, 56
+    learnset MOVE_NASTY_PLOT, 63
+    learnset MOVE_MEMENTO, 70
     terminatelearnset
 
 levelup SPECIES_WO_CHIEN
