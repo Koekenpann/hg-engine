@@ -14552,7 +14552,7 @@ movedata MOVE_ELECTRO_SHOT, "Electro Shot"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_ELECTRO_SHOT, "---"
+    movedescription MOVE_ELECTRO_SHOT, "The user gathers\nelectricity to raise\nits Sp. Atk, then\nfires a high-voltage\nshot on the next turn."
 
 movedata MOVE_TERA_STARSTORM, "Tera Starstorm"
     battleeffect 0
@@ -14573,7 +14573,7 @@ movedata MOVE_TERA_STARSTORM, "Tera Starstorm"
 movedata MOVE_FICKLE_BEAM, "Fickle Beam"
     battleeffect 0
     pss SPLIT_SPECIAL
-    basepower 80
+    basepower 80 // handle in battle_calc_damage.c probably, need flavor text that it does dbl dmg
     type TYPE_DRAGON
     accuracy 100
     pp 5
@@ -14587,7 +14587,7 @@ movedata MOVE_FICKLE_BEAM, "Fickle Beam"
     movedescription MOVE_FICKLE_BEAM, "---"
 
 movedata MOVE_BURNING_BULWARK, "Burning Bulwark"
-    battleeffect 0
+    battleeffect 111 // just protect rn
     pss SPLIT_STATUS
     basepower 0
     type TYPE_FIRE
@@ -14616,7 +14616,7 @@ movedata MOVE_THUNDERCLAP, "Thunderclap"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_THUNDERCLAP, "---"
+    movedescription MOVE_THUNDERCLAP, "This move enables the\nuser to attack first.\nIt fails if the foe is\nnot readying an\nattack, however."
 
 movedata MOVE_MIGHTY_CLEAVE, "Mighty Cleave"
     battleeffect 0
@@ -14632,10 +14632,10 @@ movedata MOVE_MIGHTY_CLEAVE, "Mighty Cleave"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_MIGHTY_CLEAVE, "---"
+    movedescription MOVE_MIGHTY_CLEAVE, "The user cleaves the\ntarget with the light\non its head.\nIt hits even if the\nfoe protects itself."
 
 movedata MOVE_TACHYON_CUTTER, "Tachyon Cutter"
-    battleeffect 0
+    battleeffect 44
     pss SPLIT_SPECIAL
     basepower 50
     type TYPE_STEEL
@@ -14648,12 +14648,12 @@ movedata MOVE_TACHYON_CUTTER, "Tachyon Cutter"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_TACHYON_CUTTER, "---"
+    movedescription MOVE_TACHYON_CUTTER, "The user attacks by\nlauching blades at the\ntarget twice in a row.\nThis attack never\nmisses."
 
 movedata MOVE_HARD_PRESS, "Hard Press"
     battleeffect 0
     pss SPLIT_PHYSICAL
-    basepower 0
+    basepower 100 // todo handle movepower in battle_calc_damage.c
     type TYPE_STEEL
     accuracy 100
     pp 10
@@ -14715,310 +14715,6 @@ movedata MOVE_TEMPER_FLARE, "Temper Flare"
     movedescription MOVE_TEMPER_FLARE, "---"
 
 movedata MOVE_SUPERCELL_SLAM, "Supercell Slam"
-    battleeffect 45
-    pss SPLIT_PHYSICAL
-    basepower 100
-    type TYPE_ELECTRIC
-    accuracy 95
-    pp 15
-    effectchance 0
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_SUPERCELL_SLAM, "---"
-
-movedata MOVE_PSYCHIC_NOISE, "Psychic Noise"
-    battleeffect 0
-    pss SPLIT_SPECIAL
-    basepower 75
-    type TYPE_PSYCHIC
-    accuracy 100
-    pp 10
-    effectchance 0
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_PSYCHIC_NOISE, "---"
-
-movedata MOVE_UPPER_HAND, "Upper Hand"
-    battleeffect 0
-    pss SPLIT_PHYSICAL
-    basepower 65
-    type TYPE_FIGHTING
-    accuracy 100
-    pp 15
-    effectchance 0
-    target MOVE_TARGET_SELECTED
-    priority 3
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_UPPER_HAND, "---"
-
-movedata MOVE_MALIGNANT_CHAIN, "Malignant Chain"
-    battleeffect 0
-    pss SPLIT_SPECIAL
-    basepower 100
-    type TYPE_POISON
-    accuracy 100
-    pp 5
-    effectchance 0
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_PSYBLADE, "An ethereal blade is\nused to rend the\ntarget. This move\nincreases in power\nin Electric Terrain."
-
-movedata MOVE_BLOOD_MOON, "Blood Moon"
-    battleeffect 0
-    pss SPLIT_SPECIAL
-    basepower 140
-    type TYPE_NORMAL
-    accuracy 100
-    pp 5
-    effectchance 0
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_BLOOD_MOON, "---"
-
-movedata MOVE_MATCHA_GOTCHA, "Matcha Gotcha"
-    battleeffect 125 // only the scald burn/thaw effect not the giga drain healing thingie... probably hard to implement with 2 different effectchances
-    pss SPLIT_SPECIAL
-    basepower 80
-    type TYPE_GRASS
-    accuracy 90
-    pp 15
-    effectchance 30
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_MATCHA_GOTCHA, "---"
-
-movedata MOVE_SYRUP_BOMB, "Syrup Bomb"
-    battleeffect 0
-    pss SPLIT_SPECIAL
-    basepower 60
-    type TYPE_GRASS
-    accuracy 85
-    pp 10
-    effectchance 0
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_SYRUP_BOMB, "---"
-
-movedata MOVE_IVY_CUDGEL, "Ivy Cudgel"
-    battleeffect 0
-    pss SPLIT_PHYSICAL
-    basepower 100
-    type TYPE_GRASS // can the type icon be changed based on Ogerpon form? battleeffect can probably easily handle it if not just battle_calc_damage.c
-    accuracy 100
-    pp 10
-    effectchance 0
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_IVY_CUDGEL, "---"
-
-movedata MOVE_ELECTRO_SHOT, "Electro Shot"
-    battleeffect 305
-    pss SPLIT_SPECIAL
-    basepower 130
-    type TYPE_ELECTRIC
-    accuracy 100
-    pp 10
-    effectchance 100
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_ELECTRO_SHOT, "The user gathers\nelectricity to raise\nits Sp. Atk, then\nfires a high-voltage\nshot on the next turn."
-
-movedata MOVE_TERA_STARSTORM, "Tera Starstorm"
-    battleeffect 0
-    pss SPLIT_SPECIAL
-    basepower 120
-    type TYPE_NORMAL
-    accuracy 100
-    pp 5
-    effectchance 0
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_TERA_STARSTORM, "---"
-
-movedata MOVE_FICKLE_BEAM, "Fickle Beam"
-    battleeffect 0
-    pss SPLIT_SPECIAL
-    basepower 80 // handle in battle_calc_damage.c probably, need flavor text that it does dbl dmg
-    type TYPE_DRAGON
-    accuracy 100
-    pp 5
-    effectchance 0
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_FICKLE_BEAM, "---"
-
-movedata MOVE_BURNING_BULWARK, "Burning Bulwark"
-    battleeffect 111 // just protect rn
-    pss SPLIT_STATUS
-    basepower 0
-    type TYPE_FIRE
-    accuracy 0
-    pp 10
-    effectchance 0
-    target MOVE_TARGET_SELECTED
-    priority 4
-    flags 0
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_BURNING_BULWARK, "---"
-
-movedata MOVE_THUNDERCLAP, "Thunderclap"
-    battleeffect 248
-    pss SPLIT_SPECIAL
-    basepower 70
-    type TYPE_ELECTRIC
-    accuracy 100
-    pp 5
-    effectchance 0
-    target MOVE_TARGET_SELECTED
-    priority 1
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_THUNDERCLAP, "This move enables the\nuser to attack first.\nIt fails if the foe is\nnot readying an\nattack, however."
-
-movedata MOVE_MIGHTY_CLEAVE, "Mighty Cleave"
-    battleeffect 0
-    pss SPLIT_PHYSICAL
-    basepower 95
-    type TYPE_ROCK
-    accuracy 100
-    pp 5
-    effectchance 0
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_CONTACT
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_MIGHTY_CLEAVE, "The user cleaves the\ntarget with the light\non its head.\nIt hits even if the\nfoe protects itself."
-
-movedata MOVE_TACHYON_CUTTER, "Tachyon Cutter"
-    battleeffect 44
-    pss SPLIT_SPECIAL
-    basepower 50
-    type TYPE_STEEL
-    accuracy 0
-    pp 10
-    effectchance 0
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_TACHYON_CUTTER, "The user attacks by\nlauching blades at the\ntarget twice in a row.\nThis attack never\nmisses."
-
-movedata MOVE_HARD_PRESS, "Hard Press"
-    battleeffect 0
-    pss SPLIT_PHYSICAL
-    basepower 100 // todo handle movepower in battle_calc_damage.c
-    type TYPE_STEEL
-    accuracy 100
-    pp 10
-    effectchance 0
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_HARD_PRESS, "---"
-
-movedata MOVE_DRAGON_CHEER, "Dragon Cheer"
-    battleeffect 0
-    pss SPLIT_STATUS
-    basepower 0
-    type TYPE_DRAGON
-    accuracy 0
-    pp 15
-    effectchance 0
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags 0
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_DRAGON_CHEER, "---"
-
-movedata MOVE_ALLURING_VOICE, "Alluring Voice"
-    battleeffect 0
-    pss SPLIT_SPECIAL
-    basepower 80
-    type TYPE_FAIRY
-    accuracy 100
-    pp 10
-    effectchance 0
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_ALLURING_VOICE, "---"
-
-movedata MOVE_TEMPER_FLARE, "Temper Flare"
-    battleeffect 0
-    pss SPLIT_PHYSICAL
-    basepower 75
-    type TYPE_FIRE
-    accuracy 100
-    pp 10
-    effectchance 0
-    target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
-    appeal 0x00
-    contesttype CONTEST_COOL
-    terminatedata
-    movedescription MOVE_TEMPER_FLARE, "---"
-
-movedata MOVE_SUPERCELL_SLAM, "Supercell Slam"
     battleeffect 45 // handle volt absorb = crash
     pss SPLIT_PHYSICAL
     basepower 100
@@ -15028,7 +14724,7 @@ movedata MOVE_SUPERCELL_SLAM, "Supercell Slam"
     effectchance 0
     target MOVE_TARGET_SELECTED
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -15044,7 +14740,7 @@ movedata MOVE_PSYCHIC_NOISE, "Psychic Noise"
     effectchance 0
     target MOVE_TARGET_SELECTED
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -15060,7 +14756,7 @@ movedata MOVE_UPPER_HAND, "Upper Hand"
     effectchance 0
     target MOVE_TARGET_SELECTED
     priority 3
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -15073,14 +14769,14 @@ movedata MOVE_MALIGNANT_CHAIN, "Malignant Chain"
     type TYPE_POISON
     accuracy 100
     pp 5
-    effectchance 50
+    effectchance 0
     target MOVE_TARGET_SELECTED
     priority 0
-    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_PROTECT
+    flags FLAG_KEEP_HP_BAR | FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_MALIGNANT_CHAIN, "---"
+    movedescription MOVE_PSYBLADE, "An ethereal blade is\nused to rend the\ntarget. This move\nincreases in power\nin Electric Terrain."
 
 // Custom Moves
 
