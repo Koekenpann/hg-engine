@@ -14539,7 +14539,7 @@ movedata MOVE_IVY_CUDGEL, "Ivy Cudgel"
     movedescription MOVE_IVY_CUDGEL, "---"
 
 movedata MOVE_ELECTRO_SHOT, "Electro Shot"
-    battleeffect 306
+    battleeffect 307
     pss SPLIT_SPECIAL
     basepower 130
     type TYPE_ELECTRIC
