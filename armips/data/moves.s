@@ -14573,7 +14573,7 @@ movedata MOVE_TERA_STARSTORM, "Tera Starstorm"
 movedata MOVE_FICKLE_BEAM, "Fickle Beam"
     battleeffect 0
     pss SPLIT_SPECIAL
-    basepower 80 // handle in battle_calc_damage.c probably, need flavor text that it does dbl dmg
+    basepower 80 // TODO handle in battle_calc_damage.c probably, need flavor text that it does dbl dmg
     type TYPE_DRAGON
     accuracy 100
     pp 5
@@ -14587,7 +14587,7 @@ movedata MOVE_FICKLE_BEAM, "Fickle Beam"
     movedescription MOVE_FICKLE_BEAM, "---"
 
 movedata MOVE_BURNING_BULWARK, "Burning Bulwark"
-    battleeffect 111 // just protect rn
+    battleeffect 111 // * just protect rn
     pss SPLIT_STATUS
     basepower 0
     type TYPE_FIRE
@@ -14715,7 +14715,7 @@ movedata MOVE_TEMPER_FLARE, "Temper Flare"
     movedescription MOVE_TEMPER_FLARE, "---"
 
 movedata MOVE_SUPERCELL_SLAM, "Supercell Slam"
-    battleeffect 45 // handle volt absorb = crash
+    battleeffect 45 // TODO handle volt absorb = crash
     pss SPLIT_PHYSICAL
     basepower 100
     type TYPE_ELECTRIC
@@ -14747,7 +14747,7 @@ movedata MOVE_PSYCHIC_NOISE, "Psychic Noise"
     movedescription MOVE_PSYCHIC_NOISE, "---"
 
 movedata MOVE_UPPER_HAND, "Upper Hand"
-    battleeffect 0 // handle in other_battle_calculators.c probably
+    battleeffect 0 // TODO handle in other_battle_calculators.c probably
     pss SPLIT_PHYSICAL
     basepower 65
     type TYPE_FIGHTING
@@ -14763,7 +14763,7 @@ movedata MOVE_UPPER_HAND, "Upper Hand"
     movedescription MOVE_UPPER_HAND, "---"
 
 movedata MOVE_MALIGNANT_CHAIN, "Malignant Chain"
-    battleeffect 0 // probably need diff battleeffect but should be easy
+    battleeffect 0 // TODO probably need diff battleeffect but should be easy
     pss SPLIT_SPECIAL
     basepower 100
     type TYPE_POISON
