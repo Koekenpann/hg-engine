@@ -430,12 +430,12 @@ u16 GetMonEvolutionInternal(struct Party *party, struct PartyPokemon *pokemon, u
                     *method_ret = EVO_TRADE_ITEM;
                 }
                 break;
-            //case EVO_TRADE_SPECIFIC_MON: // need to figure out how to deduce tradedSpecies
-            //    if (tradedSpecies == evoTable[i].param) {
-            //        GET_TARGET_AND_SET_FORM;
-            //        *method_ret = EVO_TRADE_SPECIFIC_MON;
-            //    }
-            //    break;
+            ////case EVO_TRADE_SPECIFIC_MON: // need to figure out how to deduce tradedSpecies
+            ////    if (tradedSpecies == evoTable[i].param) {
+            ////        GET_TARGET_AND_SET_FORM;
+            ////        \*method_ret = EVO_TRADE_SPECIFIC_MON;
+            ////    }
+            ////    break;
             }
             if (target != SPECIES_NONE) {
                 break;

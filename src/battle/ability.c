@@ -25,12 +25,12 @@ BOOL MummyAbilityCheck(struct BattleStruct *sp);
 BOOL CanPickpocketStealClientItem(struct BattleStruct *sp, int client_no);
 u8 BeastBoostGreatestStatHelper(struct BattleStruct *sp, u32 client);
 BOOL MoveHitAttackerAbilityCheck(void *bw, struct BattleStruct *sp, int *seq_no);
-//BOOL MoveHitDefenderAbilityCheck(void *bw, struct BattleStruct *sp, int *seq_no);
-//u32 MoldBreakerAbilityCheck(struct BattleStruct *sp, int attacker, int defender, int ability);
+////BOOL MoveHitDefenderAbilityCheck(void *bw, struct BattleStruct *sp, int *seq_no);
+////u32 MoldBreakerAbilityCheck(struct BattleStruct *sp, int attacker, int defender, int ability);
 BOOL SynchroniseAbilityCheck(void *bw, struct BattleStruct *sp, int server_seq_no);
 BOOL ServerFlinchCheck(void *bw, struct BattleStruct *sp);
 void ServerWazaOutAfterMessage(void *bw, struct BattleStruct *sp);
-//u32 ServerWazaKoyuuCheck(void *bw, struct BattleStruct *sp);
+////u32 ServerWazaKoyuuCheck(void *bw, struct BattleStruct *sp);
 void ServerDoPostMoveEffects(void *bw, struct BattleStruct *sp);
 
 
@@ -45,15 +45,15 @@ const u16 SoundproofMoveList[] =
     MOVE_CHATTER,
     MOVE_CLANGING_SCALES,
     MOVE_CLANGOROUS_SOUL,
-    //MOVE_CLANGOROUS_SOULBLAZE,
+    ////MOVE_CLANGOROUS_SOULBLAZE,
     MOVE_CONFIDE,
     MOVE_DISARMING_VOICE,
     MOVE_ECHOED_VOICE,
     MOVE_EERIE_SPELL,
     MOVE_GRASS_WHISTLE,
     MOVE_GROWL,
-    //MOVE_HEAL_BELL,
-    //MOVE_HOWL,
+    ////MOVE_HEAL_BELL,
+    ////MOVE_HOWL,
     MOVE_HYPER_VOICE,
     MOVE_METAL_SOUND,
     MOVE_NOBLE_ROAR,
@@ -65,7 +65,7 @@ const u16 SoundproofMoveList[] =
     MOVE_ROAR,
     MOVE_ROUND,
     MOVE_SCREECH,
-    //MOVE_SHADOW_PANIC,
+    ////MOVE_SHADOW_PANIC,
     MOVE_SING,
     MOVE_SNARL,
     MOVE_SNORE,
@@ -194,7 +194,7 @@ int MoveCheckDamageNegatingAbilities(struct BattleStruct *sp, int attacker, int 
             for (i = 0; i < NELEMS(BulletproofMoveList); i++){
                 if (BulletproofMoveList[i] == sp->current_move_index)
                 {
-                    // This works fine for Bulletproof too
+                    // * This works fine for Bulletproof too
                     scriptnum = SUB_SEQ_SOUNDPROOF;
                     break;
                 }
@@ -295,6 +295,7 @@ enum
     SWITCH_IN_CHECK_SURGE_ABILITY,
     SWITCH_IN_CHECK_TERRAIN_SEED,
     SWITCH_IN_CHECK_END,
+// todo SWITCH_IN_CHECK_RUIN_ABILITIES
 };
 
 enum
@@ -544,7 +545,7 @@ int SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                     if ((sp->battlemon[client_no].intimidate_flag == 0)
                         && (sp->battlemon[client_no].hp)
                         && (GetBattlerAbility(sp, client_no) == ABILITY_INTIMIDATE)
-                        && (IntimidateCheckHelper(sp, client_no)))
+                        && (IntimidateCheckHelper(sp, client_no))) //! This prevents the intimidate flag to set to 1 and activates after opp dies
                     {
                         sp->battlemon[client_no].intimidate_flag = 1;
                         sp->client_work = client_no;
@@ -1487,7 +1488,8 @@ BOOL CanPickpocketStealClientItem(struct BattleStruct *sp, int client_no)
 
 /**
  *  @brief grab which of the client's raw stats (excluding HP) are the highest for the ability beast boost
- *
+ *  TODO Order of the raw stats is wrong, it should be atk>def>spatk>spdef>speed.
+ *  TODO This logic can also be used for Protosynthesis/Quark Drive
  *  @param sp global battle structure
  *  @param client battler whose stats to compare among themselves for beast boost
  *  @return the highest raw stat the the client has (excluding HP)

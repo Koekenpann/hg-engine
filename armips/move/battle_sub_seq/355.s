@@ -72,12 +72,16 @@ _end:
 
 _hassub:
     printattackmessage
+    waitmessage
+    wait 0x1E
     printmessage 351, 0x2, 0x1, "NaN", "NaN", "NaN", "NaN", "NaN" // {STRVAR_1 1, 0, 0} already\nhas a substitute!
     waitmessage
     endscript
 
 _nohp:
     printattackmessage
+    waitmessage
+    wait 0x1E
     printmessage 819, 0x2, 0x1, "NaN", "NaN", "NaN", "NaN", "NaN" // It was too weak to make\na substitute!
     // text could be modernised but unsure, gen 9 text is: But it does not have enough HP left to make a substitute!
     waitmessage
