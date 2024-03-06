@@ -14778,12 +14778,12 @@ movedata MOVE_MALIGNANT_CHAIN, "Malignant Chain"
     terminatedata
     movedescription MOVE_PSYBLADE, "An ethereal blade is\nused to rend the\ntarget. This move\nincreases in power\nin Electric Terrain."
 
-// Custom Moves
+// * Custom Moves
 
-// Custom move for Meganium, Sp.Def variant of Body Press
-// Credits to Gherkins for move name.
+; Custom move for Meganium, Sp.Def variant of Body Press
+; Credits to Gherkins for move name.
 movedata MOVE_VERDANT_GRASP, "Verdant Grasp"
-    battleeffect 0 // effect is handled in battle_calc_damage.c
+    battleeffect 0 ; effect is handled in battle_calc_damage.c
     pss SPLIT_SPECIAL
     basepower 80
     type TYPE_GRASS

@@ -5,7 +5,7 @@
 .include "armips/include/monnums.s"
 .include "armips/include/movenums.s"
 
-// the level up moves for each pokemon
+// * the level up moves for each pokemon
 
 
 levelup SPECIES_NONE
@@ -20781,7 +20781,27 @@ levelup SPECIES_FLORAGATO
     terminatelearnset
 
 levelup SPECIES_MEOWSCARADA
-    learnset MOVE_TACKLE, 1
+    learnset MOVE_FLOWER_TRICK, 0
+    learnset MOVE_SCRATCH, 1
+    learnset MOVE_TAIL_WHIP, 1 
+    learnset MOVE_LEAFAGE, 1
+    learnset MOVE_DOUBLE_TEAM, 1
+    learnset MOVE_TRICK, 1
+    learnset MOVE_FLOWER_TRICK, 1
+    learnset MOVE_BITE, 7
+    learnset MOVE_HONE_CLAWS, 10
+    learnset MOVE_MAGICAL_LEAF, 13
+    learnset MOVE_QUICK_ATTACK, 15
+    learnset MOVE_SEED_BOMB, 20
+    learnset MOVE_U_TURN, 24
+    learnset MOVE_WORRY_SEED, 29
+    learnset MOVE_SLASH, 33
+    learnset MOVE_NIGHT_SLASH, 38
+    learnset MOVE_ENERGY_BALL, 42
+    learnset MOVE_PLAY_ROUGH, 47
+    learnset MOVE_KNOCK_OFF, 52
+    learnset MOVE_GRASSY_TERRAIN, 58
+    learnset MOVE_LEAF_STORM, 64
     terminatelearnset
 
 levelup SPECIES_FUECOCO
@@ -26601,7 +26621,7 @@ levelup SPECIES_FRILLISH_FEMALE
     learnset MOVE_OMINOUS_WIND, 27
     learnset MOVE_BRINE, 32
     learnset MOVE_RAIN_DANCE, 37
-    //learnset MOVE_HEX, 43
+    learnset MOVE_HEX, 43
     learnset MOVE_HYDRO_PUMP, 49
     learnset MOVE_WRING_OUT, 55
     learnset MOVE_WATER_SPOUT, 61
@@ -26621,7 +26641,7 @@ levelup SPECIES_JELLICENT_FEMALE
     learnset MOVE_OMINOUS_WIND, 27
     learnset MOVE_BRINE, 32
     learnset MOVE_RAIN_DANCE, 37
-    //learnset MOVE_HEX, 45
+    learnset MOVE_HEX, 45
     learnset MOVE_HYDRO_PUMP, 53
     learnset MOVE_WRING_OUT, 61
     learnset MOVE_WATER_SPOUT, 69
@@ -26832,5 +26852,21 @@ levelup SPECIES_TERAPAGOS_STELLAR
     terminatelearnset
 
 levelup SPECIES_URSALUNA_BLOODMOON
-    learnset MOVE_TACKLE, 1
+    learnset MOVE_HEADLONG_RUSH, 1
+    learnset MOVE_SCRATCH, 1
+    learnset MOVE_LEER, 1
+    learnset MOVE_LICK, 1
+    learnset MOVE_MOONLIGHT, 1
+    learnset MOVE_FURY_SWIPES, 8
+    learnset MOVE_PAYBACK, 13
+    learnset MOVE_HARDEN, 17
+    learnset MOVE_SLASH, 22
+    learnset MOVE_PLAY_NICE, 25
+    learnset MOVE_SCARY_FACE, 35
+    learnset MOVE_REST, 41
+    learnset MOVE_SNORE, 41
+    learnset MOVE_EARTH_POWER, 48
+    learnset MOVE_MOONBLAST, 56
+    learnset MOVE_HAMMER_ARM, 64
+    learnset MOVE_BLOOD_MOON, 70
     terminatelearnset
