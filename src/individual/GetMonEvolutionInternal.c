@@ -82,7 +82,6 @@ u16 GetMonEvolutionInternal(struct Party *party, struct PartyPokemon *pokemon, u
     }
 
     // handle Ursaluna Bloodmoon branch evolution
-    // ! this doesn't work properly yet
     if (species == SPECIES_URSARING && usedItem == ITEM_PEAT_BLOCK && IsNighttime() == 1) {
         u32 location = gFieldSysPtr->location->mapId; // 33 is R29 and 34 is R34 for testing purposes
         int randomEvolution = 0;
@@ -91,17 +90,12 @@ u16 GetMonEvolutionInternal(struct Party *party, struct PartyPokemon *pokemon, u
         // always evolve to Bloodmoon at Mt. Moon Plaza (debugging at R29)
         if (location == 449 || location == 513 || location == 33) {
             form = 1;
-            SetMonData(pokemon, MON_DATA_FORM, &form);
         }
         // 50% chance to evolve to Bloodmoon at other Mt. Moon locations and Lake of Rage (debugging at R30)
         if (location == 107 || location == 448 || location == 88 || location == 34) {
             randomEvolution = gf_rand() % 2;
-            switch (randomEvolution) {
-                case 1:
-                    form = 1;
-                    SetMonData(pokemon, MON_DATA_FORM, &form);
-                default:
-                    break;
+            if (randomEvolution == 1) {
+                form = 1;
             }
         }
         // Anywhere else: 10% chance to evolve to Bloodmoon
@@ -109,9 +103,9 @@ u16 GetMonEvolutionInternal(struct Party *party, struct PartyPokemon *pokemon, u
             randomEvolution = gf_rand() % 10;
             if (randomEvolution == 1) {
                 form = 1;
-                SetMonData(pokemon, MON_DATA_FORM, &form);
             }
         }
+        SetMonData(pokemon, MON_DATA_FORM, &form);
         return SPECIES_URSALUNA;
     }
 
