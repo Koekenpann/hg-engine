@@ -457,6 +457,7 @@ BOOL MoveHitDefenderAbilityCheckInternal(void *bw, struct BattleStruct *sp, int 
             if ((sp->battlemon[sp->defence_client].species == SPECIES_MIMIKYU)
              && (sp->battlemon[sp->defence_client].hp)
              && (sp->battlemon[sp->defence_client].form_no == 0)
+             && ((sp->server_status_flag & BATTLE_STATUS_CHARGE_TURN) == 0)
              && ((sp->waza_status_flag & MOVE_STATUS_FLAG_MISS) == 0) // if move was successful
              && (sp->moveTbl[sp->current_move_index].power) // if move has power
             )
@@ -472,6 +473,7 @@ BOOL MoveHitDefenderAbilityCheckInternal(void *bw, struct BattleStruct *sp, int 
             if ((sp->battlemon[sp->defence_client].species == SPECIES_EISCUE)
              && (sp->battlemon[sp->defence_client].hp)
              && (sp->battlemon[sp->defence_client].form_no == 0)
+             && ((sp->server_status_flag & BATTLE_STATUS_CHARGE_TURN) == 0)
              && ((sp->waza_status_flag & MOVE_STATUS_FLAG_MISS) == 0) // if move was successful
              && (sp->moveTbl[sp->current_move_index].power != 0)
              && (GetMoveSplit(sp, sp->current_move_index) == SPLIT_PHYSICAL)
