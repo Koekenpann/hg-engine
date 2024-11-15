@@ -1476,10 +1476,27 @@ static const u16 BabyMonTable[] = {
     SPECIES_MANTYKE,
 
     // Past 3DS entries
-    SPECIES_TOXEL
+    SPECIES_TOXEL,
     
     // Can confirm the fossils from Gen 8 have 3 perfect IVs upon reviving them
 };
+
+#define EGG_GROUP_NONE         0
+#define EGG_GROUP_MONSTER      1
+#define EGG_GROUP_WATER_1      2
+#define EGG_GROUP_BUG          3
+#define EGG_GROUP_FLYING       4
+#define EGG_GROUP_FIELD        5
+#define EGG_GROUP_FAIRY        6
+#define EGG_GROUP_GRASS        7
+#define EGG_GROUP_HUMAN_LIKE   8
+#define EGG_GROUP_WATER_3      9
+#define EGG_GROUP_MINERAL      10
+#define EGG_GROUP_AMORPHOUS    11
+#define EGG_GROUP_WATER_2      12
+#define EGG_GROUP_DITTO        13
+#define EGG_GROUP_DRAGON       14
+#define EGG_GROUP_UNDISCOVERED 15
 
 /**
  *  @brief create BoxPokemon given the parameters
@@ -1559,10 +1576,12 @@ void LONG_CALL CreateBoxMonData(struct BoxPokemon *boxmon, int species, int leve
     }
     else{
 
-        // TODO: Change constant to EGG_GROUP_UNDISCOVERED
         // X/Y babymons still have 3 perfect IVs, but since ORAS they are excluded.
-        if((PokePersonalParaGet(species, PERSONAL_EGG_GROUP_1) == 15) && !(IsElementInArray(BabyMonTable, (u16 *)&species, NELEMS(BabyMonTable), sizeof(BabyMonTable[0])))) {
+        if((PokePersonalParaGet(species, PERSONAL_EGG_GROUP_1) == EGG_GROUP_UNDISCOVERED)
+         && !(IsElementInArray(BabyMonTable, (u16 *)&species, NELEMS(BabyMonTable), sizeof(BabyMonTable[0])))) {
             PerfectIVCount = 3;
+        } else {
+            PerfectIVCount = 0;
         }
 
         // Using same for-loop as 3DSRNGTool, as it mimicks the RNG of the Gen 6+ games.
