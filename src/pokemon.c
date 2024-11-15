@@ -1476,9 +1476,35 @@ static const u16 BabyMonTable[] = {
     SPECIES_MANTYKE,
 
     // Past 3DS entries
+
+    // Gen 8
     SPECIES_TOXEL,
     
     // Can confirm the fossils from Gen 8 have 3 perfect IVs upon reviving them
+
+    // Gen 9: Can uncomment these as these technically don't have 3 perfect IVs. I'm gonna assume oversight though
+    // SPECIES_GREAT_TUSK,
+    // SPECIES_SCREAM_TAIL,
+    // SPECIES_BRUTE_BONNET,
+    // SPECIES_FLUTTER_MANE,
+    // SPECIES_SLITHER_WING,
+    // SPECIES_SANDY_SHOCKS,
+    // SPECIES_IRON_TREADS,
+    // SPECIES_IRON_BUNDLE,
+    // SPECIES_IRON_HANDS,
+    // SPECIES_IRON_JUGULIS,
+    // SPECIES_IRON_MOTH,
+    // SPECIES_IRON_THORNS,
+    // SPECIES_GIMMIGHOUL,
+    // SPECIES_GHOLDENGO,
+    // SPECIES_ROARING_MOON,
+    // SPECIES_IRON_VALIANT,
+    // SPECIES_WALKING_WAKE,
+    // SPECIES_IRON_LEAVES,
+    // SPECIES_GOUGING_FIRE,
+    // SPECIES_RAGING_BOLT,
+    // SPECIES_IRON_BOULDER,
+    // SPECIES_IRON_CROWN,
 };
 
 #define EGG_GROUP_NONE         0
@@ -1602,54 +1628,20 @@ void LONG_CALL CreateBoxMonData(struct BoxPokemon *boxmon, int species, int leve
         // If PerfectIVs bit is set, override with 31.
         i = gf_rand();
 
-        if (PerfectIVs & 1) {
-            j = 31;
-        }
-        else {
-            j = (i & (MAX_IVS <<  0)) >>  0;
-        }
+        j = (PerfectIVs & (1 << 0)) ? MAX_IVS : (i & (MAX_IVS <<  0)) >>  0;
         SetBoxMonData(boxmon, MON_DATA_HP_IV, (u8 *)&j);
-
-        if (PerfectIVs & (1 << 1)) {
-            j = 31;
-        }
-        else {
-            j = (i & (MAX_IVS <<  5)) >>  5;
-        }
+        j = (PerfectIVs & (1 << 1)) ? MAX_IVS : (i & (MAX_IVS <<  5)) >>  5;
         SetBoxMonData(boxmon, MON_DATA_ATK_IV, (u8 *)&j);
-
-        if (PerfectIVs & (1 << 2)) {
-            j = 31;
-        }
-        else {
-            j = (i & (MAX_IVS << 10)) >> 10;
-        }
+        j = (PerfectIVs & (1 << 2)) ? MAX_IVS : (i & (MAX_IVS << 10)) >> 10;
         SetBoxMonData(boxmon, MON_DATA_DEF_IV, (u8 *)&j);
 
         i = gf_rand();
 
-        if (PerfectIVs & (1 << 3)) {
-            j = 31;
-        }
-        else {
-            j = (i & (MAX_IVS <<  0)) >>  0;
-        }
+        j = (PerfectIVs & (1 << 3)) ? MAX_IVS : (i & (MAX_IVS <<  0)) >>  0;
         SetBoxMonData(boxmon, MON_DATA_SPEED_IV, (u8 *)&j);
-
-        if (PerfectIVs & (1 << 4)) {
-            j = 31;
-        }
-        else {
-            j = (i & (MAX_IVS <<  5)) >>  5;
-        }
+        j = (PerfectIVs & (1 << 4)) ? MAX_IVS : (i & (MAX_IVS <<  5)) >>  5;
         SetBoxMonData(boxmon, MON_DATA_SPATK_IV, (u8 *)&j);
-
-        if (PerfectIVs & (1 << 5)) {
-            j = 31;
-        }
-        else {
-            j = (i & (MAX_IVS << 10)) >> 10;
-        }
+        j = (PerfectIVs & (1 << 5)) ? MAX_IVS : (i & (MAX_IVS << 10)) >> 10;
         SetBoxMonData(boxmon, MON_DATA_SPDEF_IV, (u8 *)&j);
     }
 
