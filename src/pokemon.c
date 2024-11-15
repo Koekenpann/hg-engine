@@ -1451,6 +1451,36 @@ BOOL LONG_CALL GiveMon(int heapId, void *saveData, int species, int level, int f
 
 extern u32 space_for_setmondata;
 
+// List from 3DSRNGTool, these species are in the undiscovered egg group but can't have three perfect IVs.
+static const u16 BabyMonTable[] = {
+    SPECIES_NIDORINA,
+    SPECIES_NIDOQUEEN,
+    SPECIES_PICHU,
+    SPECIES_CLEFFA,
+    SPECIES_IGGLYBUFF,
+    SPECIES_TOGEPI,
+    SPECIES_UNOWN,
+    SPECIES_TYROGUE,
+    SPECIES_SMOOCHUM,
+    SPECIES_ELEKID,
+    SPECIES_MAGBY,
+    SPECIES_AZURILL,
+    SPECIES_WYNAUT,
+    SPECIES_BUDEW,
+    SPECIES_CHINGLING,
+    SPECIES_BONSLY,
+    SPECIES_MIME_JR,
+    SPECIES_HAPPINY,
+    SPECIES_MUNCHLAX,
+    SPECIES_RIOLU,
+    SPECIES_MANTYKE,
+
+    // Past 3DS entries
+    SPECIES_TOXEL
+    
+    // Can confirm the fossils from Gen 8 have 3 perfect IVs upon reviving them
+};
+
 /**
  *  @brief create BoxPokemon given the parameters
  *
@@ -1476,6 +1506,10 @@ void LONG_CALL CreateBoxMonData(struct BoxPokemon *boxmon, int species, int leve
     BoxMonInit(boxmon);
 
     flag = BoxMonSetFastModeOn(boxmon);
+
+    // TODO: Make it an ifdef
+    u8 PerfectIVs;
+    u8 PerfectIVCount;
 
     if (!rndflag) {
         rnd = (gf_rand() | (gf_rand() << 16));
@@ -1523,21 +1557,81 @@ void LONG_CALL CreateBoxMonData(struct BoxPokemon *boxmon, int species, int leve
         SetBoxMonData(boxmon,MON_DATA_SPATK_IV,(u8 *)&pow);
         SetBoxMonData(boxmon,MON_DATA_SPDEF_IV,(u8 *)&pow);
     }
-    else{ // why the fuck is it done like this
-        i=gf_rand();
-        j=(i&(0x001f<< 0))>> 0;
-        SetBoxMonData(boxmon,MON_DATA_HP_IV,(u8 *)&j);
-        j=(i&(0x001f<< 5))>> 5;
-        SetBoxMonData(boxmon,MON_DATA_ATK_IV,(u8 *)&j);
-        j=(i&(0x001f<<10))>>10;
-        SetBoxMonData(boxmon,MON_DATA_DEF_IV,(u8 *)&j);
-        i=gf_rand();
-        j=(i&(0x001f<< 0))>> 0;
-        SetBoxMonData(boxmon,MON_DATA_SPEED_IV,(u8 *)&j);
-        j=(i&(0x001f<< 5))>> 5;
-        SetBoxMonData(boxmon,MON_DATA_SPATK_IV,(u8 *)&j);
-        j=(i&(0x001f<<10))>>10;
-        SetBoxMonData(boxmon,MON_DATA_SPDEF_IV,(u8 *)&j);
+    else{
+
+        // TODO: Change constant to EGG_GROUP_UNDISCOVERED
+        // X/Y babymons still have 3 perfect IVs, but since ORAS they are excluded.
+        if((PokePersonalParaGet(species, PERSONAL_EGG_GROUP_1) == 15) && !(IsElementInArray(BabyMonTable, (u16 *)&species, NELEMS(BabyMonTable), sizeof(BabyMonTable[0])))) {
+            PerfectIVCount = 3;
+        }
+
+        // Using same for-loop as 3DSRNGTool, as it mimicks the RNG of the Gen 6+ games.
+        // But instead of setting the IV there we use a bitmask to set the stat we force to MAX_IV.
+        // FWIW: This will change some of the RNG manipulation methods as gf_rand is called multiple times.
+        for (i = PerfectIVCount; i > 0;) {
+            j = gf_rand() % 6;
+            if (!(PerfectIVs & (1 << j))) {
+                i--;
+                PerfectIVs |= (1 << j);
+            }
+        }
+
+        // Roll RNG: 1|11111|11111|11111|
+        //            | def | atk |  hp |
+        // Roll RNG: 1|11111|11111|11111|
+        //            |spdef|spatk|speed|
+        // If PerfectIVs bit is set, override with 31.
+        i = gf_rand();
+
+        if (PerfectIVs & 1) {
+            j = 31;
+        }
+        else {
+            j = (i & (MAX_IVS <<  0)) >>  0;
+        }
+        SetBoxMonData(boxmon, MON_DATA_HP_IV, (u8 *)&j);
+
+        if (PerfectIVs & (1 << 1)) {
+            j = 31;
+        }
+        else {
+            j = (i & (MAX_IVS <<  5)) >>  5;
+        }
+        SetBoxMonData(boxmon, MON_DATA_ATK_IV, (u8 *)&j);
+
+        if (PerfectIVs & (1 << 2)) {
+            j = 31;
+        }
+        else {
+            j = (i & (MAX_IVS << 10)) >> 10;
+        }
+        SetBoxMonData(boxmon, MON_DATA_DEF_IV, (u8 *)&j);
+
+        i = gf_rand();
+
+        if (PerfectIVs & (1 << 3)) {
+            j = 31;
+        }
+        else {
+            j = (i & (MAX_IVS <<  0)) >>  0;
+        }
+        SetBoxMonData(boxmon, MON_DATA_SPEED_IV, (u8 *)&j);
+
+        if (PerfectIVs & (1 << 4)) {
+            j = 31;
+        }
+        else {
+            j = (i & (MAX_IVS <<  5)) >>  5;
+        }
+        SetBoxMonData(boxmon, MON_DATA_SPATK_IV, (u8 *)&j);
+
+        if (PerfectIVs & (1 << 5)) {
+            j = 31;
+        }
+        else {
+            j = (i & (MAX_IVS << 10)) >> 10;
+        }
+        SetBoxMonData(boxmon, MON_DATA_SPDEF_IV, (u8 *)&j);
     }
 
     i = PokePersonalParaGet(species,PERSONAL_ABILITY_1);
