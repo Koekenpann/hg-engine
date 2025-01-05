@@ -3,6 +3,7 @@
 #include "../../include/config.h"
 #include "../../include/debug.h"
 #include "../../include/overlay.h"
+#include "../../include/pokemon.h"
 #include "../../include/save.h"
 #include "../../include/constants/ability.h"
 #include "../../include/constants/battle_script_constants.h"
@@ -1080,6 +1081,7 @@ BOOL btl_scr_cmd_18_playanimation2(void *bw, struct BattleStruct *sp)
     cli_a = GrabClientFromBattleScriptParam(bw, sp, attack);
     cli_d = GrabClientFromBattleScriptParam(bw, sp, defence);
 
+    // TODO figure out what should actually go here
     if ((((sp->server_status_flag & SERVER_STATUS_FLAG_ANIMATION_IS_PLAYING) == 0)
       && (CheckBattleAnimationsOption(bw) == TRUE))
      || (move == MOVE_TRANSFORM || move == MOVE_470 || move == MOVE_ELECTRIC_TERRAIN || move == MOVE_MISTY_TERRAIN || move == MOVE_GRASSY_TERRAIN || move == MOVE_PSYCHIC_TERRAIN))
@@ -1189,7 +1191,7 @@ BOOL BtlCmd_GoToMoveScript(struct BattleSystem *bsys, struct BattleStruct *ctx) 
     if (ctx->current_move_index != MOVE_METRONOME) {
         ctx->server_status_flag &= ~BATTLE_STATUS_NO_ATTACK_MESSAGE;
     }
-    
+
     ctx->server_status_flag &= ~BATTLE_STATUS_MOVE_ANIMATIONS_OFF;
 
     ctx->current_move_index = ctx->waza_work;
@@ -1519,8 +1521,9 @@ void Task_DistributeExp_Extend(void *arg0, void *work)
 
 #endif
 
-    // distribute effort values to level 100 pokémon who would otherwise not get it
-    if (expcalc->seq_no == 0 && sel_mons_no < BattleWorkPokeCountGet(expcalc->bw, exp_client_no) && GetMonData(BattleWorkPokemonParamGet(expcalc->bw, exp_client_no, sel_mons_no), MON_DATA_LEVEL, NULL) == 100)
+    //distribute effort values to level_cap pokémon who would otherwise not get it
+    //把基础点数分配给已经到达等级上限的宝可梦。
+    if (expcalc->seq_no == 0 && sel_mons_no < BattleWorkPokeCountGet(expcalc->bw, exp_client_no) && GetMonData(BattleWorkPokemonParamGet(expcalc->bw, exp_client_no, sel_mons_no), MON_DATA_LEVEL, NULL) == GetLevelCap())
     {
         DistributeEffortValues(BattleWorkPokePartyGet(expcalc->bw, exp_client_no),
                                sel_mons_no,
@@ -3277,8 +3280,6 @@ BOOL btl_scr_cmd_FC_trystickyweb(void *bw, struct BattleStruct *sp) {
         IncrementBattleScriptPtr(sp, adrs);
     } else {
         sp->side_condition[side] |= SIDE_STATUS_STICKY_WEB;
-        sp->scw[side].stickyWebBattlerId = sp->attack_client;                      // For Mirror Armor in doubles
-        sp->scw[side].stickyWebBattlerSide = IsClientEnemy(bw, sp->attack_client); // For Court Change and Defiant
     }
 
     return FALSE;
