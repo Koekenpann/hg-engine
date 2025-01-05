@@ -110,4 +110,8 @@
 // UPDATE_VITAMIN_EV_CAPS changes the cap on the vitamins from 100 to 252 per recent generations
 #define UPDATE_VITAMIN_EV_CAPS
 
+// THREE_PERFECT_IV_LEGENDS defines whether or not Pokémon in the undiscovered egg group (minus exceptions in the BabyMonTable) should have at least 3 perfect IVs.
+// comment out if you want to keep vanilla behavior
+#define THREE_PERFECT_IV_LEGENDS
+
 #endif

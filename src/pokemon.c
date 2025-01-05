@@ -1451,6 +1451,7 @@ BOOL LONG_CALL GiveMon(int heapId, void *saveData, int species, int level, int f
 
 extern u32 space_for_setmondata;
 
+#ifdef THREE_PERFECT_IV_LEGENDS
 // List from 3DSRNGTool, these species are in the undiscovered egg group but can't have three perfect IVs.
 static const u16 BabyMonTable[] = {
     SPECIES_NIDORINA,
@@ -1506,6 +1507,7 @@ static const u16 BabyMonTable[] = {
     // SPECIES_IRON_BOULDER,
     // SPECIES_IRON_CROWN,
 };
+#endif
 
 #define EGG_GROUP_NONE         0
 #define EGG_GROUP_MONSTER      1
@@ -1550,9 +1552,11 @@ void LONG_CALL CreateBoxMonData(struct BoxPokemon *boxmon, int species, int leve
 
     flag = BoxMonSetFastModeOn(boxmon);
 
-    // TODO: Make it an ifdef
     u8 PerfectIVs;
+
+    #ifdef THREE_PERFECT_IV_LEGENDS
     u8 PerfectIVCount;
+    #endif 
 
     if (!rndflag) {
         rnd = (gf_rand() | (gf_rand() << 16));
@@ -1602,6 +1606,7 @@ void LONG_CALL CreateBoxMonData(struct BoxPokemon *boxmon, int species, int leve
     }
     else{
 
+    #ifdef THREE_PERFECT_IV_LEGENDS
         // X/Y babymons still have 3 perfect IVs, but since ORAS they are excluded.
         if((PokePersonalParaGet(species, PERSONAL_EGG_GROUP_1) == EGG_GROUP_UNDISCOVERED)
          && !(IsElementInArray(BabyMonTable, (u16 *)&species, NELEMS(BabyMonTable), sizeof(BabyMonTable[0])))) {
@@ -1620,6 +1625,7 @@ void LONG_CALL CreateBoxMonData(struct BoxPokemon *boxmon, int species, int leve
                 PerfectIVs |= (1 << j);
             }
         }
+    #endif
 
         // Roll RNG: 1|11111|11111|11111|
         //            | def | atk |  hp |
