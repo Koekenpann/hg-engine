@@ -3421,7 +3421,7 @@ BOOL BtlCmd_TryProtection(void *bw, struct BattleStruct *sp) {
         }
 
         // TODO: Change MOVE_EFFECT_PROTECT to MOVE_EFFECT_PROTECT_USER_SIDE
-        if (sp->moveTbl[sp->current_move_index].effect == MOVE_EFFECT_PROTECT) {
+        /* if (sp->moveTbl[sp->current_move_index].effect == MOVE_EFFECT_PROTECT) {
             // Turn on flag both sides
             sp->oneTurnFlag[sp->attack_client].protect_flag = TRUE;
             sp->oneTurnFlag[BATTLER_ALLY(sp->attack_client)].protect_flag = TRUE;
@@ -3429,7 +3429,7 @@ BOOL BtlCmd_TryProtection(void *bw, struct BattleStruct *sp) {
             sp->mp.msg_tag = TAG_MOVE_DIR;
             sp->mp.msg_para[0] = sp->current_move_index;
             sp->mp.msg_para[1] = IsClientEnemy(sp->attack_client);
-        }
+        } */
 
         if (sp->moveTbl[sp->current_move_index].effect == MOVE_EFFECT_SURVIVE_WITH_1_HP) {
             sp->oneTurnFlag[sp->attack_client].prevent_one_hit_ko_ability = TRUE;
