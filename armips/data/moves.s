@@ -9125,7 +9125,7 @@ movedata MOVE_PHANTOM_FORCE, "Phantom Force"
     effectchance 0
     target MOVE_TARGET_SELECTED
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
+    flags FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK | FLAG_CONTACT
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9468,7 +9468,7 @@ movedata MOVE_FAIRY_LOCK, "Fairy Lock"
     movedescription MOVE_FAIRY_LOCK, "---"
 
 movedata MOVE_KINGS_SHIELD, "King’s Shield"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_PROTECT
     pss SPLIT_STATUS
     basepower 0
     type TYPE_STEEL
@@ -9477,7 +9477,7 @@ movedata MOVE_KINGS_SHIELD, "King’s Shield"
     effectchance 0
     target MOVE_TARGET_USER
     priority 4
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags 0
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9557,7 +9557,7 @@ movedata MOVE_HYPERSPACE_HOLE, "Hyperspace Hole"
     effectchance 0
     target MOVE_TARGET_SELECTED
     priority 0
-    flags FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9596,7 +9596,7 @@ movedata MOVE_MYSTICAL_FIRE, "Mystical Fire"
     movedescription MOVE_MYSTICAL_FIRE, "The user attacks by\nbreathing a special,\nhot fire.\nThis also lowers the\ntarget's Sp. Atk stat."
 
 movedata MOVE_SPIKY_SHIELD, "Spiky Shield"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_PROTECT
     pss SPLIT_STATUS
     basepower 0
     type TYPE_GRASS
@@ -9605,7 +9605,7 @@ movedata MOVE_SPIKY_SHIELD, "Spiky Shield"
     effectchance 0
     target MOVE_TARGET_USER
     priority 4
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags 0
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -9996,7 +9996,7 @@ movedata MOVE_DRAGON_ASCENT, "Dragon Ascent"
     movedescription MOVE_DRAGON_ASCENT, "---"
 
 movedata MOVE_HYPERSPACE_FURY, "Hyperspace Fury"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_REMOVE_PROTECT
     pss SPLIT_PHYSICAL
     basepower 100
     type TYPE_DARK
@@ -10005,7 +10005,7 @@ movedata MOVE_HYPERSPACE_FURY, "Hyperspace Fury"
     effectchance 100
     target MOVE_TARGET_SELECTED
     priority 0
-    flags  FLAG_PROTECT | FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
+    flags FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -10645,7 +10645,7 @@ movedata MOVE_BANEFUL_BUNKER, "Baneful Bunker"
     effectchance 0
     target MOVE_TARGET_USER
     priority 4
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags 0
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -11948,7 +11948,7 @@ movedatalongname MOVE_DOUBLE_IRON_BASH, "Dual Iron Bash", "Double Iron Bash"
     movedescription MOVE_DOUBLE_IRON_BASH, "---"
 
 movedata MOVE_MAX_GUARD, "Max Guard"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_PROTECT
     pss SPLIT_STATUS
     basepower 0
     type TYPE_NORMAL
@@ -11957,7 +11957,7 @@ movedata MOVE_MAX_GUARD, "Max Guard"
     effectchance 0
     target MOVE_TARGET_USER
     priority 4
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags 0
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -12732,7 +12732,7 @@ movedata MOVE_LIFE_DEW, "Life Dew"
     movedescription MOVE_LIFE_DEW, "---"
 
 movedata MOVE_OBSTRUCT, "Obstruct"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_PROTECT
     pss SPLIT_STATUS
     basepower 0
     type TYPE_DARK
@@ -12741,7 +12741,7 @@ movedata MOVE_OBSTRUCT, "Obstruct"
     effectchance 0
     target MOVE_TARGET_USER
     priority 4
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags 0
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -13692,7 +13692,7 @@ movedata MOVE_TERA_BLAST, "Tera Blast"
     movedescription MOVE_TERA_BLAST, "---"
 
 movedata MOVE_SILK_TRAP, "Silk Trap"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_PROTECT
     pss SPLIT_STATUS
     basepower 0
     type TYPE_BUG
@@ -13701,7 +13701,7 @@ movedata MOVE_SILK_TRAP, "Silk Trap"
     effectchance 0
     target MOVE_TARGET_USER
     priority 4
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags 0
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14588,7 +14588,7 @@ movedata MOVE_FICKLE_BEAM, "Fickle Beam"
     movedescription MOVE_FICKLE_BEAM, "---"
 
 movedata MOVE_BURNING_BULWARK, "Burning Bulwark"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_PROTECT
     pss SPLIT_STATUS
     basepower 0
     type TYPE_FIRE
@@ -14597,7 +14597,7 @@ movedata MOVE_BURNING_BULWARK, "Burning Bulwark"
     effectchance 0
     target MOVE_TARGET_USER
     priority 4
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags 0
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata

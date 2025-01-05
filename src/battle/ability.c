@@ -939,7 +939,7 @@ u32 LONG_CALL ServerWazaKoyuuCheck(void *bw, struct BattleStruct *sp)
      && (sp->moveTbl[sp->current_move_index].flag & FLAG_MAGIC_COAT))
     {
         sp->oneTurnFlag[sp->defence_client].magic_cort_flag = 0;
-        sp->waza_no_mamoru[sp->attack_client] = 0;
+        sp->move_no_protect[sp->attack_client] = 0;
         sp->waza_no_old[sp->attack_client] = sp->waza_no_temp;
         sp->waza_no_last = sp->waza_no_temp;
         sp->server_status_flag |= (0x00100000);
@@ -960,7 +960,7 @@ u32 LONG_CALL ServerWazaKoyuuCheck(void *bw, struct BattleStruct *sp)
             sp->oneTurnFlag[client_no].yokodori_flag=0;
             if ((sp->server_status_flag & (0x00100000)) == 0)
             {
-                sp->waza_no_mamoru[sp->attack_client] = 0;
+                sp->move_no_protect[sp->attack_client] = 0;
                 sp->waza_no_old[sp->attack_client] = sp->waza_no_temp;
                 sp->waza_no_last = sp->waza_no_temp;
                 sp->server_status_flag |= (0x00100000);

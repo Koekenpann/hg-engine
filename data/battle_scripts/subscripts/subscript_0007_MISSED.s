@@ -30,7 +30,10 @@ _058:
 _063:
     // {0} protected itself!
     PrintMessage 15, TAG_NICKNAME, BATTLER_CATEGORY_DEFENDER
-    GoTo _179
+    CheckProtectContactMoves
+    Wait 
+    WaitButtonABTime 30
+    GoTo _ContFromProtectContact
 
 _069:
     CompareVarToValue OPCODE_FLAG_NOT, BSCRIPT_VAR_MOVE_STATUS_FLAGS, MOVE_STATUS_LEVITATE_IMMUNE, _081
@@ -91,6 +94,7 @@ _175:
 _179:
     Wait 
     WaitButtonABTime 30
+_ContFromProtectContact:
     CompareVarToValue OPCODE_FLAG_NOT, BSCRIPT_VAR_BATTLE_STATUS, BATTLE_STATUS_MISS_MESSAGE, _189
     Call BATTLE_SUBSCRIPT_SHOW_PREPARED_MESSAGE
 

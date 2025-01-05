@@ -84,6 +84,7 @@ BOOL btl_scr_cmd_F9_canclearprimalweather(void *bw, struct BattleStruct *sp);
 BOOL btl_scr_cmd_FA_setabilityactivatedflag(void *bw, struct BattleStruct *sp);
 BOOL btl_scr_cmd_FB_switchinabilitycheck(void *bw, struct BattleStruct *sp);
 BOOL btl_scr_cmd_FC_trystickyweb(void *bw, struct BattleStruct *sp);
+BOOL btl_scr_cmd_FD_checkprotectcontactmoves(void *bw, struct BattleStruct *sp);
 BOOL BtlCmd_GoToMoveScript(struct BattleSystem *bsys, struct BattleStruct *ctx);
 BOOL BtlCmd_WeatherHPRecovery(void *bw, struct BattleStruct *sp);
 BOOL BtlCmd_CalcWeatherBallParams(void *bw, struct BattleStruct *sp);
@@ -357,6 +358,7 @@ const u8 *BattleScrCmdNames[] =
     "setabilityactivatedflag",
     "switchinabilitycheck",
     "trystickyweb",
+    "checkprotectcontactmoves",
 };
 
 u32 cmdAddress = 0;
@@ -393,6 +395,7 @@ const btl_scr_cmd_func NewBattleScriptCmdTable[] =
     [0xFA - START_OF_NEW_BTL_SCR_CMDS] = btl_scr_cmd_FA_setabilityactivatedflag,
     [0xFB - START_OF_NEW_BTL_SCR_CMDS] = btl_scr_cmd_FB_switchinabilitycheck,
     [0xFC - START_OF_NEW_BTL_SCR_CMDS] = btl_scr_cmd_FC_trystickyweb,
+    [0xFD - START_OF_NEW_BTL_SCR_CMDS] = btl_scr_cmd_FD_checkprotectcontactmoves,
 };
 
 // entries before 0xFFFE are banned for mimic and metronome--after is just banned for metronome.  table ends with 0xFFFF
@@ -3280,6 +3283,169 @@ BOOL btl_scr_cmd_FC_trystickyweb(void *bw, struct BattleStruct *sp) {
         IncrementBattleScriptPtr(sp, adrs);
     } else {
         sp->side_condition[side] |= SIDE_STATUS_STICKY_WEB;
+    }
+
+    return FALSE;
+}
+
+/** 
+ *  @brief script command to run certain subseqs based on type of protect move
+ * 
+ *  @param bw battle work structure
+ *  @param sp global battle structure
+ *  @return FALSE
+ */
+BOOL btl_scr_cmd_FD_checkprotectcontactmoves(void *bw UNUSED, struct BattleStruct *sp) {
+    IncrementBattleScriptPtr(sp, 1);
+
+    if (IsContactBeingMade(bw, sp)
+     && (sp->battlemon[sp->attack_client].hp)
+     && ((sp->server_status_flag & BATTLE_STATUS_CHARGE_TURN) == 0)) {
+        switch (sp->move_no_protect[sp->defence_client]) {
+            case MOVE_KINGS_SHIELD:
+                if ((sp->battlemon[sp->attack_client].states[STAT_ATTACK] > 0)
+                 && (sp->moveTbl[sp->current_move_index].split != SPLIT_STATUS)) {
+                    sp->addeffect_param = ADD_STATE_ATTACK_DOWN;
+                    sp->state_client = sp->attack_client;
+                    SkillSequenceGosub(sp, ARC_BATTLE_SUB_SEQ, SUB_SEQ_BOOST_STATS);
+                }
+                break;
+            case MOVE_SPIKY_SHIELD:
+                if (GetBattlerAbility(sp, sp->attack_client) != ABILITY_MAGIC_GUARD) {
+                    sp->hp_calc_work = BattleDamageDivide(sp->battlemon[sp->attack_client].maxhp * -1, 8);
+                    sp->state_client = sp->attack_client;
+                    // TODO: Different sub_seq as this prints the ability in the message: {0} was hurt!
+                    SkillSequenceGosub(sp, ARC_BATTLE_SUB_SEQ, SUB_SEQ_ROUGH_SKIN);
+                }
+                break;
+            case MOVE_BANEFUL_BUNKER:
+                if (sp->battlemon[sp->attack_client].condition == 0) {
+                    sp->state_client = sp->attack_client;
+                    SkillSequenceGosub(sp, ARC_BATTLE_SUB_SEQ, SUB_SEQ_APPLY_POISON);
+                }
+                break;
+            case MOVE_OBSTRUCT:
+                if ((sp->battlemon[sp->attack_client].states[STAT_DEFENSE] > 0)
+                 && (sp->moveTbl[sp->current_move_index].split != SPLIT_STATUS)) {
+                    sp->addeffect_param = ADD_STATE_DEFENSE_DOWN_2;
+                    sp->state_client = sp->attack_client;
+                    SkillSequenceGosub(sp, ARC_BATTLE_SUB_SEQ, SUB_SEQ_BOOST_STATS);
+                }
+                break;
+            case MOVE_SILK_TRAP:
+                if ((sp->battlemon[sp->attack_client].states[STAT_SPEED] > 0)
+                 && (sp->moveTbl[sp->current_move_index].split != SPLIT_STATUS)) {
+                    sp->addeffect_param = ADD_STATE_SPEED_DOWN;
+                    sp->state_client = sp->attack_client;
+                    SkillSequenceGosub(sp, ARC_BATTLE_SUB_SEQ, SUB_SEQ_BOOST_STATS);
+                }
+                break;
+            case MOVE_BURNING_BULWARK:
+                if ((sp->battlemon[sp->attack_client].condition == 0)
+                 && (sp->moveTbl[sp->current_move_index].split != SPLIT_STATUS)) {
+                    sp->state_client = sp->attack_client;
+                    SkillSequenceGosub(sp, ARC_BATTLE_SUB_SEQ, SUB_SEQ_APPLY_BURN);
+                }
+                break;
+            default:
+                break;
+            return FALSE;
+        }
+    }
+
+    return FALSE;
+}
+
+const u16 sProtectSuccessChance[] = {
+    1,  // 100%
+    3,  // ~33.3%
+    9,  // ~11.1%
+    27, // ~3.7%
+    // 81, // unused due to no space in protectSuccessTurns
+    // 243, // unused due to no space in protectSuccessTurns
+    // 729, // unused due to no space in protectSuccessTurns
+};
+
+
+/** 
+ *  @brief Try to execute the Protect or Endure effects.
+ *         Will also take into account the new protect moves.
+ *  @param bw battle work structure
+ *  @param sp global battle structure
+ *  @return FALSE
+ */
+
+BOOL BtlCmd_TryProtection(void *bw, struct BattleStruct *sp) {
+    IncrementBattleScriptPtr(sp, 1);
+    int adrs = read_battle_script_param(sp);
+
+    // TODO: Change this to a table maybe
+    if ((sp->move_no_protect[sp->attack_client] != MOVE_PROTECT)
+     && (sp->move_no_protect[sp->attack_client] != MOVE_DETECT)
+     && (sp->move_no_protect[sp->attack_client] != MOVE_ENDURE)
+     // New Protect moves
+     && (sp->move_no_protect[sp->attack_client] != MOVE_KINGS_SHIELD)
+     && (sp->move_no_protect[sp->attack_client] != MOVE_SPIKY_SHIELD)
+     && (sp->move_no_protect[sp->attack_client] != MOVE_BANEFUL_BUNKER)
+     && (sp->move_no_protect[sp->attack_client] != MOVE_MAX_GUARD)
+     && (sp->move_no_protect[sp->attack_client] != MOVE_OBSTRUCT)
+     && (sp->move_no_protect[sp->attack_client] != MOVE_SILK_TRAP)
+     && (sp->move_no_protect[sp->attack_client] != MOVE_BURNING_BULWARK)
+     // Since only these two side protection moves affect the counter, reset if it isn't used previously
+     && (sp->move_no_protect[sp->attack_client] != MOVE_WIDE_GUARD)
+     && (sp->move_no_protect[sp->attack_client] != MOVE_QUICK_GUARD)) {
+        sp->battlemon[sp->attack_client].moveeffect.protectSuccessTurns = 0;
+    }
+
+    BOOL moreBattlersThisTurn;
+    if (sp->client_working_count == 1) {
+        moreBattlersThisTurn = FALSE;
+    } else {
+        moreBattlersThisTurn = TRUE;
+    }
+
+    // modernise successive protect turns; currently protectSuccessTurns can only be 3 max, so not 100% accurate
+    if (((BattleRand(bw) % sProtectSuccessChance[sp->battlemon[sp->attack_client].moveeffect.protectSuccessTurns] == 0)
+     // These side protection moves increase the counter, but do not have a chance of failing the move on consecutive use
+     || (sp->current_move_index == MOVE_WIDE_GUARD)
+     || (sp->current_move_index == MOVE_QUICK_GUARD)
+     // These side protection moves only bypasses the battle RNG check
+     || (sp->current_move_index == MOVE_MAT_BLOCK)
+     || (sp->current_move_index == MOVE_CRAFTY_SHIELD))
+     && moreBattlersThisTurn) {
+        if (sp->moveTbl[sp->current_move_index].effect == MOVE_EFFECT_PROTECT) {
+            sp->oneTurnFlag[sp->attack_client].protect_flag = TRUE;
+            sp->mp.msg_id = BATTLE_MSG_PROTECTED_ITSELF; // "{0} protected itself!"
+            sp->mp.msg_tag = TAG_NICK;
+            sp->mp.msg_para[0] = CreateNicknameTag(sp, sp->attack_client);
+        }
+
+        // TODO: Change MOVE_EFFECT_PROTECT to MOVE_EFFECT_PROTECT_USER_SIDE
+        if (sp->moveTbl[sp->current_move_index].effect == MOVE_EFFECT_PROTECT) {
+            // Turn on flag both sides
+            sp->oneTurnFlag[sp->attack_client].protect_flag = TRUE;
+            sp->oneTurnFlag[BATTLER_ALLY(sp->attack_client)].protect_flag = TRUE;
+            sp->mp.msg_id = BATTLE_MSG_PROTECTED_ITSELF; // "{0} protected [your/the opposing] team" TODO: change to own battle msg
+            sp->mp.msg_tag = TAG_MOVE_DIR;
+            sp->mp.msg_para[0] = sp->current_move_index;
+            sp->mp.msg_para[1] = IsClientEnemy(sp->attack_client);
+        }
+
+        if (sp->moveTbl[sp->current_move_index].effect == MOVE_EFFECT_SURVIVE_WITH_1_HP) {
+            sp->oneTurnFlag[sp->attack_client].prevent_one_hit_ko_ability = TRUE;
+            sp->mp.msg_id = BATTLE_MSG_BRACED_ITSELF; // "{0} braced itself!"
+            sp->mp.msg_tag = TAG_NICK;
+            sp->mp.msg_para[0] = CreateNicknameTag(sp, sp->attack_client);
+        }
+
+        if ((sp->battlemon[sp->attack_client].moveeffect.protectSuccessTurns < NELEMS(sProtectSuccessChance) - 1)
+         && !(sp->current_move_index == MOVE_MAT_BLOCK)
+         && !(sp->current_move_index == MOVE_CRAFTY_SHIELD)) {
+            sp->battlemon[sp->attack_client].moveeffect.protectSuccessTurns++;
+        }
+    } else {
+        sp->battlemon[sp->attack_client].moveeffect.protectSuccessTurns = 0;
+        IncrementBattleScriptPtr(sp, adrs);
     }
 
     return FALSE;

@@ -1383,4 +1383,8 @@
     .long (((\arg_0 - .) / 4) - 1)
     .endm
 
+    .macro CheckProtectContactMoves
+    .long 253
+    .endm
+
 .endif

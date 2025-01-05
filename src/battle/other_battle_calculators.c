@@ -2152,12 +2152,76 @@ BOOL LONG_CALL BattleSystem_CheckMoveEffect(void *bw, struct BattleStruct *sp, i
         return FALSE;
     }
 
-    if (sp->oneTurnFlag[battlerIdTarget].mamoru_flag
-        && sp->moveTbl[move].flag & (1 << 1)
+    // TODO: Side protection moves !! Side Protection moves are untested atm
+    if (sp->oneTurnFlag[battlerIdTarget].protect_flag
+        && sp->moveTbl[move].flag & FLAG_PROTECT
+        && (!(sp->battlemon[battlerIdAttacker].ability == ABILITY_UNSEEN_FIST && IsContactBeingMade(bw, sp)))
         && (move != MOVE_CURSE || CurseUserIsGhost(sp, move, battlerIdAttacker) == TRUE)
         && (!CheckMoveIsChargeMove(sp, move) || sp->server_status_flag & BATTLE_STATUS_CHARGE_MOVE_HIT)) {
-        UnlockBattlerOutOfCurrentMove(bw, sp, battlerIdAttacker);
-        sp->waza_status_flag |= WAZA_STATUS_FLAG_MAMORU_NOHIT;
+        switch (sp->move_no_protect[battlerIdTarget]) {
+            case MOVE_KINGS_SHIELD:
+            case MOVE_OBSTRUCT:
+            case MOVE_SILK_TRAP:
+            case MOVE_BURNING_BULWARK:
+            case MOVE_MAT_BLOCK:
+                if (GetMoveSplit(sp, move) != SPLIT_STATUS) {
+                    UnlockBattlerOutOfCurrentMove(bw, sp, battlerIdAttacker);
+                    sp->waza_status_flag |= MOVE_STATUS_FLAG_PROTECTED;
+                }
+                break;
+            case MOVE_CRAFTY_SHIELD:
+                if (GetMoveSplit(sp, move) == SPLIT_STATUS) {
+                    UnlockBattlerOutOfCurrentMove(bw, sp, battlerIdAttacker);
+                    sp->waza_status_flag |= MOVE_STATUS_FLAG_PROTECTED;
+                }
+                break;
+            case MOVE_QUICK_GUARD:
+                if (adjustedMoveHasPositivePriority(sp, battlerIdAttacker)) {
+                    UnlockBattlerOutOfCurrentMove(bw, sp, battlerIdAttacker);
+                    sp->waza_status_flag |= MOVE_STATUS_FLAG_PROTECTED;
+                }
+                break;
+            case MOVE_WIDE_GUARD:
+                if ((sp->moveTbl[move].target == MOVE_TARGET_BOTH) || (sp->moveTbl[move].target == MOVE_TARGET_FOES_AND_ALLY)) {
+                    UnlockBattlerOutOfCurrentMove(bw, sp, battlerIdAttacker);
+                    sp->waza_status_flag |= MOVE_STATUS_FLAG_PROTECTED;
+                }
+                break;
+            default:
+                UnlockBattlerOutOfCurrentMove(bw, sp, battlerIdAttacker);
+                sp->waza_status_flag |= MOVE_STATUS_FLAG_PROTECTED;
+                break;
+        }
+
+        // Check stored Protect move of ally for the side protection moves (idk if this even works)
+        switch (sp->move_no_protect[BATTLER_ALLY(battlerIdTarget)]) {
+            case MOVE_MAT_BLOCK:
+                if (GetMoveSplit(sp, move) != SPLIT_STATUS) {
+                    UnlockBattlerOutOfCurrentMove(bw, sp, battlerIdAttacker);
+                    sp->waza_status_flag |= MOVE_STATUS_FLAG_PROTECTED;
+                }
+                break;
+            case MOVE_CRAFTY_SHIELD:
+                if (GetMoveSplit(sp, move) == SPLIT_STATUS) {
+                    UnlockBattlerOutOfCurrentMove(bw, sp, battlerIdAttacker);
+                    sp->waza_status_flag |= MOVE_STATUS_FLAG_PROTECTED;
+                }
+                break;
+            case MOVE_QUICK_GUARD:
+                if (adjustedMoveHasPositivePriority(sp, battlerIdAttacker)) {
+                    UnlockBattlerOutOfCurrentMove(bw, sp, battlerIdAttacker);
+                    sp->waza_status_flag |= MOVE_STATUS_FLAG_PROTECTED;
+                }
+                break;
+            case MOVE_WIDE_GUARD:
+                if ((sp->moveTbl[move].target == MOVE_TARGET_BOTH) || (sp->moveTbl[move].target == MOVE_TARGET_FOES_AND_ALLY)) {
+                    UnlockBattlerOutOfCurrentMove(bw, sp, battlerIdAttacker);
+                    sp->waza_status_flag |= MOVE_STATUS_FLAG_PROTECTED;
+                }
+                break;
+            default:
+                break;
+        }
         return FALSE;
     }
 
