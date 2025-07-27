@@ -343,6 +343,9 @@ void MakeTrainerPokemonParty(struct BATTLE_PARAM *bp, int num, int heapID)
             {
                 SetPartyPokemonMoveAtPos(mons[i], moves[j], j);
             }
+        } else if (form_no) // If the data type isn't used and it's an alt form, repopulate moveset
+        {
+            InitBoxMonMoveset(mons[i]); // compiler gives warning but it works...
         }
         TrainerCBSet(ballseal, mons[i], heapID);
         if (bp->trainer_data[num].data_type & TRAINER_DATA_TYPE_ABILITY)
