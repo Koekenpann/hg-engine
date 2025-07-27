@@ -1557,29 +1557,6 @@ static const u16 BabyMonTable[] = {
     
     // Can confirm the fossils from Gen 8 have 3 perfect IVs upon reviving them
 
-    // Gen 9: Can uncomment these as these technically don't have 3 perfect IVs. I'm gonna assume oversight though
-    // SPECIES_GREAT_TUSK,
-    // SPECIES_SCREAM_TAIL,
-    // SPECIES_BRUTE_BONNET,
-    // SPECIES_FLUTTER_MANE,
-    // SPECIES_SLITHER_WING,
-    // SPECIES_SANDY_SHOCKS,
-    // SPECIES_IRON_TREADS,
-    // SPECIES_IRON_BUNDLE,
-    // SPECIES_IRON_HANDS,
-    // SPECIES_IRON_JUGULIS,
-    // SPECIES_IRON_MOTH,
-    // SPECIES_IRON_THORNS,
-    // SPECIES_GIMMIGHOUL,
-    // SPECIES_GHOLDENGO,
-    // SPECIES_ROARING_MOON,
-    // SPECIES_IRON_VALIANT,
-    // SPECIES_WALKING_WAKE,
-    // SPECIES_IRON_LEAVES,
-    // SPECIES_GOUGING_FIRE,
-    // SPECIES_RAGING_BOLT,
-    // SPECIES_IRON_BOULDER,
-    // SPECIES_IRON_CROWN,
 };
 #endif
 
@@ -1688,6 +1665,16 @@ void LONG_CALL CreateBoxMonData(struct BoxPokemon *boxmon, int species, int leve
         } else {
             PerfectIVCount = 0;
         }
+
+        // Paradox Pokémon and Gimmighoul don't have 3 Perfect IVs either, but Gen 9 is not as consistent.
+        if (IS_SPECIES_PARADOX_FORM(species)
+         || (species >= SPECIES_GOUGING_FIRE && species <= SPECIES_IRON_CROWN) 
+         || (species == SPECIES_GIMMIGHOUL)
+         || (speices == SPECIES_GHOLDENGO)) {
+            PerfectIVCount = 0;
+        }
+
+        // TODO: Koraidon/Miraidon set IVs
 
         // Using same for-loop as 3DSRNGTool, as it mimicks the RNG of the Gen 6+ games.
         // But instead of setting the IV there we use a bitmask to set the stat we force to MAX_IV.
